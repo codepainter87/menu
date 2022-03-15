@@ -1,0 +1,123 @@
+.hero {
+	background: url(../img/hero.jpg);
+	background-size: cover;
+	background-position: center bottom;
+    height: 100vh;
+	// max-height: 700px;
+}
+
+.overlay__path {
+	// opacity: 0.3;
+}
+.hero:after {
+	content: '';
+	background: #007755;
+	opacity: 0;
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+/* HERO OVERLAY  */
+.hero-overlay {
+	position: absolute;
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+	// max-height: 700px;
+	&__top, &__arch, &__left, &__right {
+		mix-blend-mode: multiply;
+	}
+	&__top {
+		content: '';
+		background: var(--accent-color);
+		position: absolute;
+		top: 0;
+		height: 11vh;
+		left: 0;
+		right: 0;
+	}
+	&__arch {
+		content: '';
+		background-image: url(../img/arch.svg);
+		background-size: cover;
+		position: absolute;
+		overflow: hidden;
+		width: 100%;
+		max-width: 800px;
+		height: 89vh;
+		// max-height: 700px;
+		bottom: 0;
+		left: calc((100vw - 800px) / 2);
+		top: 11vh;
+	}
+	&__left {
+		content: '';
+		background: var(--accent-color);
+		position: absolute;
+		top: 11vh;
+		bottom: 0;
+		left: 0;
+		width: calc((100vw - 800px) / 2);
+		mix-blend-mode: multiply;
+	}
+	
+	&__right {
+		content: '';
+		background: var(--accent-color);
+		position: absolute;
+		top: 11vh;
+		bottom: 0;
+		right: 0;
+		width: calc((100vw - 800px) / 2);
+	}
+}
+
+
+
+
+
+
+
+/* HERO TEXT  */
+
+.hero-title {
+	grid-area: 1 / 1 / 2 / 2;
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	position: relative;
+	align-items: center;
+	height: 100vh;
+	// max-height: 700px;
+	justify-content: center;
+	font-weight: 400;
+	text-align: center;
+	font-size: 8vw;
+	line-height: 0.75;
+	cursor: default;
+    color: white;
+	/* margin: 50vh 0 0 0; */
+}
+
+.hero-title__main {
+	font-size: 1.8rem;
+	font-weight: 700;
+    display: block;
+    will-change: opacity, transform;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	text-shadow: 0px 0px 6px rgba(0,0,0,0.66);
+}
+
+.hero-title__sub {
+	display: block;
+	margin-top: 28px;
+	font-size: 6rem;
+	line-height: 1em;
+	margin-right: -0.3em;
+	will-change: opacity, transform;
+	text-shadow: 0px 0px 6px rgba(0,0,0,0.66);
+}

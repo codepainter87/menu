@@ -1,0 +1,25 @@
+.map-block {
+  margin: 5rem 0;
+  /* fixes potential theme css conflict */
+}
+.map-block .acf-map {
+  width: 100%;
+  height: 80vh;
+  border: #ccc solid 1px;
+}
+.map-block .acf-map img {
+  max-width: inherit !important;
+}
+.map-block__placeholder {
+  width: 100%;
+  height: 400px;
+}
+.map-block .hidden-marker {
+  display: none;
+  content: "";
+  background-image: url("map-marker.b03973ea.svg");
+}
+.map-block + .text-area--title {
+  margin-top: 0;
+}
+/*# sourceMappingURL=index.8e151f13.css.map */

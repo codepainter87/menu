@@ -1,0 +1,169 @@
+.text-area {
+    margin-top: 100px;
+
+    + .text-area:not(.text-area--display):not(.text-area--color):not(.text-area--sidebar) {
+        margin-top: 100px;
+    }
+
+    &--title {
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        + .text-area:not(.text-area--display):not(.text-area--color):not(.text-area--sidebar) {
+            margin-top: 0px;
+        }
+    }
+    &--sidebar {
+        margin-top: 60px;
+        display: flex;
+        .text-area__main {
+            flex: 0 0 60%;
+        }
+        .text-area__sidebar {
+            flex: 0 0 40%;
+        }
+    }
+    &--sidebar-right {
+        .text-area__main {
+            padding-right: 30px;
+            p:first-child {
+                margin-top: 0;
+                font-size: 2rem;
+                line-height: 3rem;
+                color: var(--accent-color);
+            }
+        }
+        .text-area__sidebar-block {
+            border-top: 2px solid var(--accent-color);
+            padding-top: 20px;
+            h4 {
+                color: var(--accent-color);
+                text-transform: uppercase;
+                margin-bottom: 16px;
+            }
+            p {
+                font-size: 2rem;
+                line-height: 3rem;
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    &--center {
+        text-align: center;
+        .text-area--title {
+            max-width: 530px;
+        }
+        .small {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    }
+    &--right {
+        text-align: right;
+        p {
+            margin-right: 0;
+            margin-left: auto;
+        }
+    }
+    &--color {
+        padding: 100px 0;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        background: var(--accent-color);
+        color: white;
+        .wrapper {
+            position: relative;
+
+        }
+        .eyebrow {
+            color: white;
+            font-weight: bold;
+        }
+        .rotating-logo {
+            position: absolute;
+            top: -179px;
+            right: 0;
+        }
+        &.text-area--center {
+            h1,h2,h3,h4,h5,h6, ol, ul, blockquote, cite {
+                max-width: 570px;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+    &--display {
+        padding: 275px 0 30px;
+        background: var(--accent-color);
+        color: white;
+        position: relative;
+        .display-style {
+            opacity: 0;
+            transition-duration: 1s;
+            transition-delay: 0.5s;
+            line-height:  1em; 
+            &.animating {
+                opacity: 1;
+            }
+        }
+    }
+    &--quote {
+        padding: 112px 0;
+        line-height: 3.5rem;
+        font-size: 2.5rem;
+    }
+
+    .animating-logo {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        img {
+            width: 132px;
+            &.moving {
+                position: absolute;
+                left: 0;
+            }
+        }
+        &.animating {
+            img {
+                // animation:  5s infinite steps(2, end);
+                // animation: logoRotation 1s infinite ease-in-out;
+                &.moving {
+                    animation: logoRotation 3s infinite step-end;
+                }
+                &.first {
+                    transform: translate(0px, 0px) rotate(0deg);
+                    opacity: 0.1;
+                }
+                &.second {
+                    transform: translate(-56px, 3px) rotate(45deg);
+                    opacity: 0.1;
+                }
+                &.third {
+                    transform: translate(-104px, 0px) rotate(90deg);
+                    opacity: 0.1;
+                }
+            }
+        }
+    }
+
+}
+
+@keyframes logoRotation {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    33.33% {
+        transform: translate(75px, 3px) rotate(45deg);
+    }
+    66.66% {
+        transform: translate(160px, 0px) rotate(90deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}

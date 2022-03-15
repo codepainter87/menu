@@ -1,0 +1,91 @@
+.full-width-image {
+    position: relative;
+    display: block;
+    img {
+        max-height: 800px;
+        width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        display: block;
+    }
+
+    + .logo-image {
+        margin-top: -60px;
+    }
+
+    + .text-area {
+        position: relative;
+        z-index: -2;
+    }
+
+    + .text-area--display {
+        position: relative;
+        z-index: 0;
+        margin: 0;
+    }
+    &.is-style-animated {
+        transition: all 2s;
+        opacity: 0.1;
+        filter: grayscale(1);
+    }
+    &.animating {
+        filter: grayscale(0);
+        opacity: 1;
+    }
+    &--top-offset {
+        margin-top: -200px;
+        z-index: -1;
+        position: relative;
+    }
+}
+
+.half-image {
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    height: 550px;
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    &--top-offset {
+        z-index: 1;
+        top: -275px;
+    }
+    &--right {
+        right: 0; 
+        overflow: hidden;
+        img {
+            transform: translateX(100%);
+            transition: all 0.5s ease-in-out;
+        }
+        &.animating {
+            img {
+                transform: translateX(0%);
+            }
+        }
+    }
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+
+
+.animating .rotating-logo {
+    animation: rotation 5s ease-in-out;
+}
+
+.rotating-logo {
+    max-width: 185px!important;
+    img {
+        margin: 0;
+    }
+}

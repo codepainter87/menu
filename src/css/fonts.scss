@@ -1,0 +1,24 @@
+@font-face {
+    font-family: GoodSans;
+    src: url("/fonts/GoodSans-Regular.otf") format("opentype");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: GoodSans;
+    src: url("/fonts/GoodSans-Bold.otf") format("opentype");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: Panama;
+    src: url("/fonts/Panama Bold.otf") format("opentype");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: Panama;
+    src: url("/fonts/Panama Regular.otf") format("opentype");
+    font-weight: normal;
+  }
+
+// Font Family
+$primaryFont: "GoodSans";
+$secondryFont: "Panama";
