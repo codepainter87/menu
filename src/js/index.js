@@ -26,7 +26,7 @@ import('jquery').then(async ($) => {
     let dropletRipples;
     // your code that uses jQuery
     
-    const initRipples = () => {
+    const initHeroRipples = () => {
         heroRipples = $('.hero').ripples({
             resolution: 600,
             dropRadius: 20,
@@ -35,6 +35,23 @@ import('jquery').then(async ($) => {
         
     };
     
+
+
+
+    const destroyHeroRipples = () => {
+        // set a timeout so it only hides once the menu is showing (less jarring)
+        setTimeout(function() {
+            $(heroRipples).ripples('destroy');
+        }, 1000);
+    };
+
+    const destroyDroplets = () => {
+        // set a timeout so it only hides once the menu is showing (less jarring)
+        setTimeout(function() {
+            $(dropletRipples).ripples('destroy');
+        }, 1000);
+    };
+
     const addDroplets = () => {
         dropletRipples = $('.droplets').ripples({
             resolution: 600,
@@ -50,19 +67,9 @@ import('jquery').then(async ($) => {
     };
 
 
-    const destroyRipples = () => {
-        console.log('removing droplets')
-        // set a timeout so it only hides once the menu is showing (less jarring)
-        setTimeout(function() {
-            $(heroRipples).ripples('destroy');
-            $(dropletRipples).ripples('destroy');
-        }, 1000);
-    };
-
-
     setTimeout(() => {
         $('.hero').addClass('render');
-        initRipples();
+        initHeroRipples();
     }), 60;
 
     // menu (wrap) element
@@ -76,9 +83,9 @@ import('jquery').then(async ($) => {
     // click on menu button
     const toggleMenu = () => {
         if(window.document.body.classList.contains('menu-open')) {
-            destroyRipples();
+            destroyHeroRipples();
         } else {
-            initRipples();
+            initHeroRipples();
         }
     };
 
@@ -102,7 +109,7 @@ import('jquery').then(async ($) => {
                 else if(!entry.isIntersecting && $(entry.target).hasClass('animating')){
                     if($(entry.target).hasClass('droplets')) {
                         $(entry.target).removeClass('animating');
-                        destroyRipples();
+                        destroyDroplets();
                     }
                 }
             });
@@ -111,6 +118,27 @@ import('jquery').then(async ($) => {
 
     blocks.forEach(block => {
         blockObserver.observe(block);
+    });
+
+    const titles = document.querySelectorAll('.text-transition');
+
+    const textTransitionConfig = {
+        rootMargin: '0%',
+        threshold: 0.5
+    };
+    const textTransitionObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            console.log(entry)
+                if (entry.isIntersecting && !$(entry.target).hasClass('animating')) {
+                    console.log('intersenting')
+                    $(entry.target).addClass('animating');
+                } 
+            });
+    }, textTransitionConfig); 
+
+
+    titles.forEach(text => {
+        textTransitionObserver.observe(text);
     });
 
 

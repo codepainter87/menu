@@ -4,7 +4,7 @@ import { gsap } from 'gsap';
 // preload images then remove loader (loading class) 
 
 // TODO NOT IN USE 
-preloadImages('.tiles__line-img').then(() => document.body.classList.remove('loading'));
+preloadImages('.hero').then(() => document.body.classList.remove('loading'));
 
 // frame element
 const frame = document.querySelector('.hero');

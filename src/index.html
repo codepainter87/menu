@@ -4,10 +4,10 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Infinite Menu Background Animation | Codrops</title>
-	<meta name="description" content="A page transition with an animated SVG path for a menu that has an infinite background animation." />
+	<title>Landing page demo</title>
+	<meta name="description" content="" />
 	<meta name="keywords" content="overlay, page transition, animation, svg" />
-	<meta name="author" content="Codrops" />
+	<meta name="author" content="Lizzie Painter" />
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="https://use.typekit.net/iqd6ozy.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.scss" />
@@ -19,6 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="css/text-area.scss" />
 	<link rel="stylesheet" type="text/css" href="css/text-image.scss" />
 	<link rel="stylesheet" type="text/css" href="css/gallery.scss" />
+	<link rel="stylesheet" type="text/css" href="css/animations.scss" />
 	<link rel="stylesheet" type="text/css" href="css/menu.scss" />
 	<link rel="stylesheet" type="text/css" href="css/buttons.scss" />
 	<link rel="stylesheet" type="text/css" href="css/accordion.scss" />
@@ -51,13 +52,15 @@
 	
 	</header> -->
 	<header>
+		<a href="#" class="header__logo">
+			<img src="./img/Dimensions_Lockup.svg" alt="">
+		</a>
 		<div class="top-nav">
-			<div class="wrapper wrapper--wide">
+			<div class="wrapper wrapper--extra-wide">
 				<a href="#rsvp" class="button button--bordered button--white button--rounded">
 					<div class="button__circle"></div>
 					<span>RSVP</span>	
 				</a>
-				<a href="#" class="top-nav__logo"><img src="./img/Dimensions_Lockup.svg" alt=""></a>
 				<a href="#" class="top-nav__wordmark"></a>
 				<button class="hamburger hamburger--spin" type="button"
 				aria-label="Menu" aria-controls="navigation">
@@ -115,7 +118,7 @@
 				<h1 class="hero-title__sub">Dimensions</h1>
 			</div>
 		</div> 
-		<div class="text-area text-area--title text-area--left wrapper">
+		<div class="text-area text-area--title text-transition is-style-animated wrapper">
 			<h2 class="eyebrow">Evolve</h2>
 			<h2>Psychedelic Guide Training with Daniel McQueen</h2>
 		</div>
@@ -138,40 +141,29 @@
 			</div>
 		</div>
 
-		<div class="text-area text-area--title text-area--center text-area--left wrapper">
+		<div class="text-area text-area--title text-area--center text-area--left text-transition is-style-animated ">
 			<h2 class="eyebrow">Evolve</h2>
 			<h2>Faculty</h2>
 		</div>
 
+<!-- PROFILES  -->
 		<div class="profiles wrapper">
 			<div class="grid grid--2-col">
 				<div class="grid__item" data-size="1280x857">
-						<a href="./img/daniel.jpg" class="img-wrap">
-							<img src="./img/daniel.jpg" alt="img06" />
-						</a>
+						<img src="./img/daniel.jpg" alt="img06" />
 						<div class="description description--grid">
 							<h3 class="description__name">Daniel McQueen, MA</h3>
-							<p class="description__bio">Daniel McQueen is a Psychedelic Specialist, Psychedelic Therapy Educator, Activist, and Author of the book Psychedelic...
+							<p class="description__bio-intro">Daniel McQueen is a Psychedelic Specialist, Psychedelic Therapy Educator, Activist, and Author of the book Psychedelic...
 								<a href="#" class="description__readmore">read more</a>
 							</p>
-							<div class="details">
-								<ul>
-									<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-									<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
-									<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-									<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-									<li><i class="icon icon-iso"></i><span>80</span></li>
-								</ul>
-							</div>
+							<div class="description__bio">Daniel McQueen is a Psychedelic Specialist, Psychedelic Therapy Educator, Activist, and Author of the book Psychedelic Cannabis. In 2012, he co-founded the Center of Medicinal Mindfulness which is the first legal plant-based psychedelic therapy center in the United States. <a href="https://medicinalmindfulness.org/project/daniel-mcqueen/" target="_blank">Visit Daniel's site</a></div>
 						</div>
 				</div>
 			</div>
 
 			<div class="grid grid--2-col">
 				<div class="grid__item" data-size="1280x857">
-						<a href="#" class="img-wrap">
-							<img src="./img/donald.jpg" alt="img06" />
-						</a>
+						<img src="./img/donald.jpg" alt="img06" />
 						<div class="description description--grid">
 							<h3 class="description__name">Donald Currie, RP</h3>
 							<p class="description__title">Clinical Director, Dimensions Algonquin Highlands</p>
@@ -190,9 +182,7 @@
 						</div>
 				</div>
 				<div class="grid__item" data-size="1280x857">
-						<a href="./img/dawn.jpg" class="img-wrap">
-							<img src="./img/dawn.jpg" alt="img06" />
-						</a>
+						<img src="./img/dawn.jpg" alt="img06" />
 						<div class="description description--grid">
 							<h3 class="description__name">Dawn Martin </h3>
 							<p class="description__title">PhD, MEd, MSW RSW</p>
@@ -214,9 +204,7 @@
 
 			<div class="grid grid--3-col">
 				<div class="grid__item" data-size="1280x857">
-						<a href="./img/donald.jpg" class="img-wrap">
-							<img src="https://via.placeholder.com/150?text=placeholder" alt="img06" />
-						</a>
+						<img src="https://via.placeholder.com/150?text=placeholder" alt="img06" />
 						<div class="description description--grid">
 							<h3 class="description__name">Name</h3>
 							<p class="description__title">Profile title</p> 
@@ -235,9 +223,7 @@
 						</div>
 				</div>
 				<div class="grid__item" data-size="1280x857">
-						<a href="./img/donald.jpg" class="img-wrap">
-							<img src="https://via.placeholder.com/150?text=placeholder" alt="img06" />
-						</a>
+						<img src="https://via.placeholder.com/150?text=placeholder" alt="img06" />
 
 						<div class="description description--grid">
 							<h3 class="description__name">Name</h3>
@@ -257,9 +243,7 @@
 						</div>
 				</div>
 				<div class="grid__item" data-size="1280x857">
-						<a href="./img/donald.jpg" class="img-wrap">
-							<img src="https://via.placeholder.com/150?text=placeholder" alt="img06" />
-						</a>
+						<img src="https://via.placeholder.com/150?text=placeholder" alt="img06" />
 						<div class="description description--grid">
 							<h3 class="description__name">Name</h3>
 							<p class="description__title">Profile title</p> 
@@ -276,6 +260,20 @@
 								</ul>
 							</div>
 						</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal">
+			<div class="modal__closer">X</div>
+			<div class="modal__content">
+				<div class="modal__image">
+					<img src="https://images.unsplash.com/photo-1647251641345-4963d2c02b38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
+				</div>
+				<div class="modal__text">
+					<p class="modal__name"></p>
+					<p class="modal__title"></p>
+					<p class="modal__bio"></p>
 				</div>
 			</div>
 		</div>
@@ -291,9 +289,9 @@
 		</div>
 
 <!-- ANIMATING SECTION  -->
-		<div class="text-area  text-area--title text-area--center wrapper">
+		<div class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated gallery-title">
 			<h2 class="eyebrow">Retreat</h2>
-			<h3>Dimensions Algonquin Highlands</h3>
+			<h3>Dimensions <br>Algonquin Highlands</h3>
 		</div>
 
 		<div class="text-area text-area--sidebar wrapper wrapper--wide">
@@ -332,6 +330,14 @@
 					<img src="./img/gallery-3.jpg" alt="">
 				</div>
 				<div class="logo-image__logo">
+				
+				</div>
+			</div>
+			<div class="logo-image logo-image--image-right">
+				<div class="logo-image__image is-style-animated">
+					<img src="./img/gallery-5.jpg" alt="">
+				</div>
+				<div class="logo-image__logo">
 					<div class="logo-image__logo-image is-style-animated">
 						<img class="rotating-logo" src="./img/slogan-green.svg" class="" alt="">
 					</div>
@@ -339,19 +345,14 @@
 			</div>
 			<div class="full-width-image full-width-image--top-offset is-style-animated droplets" style="background-image: url(./img/gallery-4.jpg); background-size: cover; height: 600px;">
 				<!-- <img src="./img/gallery-4.jpg" alt=""> -->
-			</div>
-			<div class="text-area text-area--right text-area--display">
-				<div class="half-image half-image--right half-image--top-offset is-style-animated">
-					<img src="./img/gallery-5.jpg" alt="">
-				</div>
 				<div class="wrapper">
-					<p class="display-style is-style-animated">Continue your transformational journey.</p>
+					<p class="display-style">Continue your transformational journey.</p>
 				</div>
 			</div>
 		</div>
 
 <!-- RETREAT, RESET, TRANSFORM  -->
-		<div id="retreat" class="text-area  text-area--title text-area--center wrapper">
+		<div id="retreat" class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Program</h2>
 			<h3>Retreat</h3>
 		</div>
@@ -367,7 +368,7 @@
 			</div>
 		</div>
 
-		<div id="reset" class="text-area text-area--title text-area--center wrapper">
+		<div id="reset" class="text-area text-area--title text-area--center wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Program</h2>
 			<h3>Reset</h3>
 		</div>
@@ -383,7 +384,7 @@
 			</div>
 		</div>
 
-		<div id="transform" class="text-area  text-area--title text-area--center wrapper">
+		<div id="transform" class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Program</h2>
 			<h3>Transform</h3>
 		</div>
@@ -461,7 +462,7 @@
 			<div class="hidden-marker"></div>
 		</div>
 
-		<div id="location" class="text-area  text-area--title text-area--center wrapper">
+		<div id="location" class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Getting Here</h2>
 			<h3>Locations</h3>
 		</div>
@@ -484,7 +485,7 @@
 		</div>
 		
 <!-- INCLUSIONS -->
-		<div id="inclusions" class="text-area  text-area--title text-area--center wrapper">
+		<div id="inclusions" class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Program</h2>
 			<h3>Course Fees & Inclusions</h3>
 		</div>
@@ -508,13 +509,13 @@
 		</div>
 
 <!-- ROOMS  -->
-		<div class="text-area text-area--title text-area--center wrapper">
+		<div class="text-area text-area--title text-area--center wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Course Fees</h2>
 			<h3>Evolve Certified</h3>
 		</div>
 
 		<div class="wrapper">
-			<div class="room-grid">
+			<div class="room-grid text-transition">
 				<div class="room-grid__room room">
 					<h4 class="room__title">Lake View</h4>
 					<p class="room__description">
@@ -570,14 +571,14 @@
 			</div>
 		</div>
 
-		<div class="text-area  text-area--title text-area--center wrapper">
+		<div class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Course Fees</h2>
 			<h3>Evolve Credentialed</h3>
 		</div>
 
 		<div class="wrapper">
-			<div class="room-grid">
-				<div class="room-grid__room room">
+			<div class="room-grid text-transition">
+				<div class="room-grid__room room ">
 					<h4 class="room__title">Lake View</h4>
 					<p class="room__description">
 						1 Room, 1 Queen Bed <br>Single occupancy
@@ -633,7 +634,7 @@
 		</div>
 
 <!-- FINANCING  -->
-		<div class="text-area text-area--center text-area--title wrapper">
+		<div class="text-area text-area--center text-area--title wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Terms and Conditions</h2>
 			<h3>Payment Guidelines:</h3>
 		</div>
@@ -647,7 +648,7 @@
 		</div>
 
 <!-- Q & A  -->
-		<div id="qa" class="text-area text-area--center wrapper">
+		<div id="qa" class="text-area text-area--center wrapper text-transition is-style-animated">
 			<h3>Q & A</h3>
 		</div>
 
@@ -696,7 +697,7 @@
 		</div>
 
 <!-- RSVP  -->
-		<div id="rsvp" class="text-area text-area--center wrapper">
+		<div id="rsvp" class="text-area text-area--center wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Planning your retreat</h2>
 			<h3>RSVP</h3>
 			<p>Thank you for expressing your interest in Evolve.</p>
@@ -807,8 +808,8 @@
 	<script type="module" src="js/acf-map.js"></script>
 	<script type="module" src="js/ripples.js"></script>
 	<script type="module" src="js/menu.js"></script>
+	<script type="module" src="js/modal.js"></script>
 	<script type="module" src="js/index.js"></script>
-
 </body>
 
 </html>

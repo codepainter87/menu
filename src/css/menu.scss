@@ -105,6 +105,17 @@
 	}
 }
 
+.header {
+	&__logo {
+		top: 24px;
+		z-index: 9;
+		width: 67px;
+		position: absolute;
+		left: calc(50vw - 33px);
+		display: block;
+	}
+}
+
 .top-nav {
 	padding: 24px 0;
 	position: fixed;
@@ -112,6 +123,7 @@
 	right: 0;
 	top: 0;
 	z-index: 3;
+	transition: all 0.3s;
 	.wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -121,18 +133,14 @@
 		pointer-events: auto;
 	}
 
-	&__logo {
-		width: 67px;
-		position: absolute;
-		left: calc(50vw - 33px);
-		display: block;
-	}
 	&__wordmark {
 		display: none;
 		content: "";
 		background-image: url(/src/img/dimensions-education-wordmark.svg);
 		width: 145px;
 		height: 30px;
+		position: absolute;
+		left: calc(50vw - 72px);
 		background-size: contain;
 		background-repeat: no-repeat;
 	}

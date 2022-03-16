@@ -52,6 +52,10 @@
     }
     &--center {
         text-align: center;
+        .wrapper {
+            padding-left: calc(776px / 6);
+            padding-right: calc(776px / 6);
+        }
         .text-area--title {
             max-width: 530px;
         }
@@ -123,6 +127,7 @@
         position: relative;
         img {
             width: 132px;
+            opacity: 0;
             &.moving {
                 position: absolute;
                 left: 0;
@@ -133,20 +138,22 @@
                 // animation:  5s infinite steps(2, end);
                 // animation: logoRotation 1s infinite ease-in-out;
                 &.moving {
-                    animation: logoRotation 3s infinite step-end;
+                    animation: logoRotation 3s forwards;
+                    opacity: 1;
+
                 }
                 &.first {
                     transform: translate(0px, 0px) rotate(0deg);
-                    opacity: 0.1;
+                    animation: logoReveal 2s forwards;
                 }
                 &.second {
                     transform: translate(-56px, 3px) rotate(45deg);
-                    opacity: 0.1;
+                    animation: logoReveal 2s 1s forwards;
                 }
-                &.third {
-                    transform: translate(-104px, 0px) rotate(90deg);
-                    opacity: 0.1;
-                }
+                // &.third {
+                //     transform: translate(-104px, 0px) rotate(90deg);
+                //     animation: logoReveal 2s 6s forwards;
+                // }
             }
         }
     }
@@ -155,15 +162,19 @@
 
 @keyframes logoRotation {
     0% {
-        transform: translate(0px, 0px) rotate(0deg);
+        
     }
-    33.33% {
+    50% {
         transform: translate(75px, 3px) rotate(45deg);
     }
-    66.66% {
-        transform: translate(160px, 0px) rotate(90deg);
-    }
     100% {
-        transform: translate(0px, 0px) rotate(0deg);
+        transform: translate(160px, 0px) rotate(90deg);
+        opacity: 1;
+    }
+}
+
+@keyframes logoReveal {
+    to {
+        opacity: 1;
     }
 }

@@ -105,10 +105,7 @@
     &__logo {
         display: flex;
         flex-direction: row-reverse;
-        &:before {
-            content: "";
-            flex: 1;
-        }
+        justify-content: center;
         p {
             max-width: calc(836px / 2);
         }
@@ -121,11 +118,14 @@
             height: auto;
             display: block;
             transform: translateX(-100%);
-            transition: all 0.5s ease-in-out;
+            // transition: all 0.5s ease-in-out;
+            opacity: 0.1;
+            transition: opacity 1s cubic-bezier(.19,1,.22,1),transform 1.5s cubic-bezier(.19,1,.22,1);
         }
         &.animating {
             img {
                 transform: translateX(0%);
+                opacity: 1;
             }
         }
     }
@@ -137,10 +137,14 @@
         .logo-image__image {
             img {
                 transform: translateX(100%);
+                opacity: 0.1;
+                transition: opacity 1s cubic-bezier(.19,1,.22,1),transform 1.5s cubic-bezier(.19,1,.22,1);
             }
             &.animating {
                 img {
                     transform: translateX(0%);
+                    // transform: translate(0px, 0px);
+                    opacity: 1;
                 }
             }
         }
