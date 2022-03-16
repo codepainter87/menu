@@ -18,6 +18,8 @@ body {
 	margin: 0;
 	--accent-color: #007755; 
 	--landing-bg: #f7f4ed; 
+	max-width: 100vw;
+	overflow-x: hidden;
 	/* --color-text: #fff;
 	--color-text-alt: #fff;
 	--color-heading-main: #fff;
@@ -41,6 +43,10 @@ body {
 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	opacity: 1;
+	&.loading {
+		opacity: 0;
+	}
 }
 
 h1 {
@@ -84,6 +90,9 @@ figcaption {
 	padding-right: 30px;
 	&--wide {
 		max-width: calc(916px + 60px);
+	}
+	&--extra-wide {
+		 max-width: 100vw;
 	}
 }
 

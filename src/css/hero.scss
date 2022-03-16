@@ -3,21 +3,6 @@
 	background-size: cover;
 	background-position: center bottom;
     height: 100vh;
-	// max-height: 700px;
-}
-
-.overlay__path {
-	// opacity: 0.3;
-}
-.hero:after {
-	content: '';
-	background: #007755;
-	opacity: 0;
-	position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    z-index: -1;
 }
 
 /* HERO OVERLAY  */

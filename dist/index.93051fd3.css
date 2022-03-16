@@ -83,6 +83,14 @@
 .hamburger--accent-color .hamburger__inner, .hamburger--accent-color .hamburger__inner::before, .hamburger--accent-color .hamburger__inner::after {
   background-color: var(--accent-color);
 }
+.header__logo {
+  top: 24px;
+  z-index: 9;
+  width: 67px;
+  position: absolute;
+  left: calc(50vw - 33px);
+  display: block;
+}
 .top-nav {
   padding: 24px 0;
   position: fixed;
@@ -90,6 +98,7 @@
   right: 0;
   top: 0;
   z-index: 3;
+  transition: all 0.3s;
 }
 .top-nav .wrapper {
   display: flex;
@@ -99,18 +108,14 @@
 .top-nav a, .top-nav button {
   pointer-events: auto;
 }
-.top-nav__logo {
-  width: 67px;
-  position: absolute;
-  left: calc(50vw - 33px);
-  display: block;
-}
 .top-nav__wordmark {
   display: none;
   content: "";
   background-image: url("dimensions-education-wordmark.5055a56c.svg");
   width: 145px;
   height: 30px;
+  position: absolute;
+  left: calc(50vw - 72px);
   background-size: contain;
   background-repeat: no-repeat;
 }

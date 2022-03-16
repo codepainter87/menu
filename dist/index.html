@@ -4,10 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Infinite Menu Background Animation | Codrops</title>
-	<meta name="description" content="A page transition with an animated SVG path for a menu that has an infinite background animation.">
+	<title>Landing page demo</title>
+	<meta name="description" content="">
 	<meta name="keywords" content="overlay, page transition, animation, svg">
-	<meta name="author" content="Codrops">
+	<meta name="author" content="Lizzie Painter">
 	<link rel="shortcut icon" href="/favicon.824cf0c5.ico">
 	<link rel="stylesheet" href="https://use.typekit.net/iqd6ozy.css">
 	<link rel="stylesheet" type="text/css" href="/index.b8ab1983.css">
@@ -19,6 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="/index.59dcd763.css">
 	<link rel="stylesheet" type="text/css" href="/index.f90dc71e.css">
 	<link rel="stylesheet" type="text/css" href="/index.07d3af80.css">
+	<link rel="stylesheet" type="text/css" href="/index.bc3205c9.css">
 	<link rel="stylesheet" type="text/css" href="/index.93051fd3.css">
 	<link rel="stylesheet" type="text/css" href="/index.ce7d2956.css">
 	<link rel="stylesheet" type="text/css" href="/index.fd913095.css">
@@ -27,7 +28,7 @@
 	<link rel="stylesheet" type="text/css" href="/index.a5efc37a.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
-	<script src="/jquery.fbc40b49.js"></script><script>document.documentElement.className = "js";
+	<script>document.documentElement.className = "js";
 var supportsCssVars = function() {
     var e, t = document.createElement("style");
     return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
@@ -54,13 +55,15 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 	
 	</header> -->
 	<header>
+		<a href="#" class="header__logo">
+			<img src="/Dimensions_Lockup.4f49e035.svg" alt="">
+		</a>
 		<div class="top-nav">
-			<div class="wrapper wrapper--wide">
+			<div class="wrapper wrapper--extra-wide">
 				<a href="#rsvp" class="button button--bordered button--white button--rounded">
 					<div class="button__circle"></div>
 					<span>RSVP</span>	
 				</a>
-				<a href="#" class="top-nav__logo"><img src="/Dimensions_Lockup.4f49e035.svg" alt=""></a>
 				<a href="#" class="top-nav__wordmark"></a>
 				<button class="hamburger hamburger--spin" type="button" aria-label="Menu" aria-controls="navigation">
 					<span class="hamburger__box">
@@ -117,7 +120,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				<h1 class="hero-title__sub">Dimensions</h1>
 			</div>
 		</div> 
-		<div class="text-area text-area--title text-area--left wrapper">
+		<div class="text-area text-area--title text-transition is-style-animated wrapper">
 			<h2 class="eyebrow">Evolve</h2>
 			<h2>Psychedelic Guide Training with Daniel McQueen</h2>
 		</div>
@@ -140,40 +143,29 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 			</div>
 		</div>
 
-		<div class="text-area text-area--title text-area--center text-area--left wrapper">
+		<div class="text-area text-area--title text-area--center text-area--left text-transition is-style-animated ">
 			<h2 class="eyebrow">Evolve</h2>
 			<h2>Faculty</h2>
 		</div>
 
+<!-- PROFILES  -->
 		<div class="profiles wrapper">
 			<div class="grid grid--2-col">
 				<div class="grid__item" data-size="1280x857">
-						<a href="/daniel.22d15a3c.jpg" class="img-wrap">
-							<img src="/daniel.22d15a3c.jpg" alt="img06">
-						</a>
+						<img src="/daniel.22d15a3c.jpg" alt="img06">
 						<div class="description description--grid">
 							<h3 class="description__name">Daniel McQueen, MA</h3>
-							<p class="description__bio">Daniel McQueen is a Psychedelic Specialist, Psychedelic Therapy Educator, Activist, and Author of the book Psychedelic...
+							<p class="description__bio-intro">Daniel McQueen is a Psychedelic Specialist, Psychedelic Therapy Educator, Activist, and Author of the book Psychedelic...
 								<a href="#" class="description__readmore">read more</a>
 							</p>
-							<div class="details">
-								<ul>
-									<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-									<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
-									<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-									<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-									<li><i class="icon icon-iso"></i><span>80</span></li>
-								</ul>
-							</div>
+							<div class="description__bio">Daniel McQueen is a Psychedelic Specialist, Psychedelic Therapy Educator, Activist, and Author of the book Psychedelic Cannabis. In 2012, he co-founded the Center of Medicinal Mindfulness which is the first legal plant-based psychedelic therapy center in the United States. <a href="https://medicinalmindfulness.org/project/daniel-mcqueen/" target="_blank">Visit Daniel's site</a></div>
 						</div>
 				</div>
 			</div>
 
 			<div class="grid grid--2-col">
 				<div class="grid__item" data-size="1280x857">
-						<a href="#" class="img-wrap">
-							<img src="/img/donald.jpg" alt="img06">
-						</a>
+						<img src="/donald.7493d6aa.jpg" alt="img06">
 						<div class="description description--grid">
 							<h3 class="description__name">Donald Currie, RP</h3>
 							<p class="description__title">Clinical Director, Dimensions Algonquin Highlands</p>
@@ -192,9 +184,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 						</div>
 				</div>
 				<div class="grid__item" data-size="1280x857">
-						<a href="/dawn.82bb276a.jpg" class="img-wrap">
-							<img src="/dawn.82bb276a.jpg" alt="img06">
-						</a>
+						<img src="/dawn.82bb276a.jpg" alt="img06">
 						<div class="description description--grid">
 							<h3 class="description__name">Dawn Martin </h3>
 							<p class="description__title">PhD, MEd, MSW RSW</p>
@@ -216,9 +206,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 
 			<div class="grid grid--3-col">
 				<div class="grid__item" data-size="1280x857">
-						<a href="/img/donald.jpg" class="img-wrap">
-							<img src="https://via.placeholder.com/150?text=placeholder" alt="img06">
-						</a>
+						<img src="https://via.placeholder.com/150?text=placeholder" alt="img06">
 						<div class="description description--grid">
 							<h3 class="description__name">Name</h3>
 							<p class="description__title">Profile title</p> 
@@ -237,9 +225,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 						</div>
 				</div>
 				<div class="grid__item" data-size="1280x857">
-						<a href="/img/donald.jpg" class="img-wrap">
-							<img src="https://via.placeholder.com/150?text=placeholder" alt="img06">
-						</a>
+						<img src="https://via.placeholder.com/150?text=placeholder" alt="img06">
 
 						<div class="description description--grid">
 							<h3 class="description__name">Name</h3>
@@ -259,9 +245,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 						</div>
 				</div>
 				<div class="grid__item" data-size="1280x857">
-						<a href="/img/donald.jpg" class="img-wrap">
-							<img src="https://via.placeholder.com/150?text=placeholder" alt="img06">
-						</a>
+						<img src="https://via.placeholder.com/150?text=placeholder" alt="img06">
 						<div class="description description--grid">
 							<h3 class="description__name">Name</h3>
 							<p class="description__title">Profile title</p> 
@@ -278,6 +262,20 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 								</ul>
 							</div>
 						</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal">
+			<div class="modal__closer">X</div>
+			<div class="modal__content">
+				<div class="modal__image">
+					<img src="https://images.unsplash.com/photo-1647251641345-4963d2c02b38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
+				</div>
+				<div class="modal__text">
+					<p class="modal__name"></p>
+					<p class="modal__title"></p>
+					<p class="modal__bio"></p>
 				</div>
 			</div>
 		</div>
@@ -293,9 +291,9 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 		</div>
 
 <!-- ANIMATING SECTION  -->
-		<div class="text-area  text-area--title text-area--center wrapper">
+		<div class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated gallery-title">
 			<h2 class="eyebrow">Retreat</h2>
-			<h3>Dimensions Algonquin Highlands</h3>
+			<h3>Dimensions <br>Algonquin Highlands</h3>
 		</div>
 
 		<div class="text-area text-area--sidebar wrapper wrapper--wide">
@@ -334,6 +332,14 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 					<img src="/gallery-3.b85a44d3.jpg" alt="">
 				</div>
 				<div class="logo-image__logo">
+				
+				</div>
+			</div>
+			<div class="logo-image logo-image--image-right">
+				<div class="logo-image__image is-style-animated">
+					<img src="/gallery-5.dcd6e918.jpg" alt="">
+				</div>
+				<div class="logo-image__logo">
 					<div class="logo-image__logo-image is-style-animated">
 						<img class="rotating-logo" src="/slogan-green.5628dadf.svg" alt="">
 					</div>
@@ -341,19 +347,14 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 			</div>
 			<div class="full-width-image full-width-image--top-offset is-style-animated droplets" style="background-image: url(&quot;gallery-4.9ab275bb.jpg&quot;); background-size: cover; height: 600px;">
 				<!-- <img src="./img/gallery-4.jpg" alt=""> -->
-			</div>
-			<div class="text-area text-area--right text-area--display">
-				<div class="half-image half-image--right half-image--top-offset is-style-animated">
-					<img src="/gallery-5.dcd6e918.jpg" alt="">
-				</div>
 				<div class="wrapper">
-					<p class="display-style is-style-animated">Continue your transformational journey.</p>
+					<p class="display-style">Continue your transformational journey.</p>
 				</div>
 			</div>
 		</div>
 
 <!-- RETREAT, RESET, TRANSFORM  -->
-		<div id="retreat" class="text-area  text-area--title text-area--center wrapper">
+		<div id="retreat" class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Program</h2>
 			<h3>Retreat</h3>
 		</div>
@@ -369,7 +370,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 			</div>
 		</div>
 
-		<div id="reset" class="text-area text-area--title text-area--center wrapper">
+		<div id="reset" class="text-area text-area--title text-area--center wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Program</h2>
 			<h3>Reset</h3>
 		</div>
@@ -385,7 +386,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 			</div>
 		</div>
 
-		<div id="transform" class="text-area  text-area--title text-area--center wrapper">
+		<div id="transform" class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Program</h2>
 			<h3>Transform</h3>
 		</div>
@@ -463,7 +464,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 			<div class="hidden-marker"></div>
 		</div>
 
-		<div id="location" class="text-area  text-area--title text-area--center wrapper">
+		<div id="location" class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Getting Here</h2>
 			<h3>Locations</h3>
 		</div>
@@ -486,7 +487,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 		</div>
 		
 <!-- INCLUSIONS -->
-		<div id="inclusions" class="text-area  text-area--title text-area--center wrapper">
+		<div id="inclusions" class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Program</h2>
 			<h3>Course Fees & Inclusions</h3>
 		</div>
@@ -510,13 +511,13 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 		</div>
 
 <!-- ROOMS  -->
-		<div class="text-area text-area--title text-area--center wrapper">
+		<div class="text-area text-area--title text-area--center wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Course Fees</h2>
 			<h3>Evolve Certified</h3>
 		</div>
 
 		<div class="wrapper">
-			<div class="room-grid">
+			<div class="room-grid text-transition">
 				<div class="room-grid__room room">
 					<h4 class="room__title">Lake View</h4>
 					<p class="room__description">
@@ -572,14 +573,14 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 			</div>
 		</div>
 
-		<div class="text-area  text-area--title text-area--center wrapper">
+		<div class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Course Fees</h2>
 			<h3>Evolve Credentialed</h3>
 		</div>
 
 		<div class="wrapper">
-			<div class="room-grid">
-				<div class="room-grid__room room">
+			<div class="room-grid text-transition">
+				<div class="room-grid__room room ">
 					<h4 class="room__title">Lake View</h4>
 					<p class="room__description">
 						1 Room, 1 Queen Bed <br>Single occupancy
@@ -635,7 +636,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 		</div>
 
 <!-- FINANCING  -->
-		<div class="text-area text-area--center text-area--title wrapper">
+		<div class="text-area text-area--center text-area--title wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Terms and Conditions</h2>
 			<h3>Payment Guidelines:</h3>
 		</div>
@@ -649,7 +650,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 		</div>
 
 <!-- Q & A  -->
-		<div id="qa" class="text-area text-area--center wrapper">
+		<div id="qa" class="text-area text-area--center wrapper text-transition is-style-animated">
 			<h3>Q & A</h3>
 		</div>
 
@@ -698,7 +699,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 		</div>
 
 <!-- RSVP  -->
-		<div id="rsvp" class="text-area text-area--center wrapper">
+		<div id="rsvp" class="text-area text-area--center wrapper text-transition is-style-animated">
 			<h2 class="eyebrow">Planning your retreat</h2>
 			<h3>RSVP</h3>
 			<p>Thank you for expressing your interest in Evolve.</p>
@@ -801,351 +802,13 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 			</div>
 		</div>
 	</footer>
-	<script src="/index.739bf03c.js" defer=""></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk-_EpGb9YIXP98DP-gtegW_9CSa0iITw" async=""></script>
 	<script src="/index.b8e4dfc2.js" defer=""></script>
 	<script src="/index.af1d64cf.js" defer=""></script>
-	<script>// modules are defined as an array
-// [ module function, map of requires ]
-//
-// map of requires is short require name -> numeric require
-//
-// anything defined in a previous bundle is accessed via the
-// orig method which is the require for previous bundles
-
-(function (modules, entry, mainEntry, parcelRequireName, globalName) {
-  /* eslint-disable no-undef */
-  var globalObject =
-    typeof globalThis !== 'undefined'
-      ? globalThis
-      : typeof self !== 'undefined'
-      ? self
-      : typeof window !== 'undefined'
-      ? window
-      : typeof global !== 'undefined'
-      ? global
-      : {};
-  /* eslint-enable no-undef */
-
-  // Save the require from previous bundle to this closure if any
-  var previousRequire =
-    typeof globalObject[parcelRequireName] === 'function' &&
-    globalObject[parcelRequireName];
-
-  var cache = previousRequire.cache || {};
-  // Do not use `require` to prevent Webpack from trying to bundle this call
-  var nodeRequire =
-    typeof module !== 'undefined' &&
-    typeof module.require === 'function' &&
-    module.require.bind(module);
-
-  function newRequire(name, jumped) {
-    if (!cache[name]) {
-      if (!modules[name]) {
-        // if we cannot find the module within our internal map or
-        // cache jump to the current global require ie. the last bundle
-        // that was added to the page.
-        var currentRequire =
-          typeof globalObject[parcelRequireName] === 'function' &&
-          globalObject[parcelRequireName];
-        if (!jumped && currentRequire) {
-          return currentRequire(name, true);
-        }
-
-        // If there are other bundles on this page the require from the
-        // previous one is saved to 'previousRequire'. Repeat this as
-        // many times as there are bundles until the module is found or
-        // we exhaust the require chain.
-        if (previousRequire) {
-          return previousRequire(name, true);
-        }
-
-        // Try the node require function if it exists.
-        if (nodeRequire && typeof name === 'string') {
-          return nodeRequire(name);
-        }
-
-        var err = new Error("Cannot find module '" + name + "'");
-        err.code = 'MODULE_NOT_FOUND';
-        throw err;
-      }
-
-      localRequire.resolve = resolve;
-      localRequire.cache = {};
-
-      var module = (cache[name] = new newRequire.Module(name));
-
-      modules[name][0].call(
-        module.exports,
-        localRequire,
-        module,
-        module.exports,
-        this
-      );
-    }
-
-    return cache[name].exports;
-
-    function localRequire(x) {
-      var res = localRequire.resolve(x);
-      return res === false ? {} : newRequire(res);
-    }
-
-    function resolve(x) {
-      var id = modules[name][1][x];
-      return id != null ? id : x;
-    }
-  }
-
-  function Module(moduleName) {
-    this.id = moduleName;
-    this.bundle = newRequire;
-    this.exports = {};
-  }
-
-  newRequire.isParcelRequire = true;
-  newRequire.Module = Module;
-  newRequire.modules = modules;
-  newRequire.cache = cache;
-  newRequire.parent = previousRequire;
-  newRequire.register = function (id, exports) {
-    modules[id] = [
-      function (require, module) {
-        module.exports = exports;
-      },
-      {},
-    ];
-  };
-
-  Object.defineProperty(newRequire, 'root', {
-    get: function () {
-      return globalObject[parcelRequireName];
-    },
-  });
-
-  globalObject[parcelRequireName] = newRequire;
-
-  for (var i = 0; i < entry.length; i++) {
-    newRequire(entry[i]);
-  }
-
-  if (mainEntry) {
-    // Expose entry point to Node, AMD or browser globals
-    // Based on https://github.com/ForbesLindesay/umd/blob/master/template.js
-    var mainExports = newRequire(mainEntry);
-
-    // CommonJS
-    if (typeof exports === 'object' && typeof module !== 'undefined') {
-      module.exports = mainExports;
-
-      // RequireJS
-    } else if (typeof define === 'function' && define.amd) {
-      define(function () {
-        return mainExports;
-      });
-
-      // <script>
-    } else if (globalName) {
-      this[globalName] = mainExports;
-    }
-  }
-})({"gQUbn":[function(require,module,exports) {
-module.exports = require("./helpers/browser/js-loader")(require('./helpers/bundle-url').getBundleURL('h3vvf') + "jquery.fbc40b49.js" + "?" + Date.now()).catch((err)=>{
-    delete module.bundle.cache[module.id];
-    throw err;
-}).then(()=>module.bundle.root('hgMhh')
-);
-
-},{"./helpers/browser/js-loader":"61B45","./helpers/bundle-url":"lgJ39"}],"61B45":[function(require,module,exports) {
-"use strict";
-var cacheLoader = require('../cacheLoader');
-module.exports = cacheLoader(function(bundle) {
-    return new Promise(function(resolve, reject) {
-        // Don't insert the same script twice (e.g. if it was already in the HTML)
-        var existingScripts = document.getElementsByTagName('script');
-        if ([].concat(existingScripts).some(function isCurrentBundle(script) {
-            return script.src === bundle;
-        })) {
-            resolve();
-            return;
-        }
-        var script1 = document.createElement('script');
-        script1.async = true;
-        script1.type = 'text/javascript';
-        script1.charset = 'utf-8';
-        script1.src = bundle;
-        script1.onerror = function(e) {
-            var error = new TypeError("Failed to fetch dynamically imported module: ".concat(bundle, ". Error: ").concat(e.message));
-            script1.onerror = script1.onload = null;
-            script1.remove();
-            reject(error);
-        };
-        script1.onload = function() {
-            script1.onerror = script1.onload = null;
-            resolve();
-        };
-        document.getElementsByTagName('head')[0].appendChild(script1);
-    });
-});
-
-},{"../cacheLoader":"j49pS"}],"j49pS":[function(require,module,exports) {
-"use strict";
-var cachedBundles = {
-};
-var cachedPreloads = {
-};
-var cachedPrefetches = {
-};
-function getCache(type) {
-    switch(type){
-        case 'preload':
-            return cachedPreloads;
-        case 'prefetch':
-            return cachedPrefetches;
-        default:
-            return cachedBundles;
-    }
-}
-module.exports = function(loader, type) {
-    return function(bundle) {
-        var cache = getCache(type);
-        if (cache[bundle]) return cache[bundle];
-        return cache[bundle] = loader.apply(null, arguments).catch(function(e) {
-            delete cache[bundle];
-            throw e;
-        });
-    };
-};
-
-},{}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {
-};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return '/';
-}
-function getBaseURL(url) {
-    return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ('' + url).match(/(https?|file|ftp):\/\/[^/]+/);
-    if (!matches) throw new Error('Origin not found');
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}]},[], null, "parcelRequiredf5e")
-document.addEventListener('scroll', function(e) {
-    const topNav = document.querySelector('.top-nav');
-    const menuWrap = document.querySelector('.menu-wrap');
-    const rsvpButton = topNav.querySelector('.button');
-    const hamburger = topNav.querySelector('.hamburger');
-    const logo = topNav.querySelector('.top-nav__logo');
-    const lockup = topNav.querySelector('.top-nav__lockup');
-    if (window.scrollY > 700) {
-        topNav.classList.add('top-nav--scrolled');
-        menuWrap.classList.add('menu-wrap--scrolled');
-        hamburger.classList.add('hamburger--accent-color');
-        rsvpButton.classList.remove('button--white');
-    } else {
-        topNav.classList.remove('top-nav--scrolled');
-        menuWrap.classList.remove('menu-wrap--scrolled');
-        hamburger.classList.remove('hamburger--accent-color');
-        rsvpButton.classList.add('button--white');
-    }
-});
-parcelRequiredf5e("gQUbn").then(async ($)=>{
-    let heroRipples;
-    let dropletRipples;
-    // your code that uses jQuery
-    const initRipples = ()=>{
-        heroRipples = $('.hero').ripples({
-            resolution: 600,
-            dropRadius: 20,
-            perturbance: 0.04
-        });
-    };
-    const addDroplets = ()=>{
-        dropletRipples = $('.droplets').ripples({
-            resolution: 600,
-            interactive: false
-        });
-        setInterval(function() {
-            const x = Math.random() * $('.droplets').outerWidth();
-            const y = Math.random() * $('.droplets').outerHeight();
-            const radius = 20;
-            const strength = 0.04 + Math.random() * 0.04;
-            dropletRipples = $('.droplets').ripples('drop', x, y, radius, strength);
-        }, 1000);
-    };
-    const destroyRipples = ()=>{
-        console.log('removing droplets');
-        // set a timeout so it only hides once the menu is showing (less jarring)
-        setTimeout(function() {
-            $(heroRipples).ripples('destroy');
-            $(dropletRipples).ripples('destroy');
-        }, 1000);
-    };
-    setTimeout(()=>{
-        $('.hero').addClass('render');
-        initRipples();
-    });
-    // menu (wrap) element
-    const menuWrap = document.querySelector('.menu-wrap');
-    // open menu button
-    const hamburger = document.querySelector('.hamburger');
-    // close menu button
-    // const closeMenuCtrl = document.querySelector('.menu__close-button');
-    // click on menu button
-    const toggleMenu = ()=>{
-        if (window.document.body.classList.contains('menu-open')) destroyRipples();
-        else initRipples();
-    };
-    // click on menu button;lpju
-    hamburger.addEventListener('click', toggleMenu);
-    const blocks = document.querySelectorAll('.is-style-animated');
-    const blockConfig = {
-        rootMargin: '0%',
-        threshold: 0.25
-    };
-    const blockObserver = new IntersectionObserver((entries)=>{
-        entries.forEach((entry)=>{
-            if (entry.isIntersecting && !$(entry.target).hasClass('animating')) {
-                $(entry.target).addClass('animating');
-                if ($(entry.target).hasClass('droplets')) addDroplets();
-            } else if (!entry.isIntersecting && $(entry.target).hasClass('animating')) {
-                if ($(entry.target).hasClass('droplets')) {
-                    $(entry.target).removeClass('animating');
-                    destroyRipples();
-                }
-            }
-        });
-    }, blockConfig);
-    blocks.forEach((block)=>{
-        blockObserver.observe(block);
-    });
-});
-
-</script>
+	<script src="/index.66c49646.js" defer=""></script>
+	<script src="/index.f9b3b06b.js" defer=""></script>
+	<script src="/index.739bf03c.js" defer=""></script>
 </body>
 
 </html>

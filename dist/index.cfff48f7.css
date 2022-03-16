@@ -18,6 +18,8 @@ body {
   margin: 0;
   --accent-color: #007755;
   --landing-bg: #f7f4ed;
+  max-width: 100vw;
+  overflow-x: hidden;
   /* --color-text: #fff;
   --color-text-alt: #fff;
   --color-heading-main: #fff;
@@ -40,6 +42,11 @@ body {
   /* font-family: meno-banner, serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  opacity: 1;
+}
+
+body.loading {
+  opacity: 0;
 }
 
 h1 {
@@ -85,6 +92,10 @@ figcaption {
 
 .wrapper--wide {
   max-width: 976px;
+}
+
+.wrapper--extra-wide {
+  max-width: 100vw;
 }
 
 /* Page Loader */

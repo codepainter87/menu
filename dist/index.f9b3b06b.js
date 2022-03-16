@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"l4AUa":[function(require,module,exports) {
+})({"aEP6z":[function(require,module,exports) {
 "use strict";
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "ba60c367739bf03c";
+module.bundle.HMR_BUNDLE_ID = "54abdd79f9b3b06b";
 function _toConsumableArray(arr) {
     return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
 }
@@ -518,122 +518,47 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"ebWYT":[function(require,module,exports) {
-document.addEventListener('scroll', function(e) {
-    const topNav = document.querySelector('.top-nav');
-    const menuWrap = document.querySelector('.menu-wrap');
-    const rsvpButton = topNav.querySelector('.button');
-    const hamburger = topNav.querySelector('.hamburger');
-    const logo = topNav.querySelector('.top-nav__logo');
-    const lockup = topNav.querySelector('.top-nav__lockup');
-    if (window.scrollY > 700) {
-        topNav.classList.add('top-nav--scrolled');
-        menuWrap.classList.add('menu-wrap--scrolled');
-        hamburger.classList.add('hamburger--accent-color');
-        rsvpButton.classList.remove('button--white');
-    } else {
-        topNav.classList.remove('top-nav--scrolled');
-        menuWrap.classList.remove('menu-wrap--scrolled');
-        hamburger.classList.remove('hamburger--accent-color');
-        rsvpButton.classList.add('button--white');
-    }
-});
-require("884030d440daff84").then(async ($)=>{
-    let heroRipples;
-    let dropletRipples;
-    // your code that uses jQuery
-    const initHeroRipples = ()=>{
-        heroRipples = $('.hero').ripples({
-            resolution: 600,
-            dropRadius: 20,
-            perturbance: 0.04
-        });
-    };
-    const destroyHeroRipples = ()=>{
-        // set a timeout so it only hides once the menu is showing (less jarring)
-        setTimeout(function() {
-            $(heroRipples).ripples('destroy');
-        }, 1000);
-    };
-    const destroyDroplets = ()=>{
-        // set a timeout so it only hides once the menu is showing (less jarring)
-        setTimeout(function() {
-            $(dropletRipples).ripples('destroy');
-        }, 1000);
-    };
-    const addDroplets = ()=>{
-        dropletRipples = $('.droplets').ripples({
-            resolution: 600,
-            interactive: false
-        });
-        setInterval(function() {
-            const x = Math.random() * $('.droplets').outerWidth();
-            const y = Math.random() * $('.droplets').outerHeight();
-            const radius = 20;
-            const strength = 0.04 + Math.random() * 0.04;
-            dropletRipples = $('.droplets').ripples('drop', x, y, radius, strength);
-        }, 1000);
-    };
-    setTimeout(()=>{
-        $('.hero').addClass('render');
-        initHeroRipples();
-    });
-    // menu (wrap) element
-    const menuWrap = document.querySelector('.menu-wrap');
-    // open menu button
-    const hamburger = document.querySelector('.hamburger');
-    // close menu button
-    // const closeMenuCtrl = document.querySelector('.menu__close-button');
-    // click on menu button
-    const toggleMenu = ()=>{
-        if (window.document.body.classList.contains('menu-open')) destroyHeroRipples();
-        else initHeroRipples();
-    };
-    // click on menu button;lpju
-    hamburger.addEventListener('click', toggleMenu);
-    const blocks = document.querySelectorAll('.is-style-animated');
-    const blockConfig = {
-        rootMargin: '0%',
-        threshold: 0.25
-    };
-    const blockObserver = new IntersectionObserver((entries)=>{
-        entries.forEach((entry)=>{
-            if (entry.isIntersecting && !$(entry.target).hasClass('animating')) {
-                $(entry.target).addClass('animating');
-                if ($(entry.target).hasClass('droplets')) addDroplets();
-            } else if (!entry.isIntersecting && $(entry.target).hasClass('animating')) {
-                if ($(entry.target).hasClass('droplets')) {
-                    $(entry.target).removeClass('animating');
-                    destroyDroplets();
-                }
-            }
-        });
-    }, blockConfig);
-    blocks.forEach((block)=>{
-        blockObserver.observe(block);
-    });
-    const titles = document.querySelectorAll('.text-transition');
-    const textTransitionConfig = {
-        rootMargin: '0%',
-        threshold: 0.5
-    };
-    const textTransitionObserver = new IntersectionObserver((entries)=>{
-        entries.forEach((entry)=>{
-            console.log(entry);
-            if (entry.isIntersecting && !$(entry.target).hasClass('animating')) {
-                console.log('intersenting');
-                $(entry.target).addClass('animating');
-            }
-        });
-    }, textTransitionConfig);
-    titles.forEach((text)=>{
-        textTransitionObserver.observe(text);
-    });
-});
+},{}],"aHHgN":[function(require,module,exports) {
+const gridItems = document.querySelectorAll('.grid__item');
+const modal = document.querySelector('.modal');
+const modalCloser = modal.querySelector('.modal__closer');
+const openModal = ()=>{
+    const modalContent = modal.querySelector('.modal__text');
+    const modalImg = modal.querySelector('.modal__image img');
+    const modalImgOffset = modalImg.getBoundingClientRect();
+    // console.dir(event);
+    const gridImg = event.srcElement; // img element
+    const textContent = gridImg.nextElementSibling.innerHTML;
+    console.dir(gridImg);
+    modalImg.src = gridImg.src;
+    // add class to grid image so we can select it when we close the modal:
+    gridImg.classList.add('current');
+    const gridImgOffset = gridImg.getBoundingClientRect();
+    //  compare width of original with modal width to generate scaleX value
+    const scaleX = modalImgOffset.width / gridImgOffset.width;
+    //  compare height of original with modal height to generate scaleY value
+    const scaleY = modalImgOffset.height / gridImgOffset.height;
+    //  compare top offset of original with top offset of modal to generate translateY value
+    const translateY = modalImgOffset.top - gridImgOffset.top;
+    //  compare left offset of original with left offset of modal to generate translateY value
+    const translateX = modalImgOffset.left - gridImgOffset.left;
+    //  apply transform 
+    gridImg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scaleX}, ${scaleY})`;
+    modalContent.innerHTML = textContent;
+    //  console.log(modalImgOffset.left, gridImgOffset.left)
+    modal.classList.add('modal--open');
+};
+const closeModal = ()=>{
+    modal.classList.remove('modal--open');
+    const gridImg = document.querySelector('.current'); // img element
+    gridImg.classList.remove('current');
+    gridImg.style.transform = `translate(0px, 0px) scale(1,1)`;
+} // for(const gridItem of gridItems) {
+ //   gridItem.addEventListener('click', openModal);
+ // }
+ //  modalCloser.addEventListener('click', closeModal);
+;
 
-},{"884030d440daff84":"3k232"}],"3k232":[function(require,module,exports) {
-module.exports = Promise.resolve(module.bundle.root("hgMhh"));
+},{}]},["aEP6z","aHHgN"], "aHHgN", "parcelRequiredf5e")
 
-},{}]},["l4AUa","ebWYT"], "ebWYT", "parcelRequiredf5e")
-
-//# sourceMappingURL=index.739bf03c.js.map
+//# sourceMappingURL=index.f9b3b06b.js.map

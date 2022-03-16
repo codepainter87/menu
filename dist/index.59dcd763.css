@@ -50,6 +50,10 @@
 .text-area--center {
   text-align: center;
 }
+.text-area--center .wrapper {
+  padding-left: 129.3333333333px;
+  padding-right: 129.3333333333px;
+}
 .text-area--center .text-area--title {
   max-width: 530px;
 }
@@ -117,39 +121,37 @@
 }
 .text-area .animating-logo img {
   width: 132px;
+  opacity: 0;
 }
 .text-area .animating-logo img.moving {
   position: absolute;
   left: 0;
 }
 .text-area .animating-logo.animating img.moving {
-  animation: logoRotation 3s infinite step-end;
+  animation: logoRotation 3s forwards;
+  opacity: 1;
 }
 .text-area .animating-logo.animating img.first {
   transform: translate(0px, 0px) rotate(0deg);
-  opacity: 0.1;
+  animation: logoReveal 2s forwards;
 }
 .text-area .animating-logo.animating img.second {
   transform: translate(-56px, 3px) rotate(45deg);
-  opacity: 0.1;
-}
-.text-area .animating-logo.animating img.third {
-  transform: translate(-104px, 0px) rotate(90deg);
-  opacity: 0.1;
+  animation: logoReveal 2s 1s forwards;
 }
 
 @keyframes logoRotation {
-  0% {
-    transform: translate(0px, 0px) rotate(0deg);
-  }
-  33.33% {
+  50% {
     transform: translate(75px, 3px) rotate(45deg);
   }
-  66.66% {
-    transform: translate(160px, 0px) rotate(90deg);
-  }
   100% {
-    transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(160px, 0px) rotate(90deg);
+    opacity: 1;
+  }
+}
+@keyframes logoReveal {
+  to {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=index.59dcd763.css.map */

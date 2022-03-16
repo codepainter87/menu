@@ -1,0 +1,67 @@
+.text-area--title.text-transition {
+  overflow: hidden;
+}
+.text-area--title.text-transition > * {
+  opacity: 0;
+  transform: translate(0%, 10%);
+  transition: opacity 3s 0.3s cubic-bezier(0.23, 1, 0.32, 1), transform 1s 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.text-area--title.animating.text-transition > * {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: opacity 3s 0.3s cubic-bezier(0.23, 1, 0.32, 1), transform 1s 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.droplets .display-style {
+  overflow: hidden;
+  opacity: 0;
+  transform: translate(10%, 10%);
+  transition: opacity 3s 0.6s cubic-bezier(0.23, 1, 0.32, 1), transform 1s 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.droplets.animating .display-style {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: opacity 3s 0.6s cubic-bezier(0.23, 1, 0.32, 1), transform 1s 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.room-grid.text-transition .room {
+  overflow: hidden;
+}
+.room-grid.text-transition .room > * {
+  opacity: 0;
+  transform: translate(0%, 10%);
+  transition: opacity 3s 0.3s cubic-bezier(0.23, 1, 0.32, 1), transform 1s 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.room-grid.text-transition .room:nth-child(1) > * {
+  transition-delay: 0.25s !important;
+}
+.room-grid.text-transition .room:nth-child(2) > * {
+  transition-delay: 0.5s !important;
+}
+.room-grid.text-transition .room:nth-child(3) > * {
+  transition-delay: 0.75s !important;
+}
+.room-grid.text-transition .room:nth-child(4) > * {
+  transition-delay: 1s !important;
+}
+.room-grid.text-transition .room:nth-child(5) > * {
+  transition-delay: 1.25s !important;
+}
+.room-grid.text-transition .room:nth-child(6) > * {
+  transition-delay: 1.5s !important;
+}
+.room-grid.text-transition .room:nth-child(7) > * {
+  transition-delay: 1.75s !important;
+}
+.room-grid.text-transition .room:nth-child(8) > * {
+  transition-delay: 2s !important;
+}
+.room-grid.text-transition .room:nth-child(9) > * {
+  transition-delay: 2.25s !important;
+}
+.room-grid.animating .room > * {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: opacity 3s 0.3s cubic-bezier(0.23, 1, 0.32, 1), transform 1s 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+/*# sourceMappingURL=index.bc3205c9.css.map */
