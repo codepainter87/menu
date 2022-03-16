@@ -141,5 +141,5 @@ import('jquery').then(async ($) => {
         textTransitionObserver.observe(text);
     });
 
-
+juin 
 });

@@ -467,7 +467,7 @@ jQuery(document).ready(function( $ ){
             map			: map,
             icon       : {
                 // url: 'map-marker.ca531c5d.png',
-                url: 'map-marker.b03973ea.svg',
+                url: 'map-marker.7d3d2c16.svg',
                 scaledSize: new google.maps.Size(35, 48), // scaled size
             }
         });
