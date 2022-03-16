@@ -6,6 +6,7 @@ import { gsap } from 'gsap';
 // TODO NOT IN USE 
 preloadImages('.hero').then(() => document.body.classList.remove('loading'));
 
+
 // frame element
 const frame = document.querySelector('.hero');
 
@@ -14,6 +15,12 @@ const overlayPath = document.querySelector('.overlay__path');
 
 // menu (wrap) element
 const menuWrap = document.querySelector('.menu-wrap');
+// const addEventListeners = () => {
+//     const navItems = menuWrap.querySelectorAll('.menu__item');
+//     navItems.forEach(navItem => {
+//         navItem.addEventListener('click', toggleMenu);
+//     });
+// }
 
 // menu (wrap) element
 const topNav = document.querySelector('.top-nav');
@@ -106,7 +113,7 @@ const openMenu = ()  => {
             opacity: 1,
             stagger: 0.05,
             // onComplete: () => {
-            //     hamburger.classList.add('is-active');
+            //     addEventListeners();
             // }
         }, '>-=1.1');
 
@@ -179,7 +186,7 @@ const closeMenu = ()  => {
 }
 
 const toggleMenu = () => {
-    if(event.currentTarget.classList.contains('is-active')) {
+    if(window.document.body.classList.contains('menu-open')) {
         closeMenu();
     } else {
         openMenu();
@@ -187,5 +194,28 @@ const toggleMenu = () => {
 };
 
 
+
+
 // click on menu button
 hamburger.addEventListener('click', toggleMenu);
+
+const clickMenuLink = () => {
+    event.preventDefault();
+    const href = event.target.hash;
+    console.dir(event)
+      let offsetTop = window.document.querySelector(href).offsetTop;
+      offsetTop = offsetTop - 100;
+      console.log(offsetTop)
+      scrollTo({
+        top: offsetTop,
+        left: 100,
+        behavior: "smooth"
+      });
+      toggleMenu();
+};
+
+
+const navItems = menuWrap.querySelectorAll('.menu__item');
+navItems.forEach(navItem => {
+    navItem.addEventListener('click', clickMenuLink);
+});

@@ -128,9 +128,7 @@ import('jquery').then(async ($) => {
     };
     const textTransitionObserver = new IntersectionObserver(entries => {
         entries.forEach(entry => {
-            console.log(entry)
                 if (entry.isIntersecting && !$(entry.target).hasClass('animating')) {
-                    console.log('intersenting')
                     $(entry.target).addClass('animating');
                 } 
             });
@@ -141,5 +139,4 @@ import('jquery').then(async ($) => {
         textTransitionObserver.observe(text);
     });
 
-juin 
 });

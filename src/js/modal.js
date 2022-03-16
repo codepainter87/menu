@@ -33,7 +33,6 @@ const openModal = () => {
     gridImg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scaleX}, ${scaleY})`;
   
     modalContent.innerHTML = textContent;
-    //  console.log(modalImgOffset.left, gridImgOffset.left)
     modal.classList.add('modal--open');
     
 };

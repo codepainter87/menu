@@ -1,12 +1,13 @@
 .full-width-image {
     position: relative;
     display: block;
+    height: 700px;
     img {
-        max-height: 800px;
         width: 100%;
         object-fit: cover;
         object-position: bottom;
         display: block;
+        height: 100%;
     }
 
     + .logo-image {
@@ -52,10 +53,11 @@
             right: 0;
             mix-blend-mode: multiply;
             z-index: -1;
+            height: 100%;
         }
     }
     &--top-offset {
-        margin-top: -200px;
+        margin-top: -60px;
         z-index: -1;
         position: relative;
     }

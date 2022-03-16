@@ -246,7 +246,9 @@
 		position: relative;
 		display: block;
 		will-change: opacity, transform;
-
+		> * {
+			pointer-events: none;
+		}
 		&:hover .menu__item-text:after {
 			transform: scaleX(1);
 			transform-origin: bottom left;

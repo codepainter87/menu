@@ -1,7 +1,5 @@
 jQuery(document).ready(function( $ ){
 
-    console.log('map js firing')
-
     /*
     *  new_map
     *
@@ -471,8 +469,6 @@ jQuery(document).ready(function( $ ){
                 scaledSize: new google.maps.Size(35, 48), // scaled size
             }
         });
-
-        console.log(marker)
     
         // add to array
         map.markers.push( marker );
