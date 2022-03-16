@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Landing page demo</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="overlay, page transition, animation, svg">
+	<meta name="author" content="Lizzie Painter">
+	<link rel="shortcut icon" href="/favicon.824cf0c5.ico">
+	<link rel="stylesheet" href="https://use.typekit.net/iqd6ozy.css">
+	<link rel="stylesheet" type="text/css" href="/index.b8ab1983.css">
+	<link rel="stylesheet" type="text/css" href="/index.cfff48f7.css">
+	<link rel="stylesheet" type="text/css" href="/index.3753ab62.css">
+	<link rel="stylesheet" type="text/css" href="/index.a17b2bbc.css">
+	<link rel="stylesheet" type="text/css" href="/index.3198ef4c.css">
+	<link rel="stylesheet" type="text/css" href="/index.dd7d1775.css">
+	<link rel="stylesheet" type="text/css" href="/index.59dcd763.css">
+	<link rel="stylesheet" type="text/css" href="/index.f90dc71e.css">
+	<link rel="stylesheet" type="text/css" href="/index.07d3af80.css">
+	<link rel="stylesheet" type="text/css" href="/index.bc3205c9.css">
+	<link rel="stylesheet" type="text/css" href="/index.93051fd3.css">
+	<link rel="stylesheet" type="text/css" href="/index.ce7d2956.css">
+	<link rel="stylesheet" type="text/css" href="/index.fd913095.css">
+	<link rel="stylesheet" type="text/css" href="/index.8e151f13.css">
+
+	<link rel="stylesheet" type="text/css" href="/index.a5efc37a.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+	<script>document.documentElement.className = "js";
+var supportsCssVars = function() {
+    var e, t = document.createElement("style");
+    return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+
+</script>
+</head>
+
+<body class="loading">
+	<!-- <header class="top-nav">
+		<div class="pill-btn">RSVP</div>
+		<div class="top-nav__heading">
+			<span class="top-nav__heading-main">Dimensions</span>
+			<span class="top-nav__heading-sub">Healing Retreats</span>
+		</div>
+		<button id="landing-hamburger" class="top-nav__hamburger" aria-label="Open menu">
+			<svg width="19" height="12" viewBox="0 0 19 12">
+				<path d="m.742 3.26.485.874c.043-.024.13-.07.26-.136.22-.11.476-.233.765-.361A22.92 22.92 0 0 1 4.997 2.62c4.476-1.34 8.75-1.219 12.241 1.1.18.12.357.245.531.376l.6-.8a12.46 12.46 0 0 0-.578-.408C14.008.375 9.443.246 4.71 1.663c-1.037.31-2 .675-2.865 1.06a18.83 18.83 0 0 0-1.103.536Z" />
+				<path d="m.742 6.748.485.874c.043-.023.13-.07.26-.135.22-.111.476-.233.765-.362A22.92 22.92 0 0 1 4.997 6.11c4.476-1.34 8.75-1.22 12.241 1.1.18.12.357.245.531.375l.6-.8a12.46 12.46 0 0 0-.578-.408C14.008 3.864 9.443 3.735 4.71 5.152c-1.037.31-2 .675-2.865 1.06a18.83 18.83 0 0 0-1.103.536Z" />
+				<path d="m.742 10.237.485.874c.043-.024.13-.07.26-.136.22-.11.476-.232.765-.36a22.92 22.92 0 0 1 2.745-1.016c4.476-1.34 8.75-1.22 12.241 1.1.18.12.357.244.531.375l.6-.8a12.46 12.46 0 0 0-.578-.408C14.008 7.353 9.443 7.224 4.71 8.64c-1.037.31-2 .674-2.865 1.06a18.83 18.83 0 0 0-1.103.536Z" />
+			</svg>
+		</button>
+	
+	</header> -->
+	<header>
+		<a href="#" class="header__logo">
+			<img src="/Dimensions_Lockup.4f49e035.svg" alt="">
+		</a>
+		<div class="top-nav">
+			<div class="wrapper wrapper--extra-wide">
+				<a href="#rsvp" class="button button--bordered button--white button--rounded">
+					<div class="button__circle"></div>
+					<span>RSVP</span>	
+				</a>
+				<a href="#" class="top-nav__wordmark"></a>
+				<button class="hamburger hamburger--spin" type="button" aria-label="Menu" aria-controls="navigation">
+					<span class="hamburger__box">
+						<span class="hamburger__inner"></span>
+					</span>
+				</button>
+			</div>
+		</div>
+			<div class="menu-wrap">
+				<div class="wrapper wrapper--wide">
+					<nav id="navigation" class="menu">
+						<a href="#profiles" class="menu__item">
+							<span class="menu__item-text">Facilitators & Hosts</span>
+						</a>
+						<a href="#retreat" class="menu__item">
+							<span class="menu__item-text">Retreat</span>
+						</a>
+						<a href="#program" class="menu__item">
+							<span class="menu__item-text">Program</span>
+						</a>
+						<a href="#location" class="menu__item">
+							<span class="menu__item-text">Location</span>
+						</a>
+						<a href="#inclusions" class="menu__item">
+							<span class="menu__item-text">Inclusions</span>
+						</a>
+						<a href="#qa" class="menu__item">
+							<span class="menu__item-text">Q & A</span>
+						</a>
+						<a href="#rsvp" class="menu__item">
+							<span class="menu__item-text">Registration</span>
+						</a>
+					</nav>
+					<div class="menu-wrap__image">
+						<img src="/menu-image.2f06aebd.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<!-- Edit the paths here: https://yqnn.github.io/svg-path-editor/ -->
+			<svg class="overlay" width="100%" height="100%" viewbox="0 0 100 100" preserveaspectratio="none">
+				<path class="overlay__path" fill="#007755" vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z"></path>
+			</svg> 
+	</header>
+	<main>
+		 <div class="hero ascend">
+			<div class="hero__overlay hero-overlay">
+				<div class="hero-overlay__top"></div>
+				<div class="hero-overlay__left"></div>
+				<div class="hero-overlay__right"></div>
+				<div class="hero-overlay__arch"></div>
+			</div>
+			<div class="hero__title hero-title">
+				<span class="hero-title__main">Evolve</span>
+				<h1 class="hero-title__sub">Dimensions</h1>
+			</div>
+		</div> 
+		<div class="text-area text-area--title text-transition is-style-animated wrapper">
+			<h2 class="eyebrow">Evolve</h2>
+			<h2>Psychedelic Guide Training with Daniel McQueen</h2>
+		</div>
+		<div href="#program" class="text-area text-area--sidebar text-area--sidebar-right wrapper">
+			<div class="text-area__main">
+				<p>Dimensions Algonquin Highlands Clinical Director Donald Currie, RP, and Dawn Martin, PhD, unite with guest facilitator Daniel McQueen, MA, for a six-day, five-night training intensive. </p>
+				<p>Daniel McQueen, an international psychedelic educator and the founding director of the Center for Medicinal Mindfulness, is a globally recognized pioneer in the realm of psychedelicassisted therapy. </p>
+				<p><strong>EVOLVE</strong>, is Dimensions’ inaugural practitioner retreat tailored to wellness clinicians and registered therapists with a solid foundation of personal development work, self-understanding, conscious evolution and ceremonial experiences. This private retreat is only open to an intimate group of invited participants and offers you the opportunity to continue your transformational journey while surrounded by others who are equally dedicated to becoming a cannabis-assisted psychedelic guide. </p>
+				<p>Be among the first in Canada to experience <strong>EVOLVE</strong>, our psychedelic guide training </p>
+			</div>
+			<div class="text-area__sidebar">
+				<div class="text-area__sidebar-block">
+					<h4 class="eyebrow">Where</h4>
+					<p>Dimensions <br>Algonquin Highlands,<br>Ontario, Canada</p>
+				</div>
+				<div class="text-area__sidebar-block">
+					<h4 class="eyebrow">When</h4>
+					<p>Monday, May 23 through Friday, May 27, 2022</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="text-area text-area--title text-area--center text-area--left text-transition is-style-animated ">
+			<h2 class="eyebrow">Evolve</h2>
+			<h2>Faculty</h2>
+		</div>
+
+<!-- PROFILES  -->
+		<div class="profiles wrapper">
+			<div class="grid grid--2-col">
+				<div class="grid__item" data-size="1280x857">
+						<img src="/daniel.22d15a3c.jpg" alt="img06">
+						<div class="description description--grid">
+							<h3 class="description__name">Daniel McQueen, MA</h3>
+							<p class="description__bio-intro">Daniel McQueen is a Psychedelic Specialist, Psychedelic Therapy Educator, Activist, and Author of the book Psychedelic...
+								<a href="#" class="description__readmore">read more</a>
+							</p>
+							<div class="description__bio">Daniel McQueen is a Psychedelic Specialist, Psychedelic Therapy Educator, Activist, and Author of the book Psychedelic Cannabis. In 2012, he co-founded the Center of Medicinal Mindfulness which is the first legal plant-based psychedelic therapy center in the United States. <a href="https://medicinalmindfulness.org/project/daniel-mcqueen/" target="_blank">Visit Daniel's site</a></div>
+						</div>
+				</div>
+			</div>
+
+			<div class="grid grid--2-col">
+				<div class="grid__item" data-size="1280x857">
+						<img src="/donald.7493d6aa.jpg" alt="img06">
+						<div class="description description--grid">
+							<h3 class="description__name">Donald Currie, RP</h3>
+							<p class="description__title">Clinical Director, Dimensions Algonquin Highlands</p>
+							<p class="description__bio">A registered psychotherapist with 19 years of experience, Donald leads the retreat programming at Dimensions Algonquin ...
+								<a href="#" class="description__readmore">read more</a>
+							</p>
+							<div class="details">
+								<ul>
+									<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
+									<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
+									<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
+									<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
+									<li><i class="icon icon-iso"></i><span>80</span></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+				<div class="grid__item" data-size="1280x857">
+						<img src="/dawn.82bb276a.jpg" alt="img06">
+						<div class="description description--grid">
+							<h3 class="description__name">Dawn Martin </h3>
+							<p class="description__title">PhD, MEd, MSW RSW</p>
+							<p class="description__bio">For over thirty years, Dawn Martin has worked extensively with practicing physicians, faculty, varying levels of ...
+								<a href="#" class="description__readmore">read more</a>
+							</p>
+							<div class="details">
+								<ul>
+									<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
+									<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
+									<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
+									<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
+									<li><i class="icon icon-iso"></i><span>80</span></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+
+			<div class="grid grid--3-col">
+				<div class="grid__item" data-size="1280x857">
+						<img src="https://via.placeholder.com/150?text=placeholder" alt="img06">
+						<div class="description description--grid">
+							<h3 class="description__name">Name</h3>
+							<p class="description__title">Profile title</p> 
+							<p class="description__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id feugiat lacus...
+								<a href="#" class="description__readmore">read more</a>
+							</p>
+							<div class="details">
+								<ul>
+									<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
+									<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
+									<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
+									<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
+									<li><i class="icon icon-iso"></i><span>80</span></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+				<div class="grid__item" data-size="1280x857">
+						<img src="https://via.placeholder.com/150?text=placeholder" alt="img06">
+
+						<div class="description description--grid">
+							<h3 class="description__name">Name</h3>
+							<p class="description__title">Profile title</p> 
+							<p class="description__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id feugiat lacus...
+								<a href="#" class="description__readmore">read more</a>
+							</p>
+							<div class="details">
+								<ul>
+									<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
+									<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
+									<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
+									<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
+									<li><i class="icon icon-iso"></i><span>80</span></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+				<div class="grid__item" data-size="1280x857">
+						<img src="https://via.placeholder.com/150?text=placeholder" alt="img06">
+						<div class="description description--grid">
+							<h3 class="description__name">Name</h3>
+							<p class="description__title">Profile title</p> 
+							<p class="description__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id feugiat lacus...
+								<a href="#" class="description__readmore">read more</a>
+							</p>
+							<div class="details">
+								<ul>
+									<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
+									<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
+									<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
+									<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
+									<li><i class="icon icon-iso"></i><span>80</span></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal">
+			<div class="modal__closer">X</div>
+			<div class="modal__content">
+				<div class="modal__image">
+					<img src="https://images.unsplash.com/photo-1647251641345-4963d2c02b38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
+				</div>
+				<div class="modal__text">
+					<p class="modal__name"></p>
+					<p class="modal__title"></p>
+					<p class="modal__bio"></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="text-area text-area--center text-area--color">
+			<div class="wrapper">
+				<div class="is-style-animated">
+					<img class="rotating-logo" src="/slogan.41516a1d.svg" alt="">
+				</div>
+				<h2 class="eyebrow">About Dimensions</h2>
+				<p class="large">Combining neuroscientific research with Plant Ceremony and luxurious hospitality, Dimensions focuses on restorative well-being and transformational growth. Dimensions Retreats help improve and transform lives by drawing on the restorative power of nature, spa rituals, remarkable cuisine and psychedelic Plant Ceremony in a growing collection of safe, legal and luxurious accommodations in natural settings.</p>
+			</div>
+		</div>
+
+<!-- ANIMATING SECTION  -->
+		<div class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated gallery-title">
+			<h2 class="eyebrow">Retreat</h2>
+			<h3>Dimensions <br>Algonquin Highlands</h3>
+		</div>
+
+		<div class="text-area text-area--sidebar wrapper wrapper--wide">
+			<div class="text-area__main">
+				<p class="display-style">
+					Join us and <span class="highlight-style">Evolve</span>
+					<span class="custom-fullstop"></span>
+				</p>
+			</div>
+			<div class="text-area__sidebar">
+				<div class="animating-logo is-style-animated">
+					<img class="first" src="/hollow-d.ced66742.svg" alt="">
+					<img class="second" src="/hollow-d.ced66742.svg" alt="">
+					<img class="third" src="/hollow-d.ced66742.svg" alt="">
+					<img class="moving" src="/hollow-d.ced66742.svg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="animating-gallery">
+			<div class="full-width-image is-style-animated">
+				<img src="/gallery-1.acf86e3a.jpg" alt="">
+			</div>
+			<div class="logo-image logo-image--image-right">
+				<div class="logo-image__image is-style-animated">
+					<img src="/gallery-2.bdf79e3d.jpg" alt="">
+				</div>
+				<div class="logo-image__logo">
+					<div class="logo-image__logo-image">
+						<img src="/Dimensions-Education-Logo.c5deb37d.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="logo-image">
+				<div class="logo-image__image is-style-animated">
+					<img src="/gallery-3.b85a44d3.jpg" alt="">
+				</div>
+				<div class="logo-image__logo">
+				
+				</div>
+			</div>
+			<div class="logo-image logo-image--image-right">
+				<div class="logo-image__image is-style-animated">
+					<img src="/gallery-5.dcd6e918.jpg" alt="">
+				</div>
+				<div class="logo-image__logo">
+					<div class="logo-image__logo-image is-style-animated">
+						<img class="rotating-logo" src="/slogan-green.5628dadf.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="full-width-image full-width-image--top-offset is-style-animated droplets" style="background-image: url(&quot;gallery-4.9ab275bb.jpg&quot;); background-size: cover; height: 600px;">
+				<!-- <img src="./img/gallery-4.jpg" alt=""> -->
+				<div class="wrapper">
+					<p class="display-style">Continue your transformational journey.</p>
+				</div>
+			</div>
+		</div>
+
+<!-- RETREAT, RESET, TRANSFORM  -->
+		<div id="retreat" class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
+			<h2 class="eyebrow">Program</h2>
+			<h3>Retreat</h3>
+		</div>
+
+		<div class="text-image text-image--image-right">
+			<div class="text-image__image is-style-animated">
+				<img src="/retreat.1507609f.jpg" alt="">
+			</div>
+			<div class="text-image__text is-style-animated">
+				<p>
+					Only 12 invited participants will be in attendance for our inaugural training Retreat at Dimensions Algonquin Highlands. Our lakeside Northern Ontario setting featuring rugged hills and an extensive network of forest trails is the optimal setting to observe the first signs of a Canadian spring. Time spent with us off the beaten path will serve as an exclusive prelude to Dimensions Education’s growing curriculum and the opening of a global collection of several permanent Retreat destinations for deep healing and well- being. You will learn why the combination of natural plant medicines and psychotherapeutic technique is a powerful strategy to address issues and reduce the impact of trauma – especially when healing is set in natural surroundings.
+				</p>
+			</div>
+		</div>
+
+		<div id="reset" class="text-area text-area--title text-area--center wrapper text-transition is-style-animated">
+			<h2 class="eyebrow">Program</h2>
+			<h3>Reset</h3>
+		</div>
+
+		<div class="text-image">
+			<div class="text-image__image is-style-animated">
+				<img src="/reset.b0e82515.jpg" alt="">
+			</div>
+			<div class="text-image__text is-style-animated">
+				<p>
+					EVOLVE is one of five well-being programs in Dimensions’ foundational repertoire. Your Retreat week with us will enrich your knowledge with relevant, in-depth training. Provide better care for your clients and feel more confident in the work you do as a therapist and wellness practitioner. Our leaders in the fields of psychotherapy, wellness and psychedelics will instruct you in best practices to ensure the highest levels of integrity, ethics and safety. You will gain new skills and receive certification in evidence-based psychedelic therapies, techniques and methods. We focus on mindfulness techniques that psychedelic therapists and guides can use to deepen their own healing and transformation process while assisting and staying in full contact with their client for many hours. These internal skill sets are often unacknowledged in other programs, yet are essential in increasing personal and professional sustainability and resilience.
+				</p>
+			</div>
+		</div>
+
+		<div id="transform" class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
+			<h2 class="eyebrow">Program</h2>
+			<h3>Transform</h3>
+		</div>
+
+		<div class="text-image text-image--image-right">
+			<div class="text-image__image is-style-animated">
+				<img src="/transform.f7164e09.jpg" alt="">
+			</div>
+			<div class="text-image__text is-style-animated">
+				<p>
+					Only 12 invited participants will be in attendance for our inaugural training Retreat at Dimensions Algonquin Highlands. Our lakeside Northern Ontario setting featuring rugged hills and an extensive network of forest trails is the optimal setting to observe the first signs of a Canadian spring. Time spent with us off the beaten path will serve as an exclusive prelude to Dimensions Education’s growing curriculum and the opening of a global collection of several permanent Retreat destinations for deep healing and well- being. You will learn why the combination of natural plant medicines and psychotherapeutic technique is a powerful strategy to address issues and reduce the impact of trauma – especially when healing is set in natural surroundings.
+				</p>
+			</div>
+		</div>
+
+		<!-- TRANSFORM CURRICULULUM  -->
+		<div class="accordion row wrapper">
+			<div class="tabs">
+				<div class="tab">
+					<input type="checkbox" id="chck1">
+					<label class="tab-label" for="chck1">ORIENTATION SESSION DATE X (& days in advance of Retreat)</label>
+					<div class="tab-content">
+						<p>Preparation work XYZ??? Donald needs to describe this </p>
+					</div>
+				</div>
+				<div class="tab">
+					<input type="checkbox" id="chck2">
+					<label class="tab-label" for="chck2"><span><strong>LEVEL 1</strong> MAY 23-MAY 27, 2022 A Intro + Experiential Retreat Overview</span></label>
+					<div class="tab-content">
+						<p>Four in person experiential sessions, 2 group and 2 individual guiding sessions, to introduce students to the power of psychedelic cannabis. During our five night and six  day retreat you’ll experience the transformational power of psychedelic cannabis firsthand in a series of journey experiences. We provide ongoing small group process for integration support and skill development, and a series of lectures on mindfulness practices, facilitator logistics, and other skills required for ethical guiding.
+						</p>
+					</div>
+				</div>
+				<div class="tab">
+					<input type="checkbox" id="chck4">
+					<label class="tab-label" for="chck4"><span><strong>AGENDA</strong>Five Nights At Dimensions Algonquin Highlands</span></label>
+					<div class="tab-content">
+						<!-- <p><strong></strong></p> -->
+						<h4>Day 1</h4>
+						<p><strong>9-10:30am</strong>- Orientation and Introduction to the Training </p>
+						<p><strong>10:30-Noon</strong>- 1st lecture - Overview of MBPT & CAPT Core Therapeutic Concepts </p>
+						<p>Lunch</p>
+					</div>
+				</div>
+				<div class="tab">
+					<input type="checkbox" id="chck5">
+					<label class="tab-label" for="chck5"><span><strong>LEVEL 2</strong> (days DATE??? To days/DATE ?????)Online Lectures:</span></label>
+					<div class="tab-content">
+						<p>This next level of training intensive is a full professional training program with online lectures and 22 hours of psychedelic therapy experientials. These experientials include two community Conscious Cannabis Circle and 4 one-on-one practice sessions in the practicum.</p>
+						<ul>
+							<li>Introduction & Overview</li>
+							<li>Foundational Mindful Journeywork Practices</li>
+							<li>Tracking & The Five Awareness Practice</li>
+							<li>Trauma Resolution</li>
+							<li>Shadow Work & Aspects of Self</li>
+							<li>Transpersonal Terrain & Setting Sacred Space</li>
+							<li>Beginners Music Set Instructions</li>
+							<li>Necessary Skill Set and Resiliency Development</li>
+							<li>Self Care and Resourcing Art Experiential</li>
+							<li>Mindfulness Exercises</li>
+							<li>Making a Cannabis Blend</li>
+							<li>Using Cannabis With Intention</li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+<!-- LOCATION  -->
+		<div class="map-block">
+			<div class="acf-map">
+				<div class="marker" data-lat="45.106244" data-lng="-78.658208"><p>Location details can be added here...</p></div>
+			</div>
+			<div class="hidden-marker"></div>
+		</div>
+
+		<div id="location" class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
+			<h2 class="eyebrow">Getting Here</h2>
+			<h3>Locations</h3>
+		</div>
+
+		<div class="wrapper">
+			<p><strong>45°6’22.48”N 78°39’29.55”W</strong></p>
+			<p>Dimensions Algonquin Highlands can be reached from Toronto by car, helicopter or private air. Driving from Toronto via Highway 400 North with a connection to Highway 118 West brings guests to our door in approximately three hours. From Billy Bishop Toronto City Airport or Toronto Pearson International airport, flight time to the nearby Stanhope Municipal Airport (CND4) is one hour. The Retreat spans nearly 40 acres of woodlands and is located in Stanhope Township, along the shores of Maple Lake at 1218 Canopy Lane. This forest access road leads south off of the Township’s Airport Road, just 6km from the nearest community of Carnarvon and 20km from the larger town of Minden, Ontario.</p>
+		</div>
+
+<!-- TESTIMONIAL  -->
+		<div class="text-area text-area--quote text-area--color">
+			<div class="wrapper">
+				<figure>
+					<blockquote>
+						<p>“We welcome you to an intimate, safe environment – a container to practise vulnerability and cultivate empathy for other participants and yourself. To ensure your safety and support, we will oversee all onboarding, including mental and physical assessments for everyone, and there will be a high practitioner/trainer–participant ratio. Medical supervision is always present during every Dimensions Plant Ceremony. “</p>
+					</blockquote>
+					<figcaption>—Donald Currie, RP, <br>Clinical Director Dimensions Algonquin Highlands</figcaption>
+				</figure>
+			</div>
+		</div>
+		
+<!-- INCLUSIONS -->
+		<div id="inclusions" class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
+			<h2 class="eyebrow">Program</h2>
+			<h3>Course Fees & Inclusions</h3>
+		</div>
+
+		<div class="text-image ">
+			<div class="text-image__image is-style-animated">
+				<img src="/room.3f149059.jpg" alt="">
+			</div>
+			<div class="text-image__text is-style-animated">
+				<div class="text-image__text-content">
+					<p>
+						All course fees, accommodation and meals are included our preferred practitioners rate of $9,000 + 13% HST (single occupancy).
+					</p>
+					<p>
+						Accommodation in a private cabin includes all programmed activities and organic meals prepared daily to suit all dietary needs by Dimensions Algonquin Highland’s Executive Chef, Miriam Echeverria. </p>
+					<p>
+						These all-inclusive accommodations, amenities and activities are offered as a prelude to all three progressive levels of in person training sessions and subsequent on line modules conducted by Dimension’s clinicians: Donald Currie, RP, Dawn martin, PhD and Daniel McQueen’s faculty at the Centre for Medicinal Mindfulness. The rate does not include ground transportation or airfare. 
+					</p>
+				</div>
+			</div>
+		</div>
+
+<!-- ROOMS  -->
+		<div class="text-area text-area--title text-area--center wrapper text-transition is-style-animated">
+			<h2 class="eyebrow">Course Fees</h2>
+			<h3>Evolve Certified</h3>
+		</div>
+
+		<div class="wrapper">
+			<div class="room-grid text-transition">
+				<div class="room-grid__room room">
+					<h4 class="room__title">Lake View</h4>
+					<p class="room__description">
+						1 Room, 1 Queen Bed <br>Single occupancy
+					</p>
+					<div class="room__icon">
+						<img src="/hollow-d.ced66742.svg" alt="">
+					</div>
+					<p class="room__rate">
+						<span class="room__price">$7,500</span>
+						<span class="room__currency">CAD + HST</span>
+					</p>
+				</div>
+				<div class="room-grid__room room">
+					<h4 class="room__title">Forest View Cabin</h4>
+					<p class="room__description">
+						1 Room, 1 Queen Bed <br>Single occupancy
+					</p>
+					<div class="room__icon">
+						<img src="/hollow-d.ced66742.svg" alt="">
+					</div>
+					<p class="room__rate">
+						<span class="room__price">$7,500</span>
+						<span class="room__currency">CAD + HST</span>
+					</p>
+				</div>
+				<div class="room-grid__room room">
+					<h4 class="room__title">Lake View</h4>
+					<p class="room__description">
+						1 Room, 1 Queen Bed <br>Double occupancy
+					</p>
+					<div class="room__icon">
+						<img src="/hollow-d.ced66742.svg" alt="">
+					</div>
+					<p class="room__rate">
+						<span class="room__price">$7,500</span>
+						<span class="room__currency">CAD + HST</span>
+					</p>
+				</div>
+				<div class="room-grid__room room">
+					<h4 class="room__title">Forest View Cabin</h4>
+					<p class="room__description">
+						1 Room, 1 Queen Bed <br>Double occupancy
+					</p>
+					<div class="room__icon">
+						<img src="/hollow-d.ced66742.svg" alt="">
+					</div>
+					<p class="room__rate">
+						<span class="room__price">$7,500</span>
+						<span class="room__currency">CAD + HST</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
+			<h2 class="eyebrow">Course Fees</h2>
+			<h3>Evolve Credentialed</h3>
+		</div>
+
+		<div class="wrapper">
+			<div class="room-grid text-transition">
+				<div class="room-grid__room room ">
+					<h4 class="room__title">Lake View</h4>
+					<p class="room__description">
+						1 Room, 1 Queen Bed <br>Single occupancy
+					</p>
+					<div class="room__icon">
+						<img src="/hollow-d.ced66742.svg" alt="">
+					</div>
+					<p class="room__rate">
+						<span class="room__price">$7,500</span>
+						<span class="room__currency">CAD + HST</span>
+					</p>
+				</div>
+				<div class="room-grid__room room">
+					<h4 class="room__title">Forest View Cabin</h4>
+					<p class="room__description">
+						1 Room, 1 Queen Bed <br>Single occupancy
+					</p>
+					<div class="room__icon">
+						<img src="/hollow-d.ced66742.svg" alt="">
+					</div>
+					<p class="room__rate">
+						<span class="room__price">$7,500</span>
+						<span class="room__currency">CAD + HST</span>
+					</p>
+				</div>
+				<div class="room-grid__room room">
+					<h4 class="room__title">Lake View</h4>
+					<p class="room__description">
+						1 Room, 1 Queen Bed <br>Double occupancy
+					</p>
+					<div class="room__icon">
+						<img src="/hollow-d.ced66742.svg" alt="">
+					</div>
+					<p class="room__rate">
+						<span class="room__price">$7,500</span>
+						<span class="room__currency">CAD + HST</span>
+					</p>
+				</div>
+				<div class="room-grid__room room">
+					<h4 class="room__title">Forest View Cabin</h4>
+					<p class="room__description">
+						1 Room, 1 Queen Bed <br>Double occupancy
+					</p>
+					<div class="room__icon">
+						<img src="/hollow-d.ced66742.svg" alt="">
+					</div>
+					<p class="room__rate">
+						<span class="room__price">$7,500</span>
+						<span class="room__currency">CAD + HST</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+<!-- FINANCING  -->
+		<div class="text-area text-area--center text-area--title wrapper text-transition is-style-animated">
+			<h2 class="eyebrow">Terms and Conditions</h2>
+			<h3>Payment Guidelines:</h3>
+		</div>
+
+		<div class="text-area wrapper">
+			<p>Upon written acceptance of attendance at the Dimensions Education EVOLVE practitioners retreat with Daniel McQueen, being held on May 23, 2022, all guests must confirm their registration with a 25% deposit towards the full enrollment fee of $9,000 CDN, plus 13% HST. Full payment is due on May 15, 2022.</p>
+		
+			<p>	<strong>Financing options:</strong> All practitioners enrolled in the EVOLVE training intensive are also eligible for interest free financing options. The payment plan allows for an initial 25% deposit and an allowance for a 50% advance payment towards the full enrollment fee of $9,000 CDN, plus 13% HST by May 15, 2022, with the option to finalize payment of the outstanding balance in 10% installments. Full payment must be completed by December 31, 2022, regardless of attendance defferals or course withdrawals</p>
+		
+
+		</div>
+
+<!-- Q & A  -->
+		<div id="qa" class="text-area text-area--center wrapper text-transition is-style-animated">
+			<h3>Q & A</h3>
+		</div>
+
+		<div class="accordion row wrapper">
+			<div class="tabs">
+				<div class="tab">
+					<input type="checkbox" id="qa-chck1">
+					<label class="tab-label" for="qa-chck1">What are the graduation benchmarks, course attendance and diagnostic expectations?</label>
+					<div class="tab-content">
+						<p>Preparation work XYZ??? Donald needs to describe this </p>
+					</div>
+				</div>
+				<div class="tab">
+					<input type="checkbox" id="qa-chck2">
+					<label class="tab-label" for="qa-chck2">Will we learn how to prepare cannabis blends?
+					</label>
+					<div class="tab-content">
+						<p>Guidance will be provided on how to make your own psychedelic cannabis blends, set up your therapy space, use music and prompts to safely hold space as a psychedelic facilitator. The skill sets taught are similar to facilitating Ketamine and N,N-DMT psychedelic experiences.
+						</p>
+					</div>
+				</div>
+				<div class="tab">
+					<input type="checkbox" id="qa-chck4">
+					<label class="tab-label" for="qa-chck4">Associated Benefits for Graduates:</label>
+					<div class="tab-content">
+						<ul>
+							<li>Access Webinar Lecture Content and Community Forum of CMM/PSS </li>
+							<li>Invitation to Credentialing program for professional practice and membership in CMM </li>
+							<li>Opportunity to take PSS3 Advanced practices and future international training retreats </li>
+							<li>Invitation to CMM 10 Year Anniversary Community Gathering in Colorado </li>
+						</ul>
+					</div>
+				</div>
+				<div class="tab">
+					<input type="checkbox" id="qa-chck5">
+					<label class="tab-label" for="qa-chck5">Will we receive Continued Education Unit credits?</label>
+					<div class="tab-content">
+						<p>YES/NO? may be secured upon graduation.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="text-area--center wrapper">
+			<p class="small">Legal copy + Right to refuse statement Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+		</div>
+
+<!-- RSVP  -->
+		<div id="rsvp" class="text-area text-area--center wrapper text-transition is-style-animated">
+			<h2 class="eyebrow">Planning your retreat</h2>
+			<h3>RSVP</h3>
+			<p>Thank you for expressing your interest in Evolve.</p>
+			<p>Our clinical team will confirm next steps with you.</p>
+			<form id="contact-us" class="rsvp-form" method="POST" action="/contact-us">
+				<div class="rsvp-form__input-fields-container">
+					<input type="text" placeholder="First Name*" name="first-name" id="first-name">
+					<input type="text" placeholder="Last Name" name="last-name" id="last-name">
+					<input type="text" placeholder="Age" name="age" id="age">
+					<input type="text" placeholder="City / Town" name="city" id="city">
+					<input type="text" placeholder="Your Email*" name="email" id="email">
+				</div>
+				<button id="submitform" class="button button--rounded button--bordered"><div class="button__circle"></div> <span>Submit</span></button>
+			</form>
+		</div>
+
+
+		<!-- buttons test  -->
+		
+		<!-- From https://codepen.io/sebastien-gilbert/pen/VwLzvGV?editors=1010 -->
+
+	</main>
+	<footer>
+		<div class="subscriptions text-area">
+			<div class="wrapper sub-email">
+				<div class="sub-email-content">
+					<h2>Newsletter</h2>
+					<div class="email-input">
+						<input id="footer-email" type="text" placeholder="Just enter your email">
+
+						<button id="footer-subscription" class="button button--rounded button--bordered">
+							<div class="button__circle"></div> 
+							<span>Submit</span>
+						</button>
+					</div>
+					<div class="privacy-policy-footer">
+						<input type="hidden" id="footer-recipient" value="enquire@dimensionshealing.com">
+						<input type="hidden" id="footer-subject" value="Via Newsletter: Dimensions Site Visitor | Newsletter">
+						<span class="checkbox">
+							<label>
+								<input type="checkbox" class="condition-check" id="terms-condition-footer" name="terms-condition-footer">
+								<span class="check-label">I have read and understand the <a class="privacy-link" href="/privacy-policy">Privacy Policy.</a></span>
+							</label>
+						</span>
+					</div>
+					<div class="newsletter-footer">
+						<span class="checkbox">
+							<label>
+								<input type="checkbox" class="condition-check" id="news-letter-footer" name="news-letter-footer">
+								<span class="check-label">I would like to receive more information from Dimensions.</span>
+							</label>
+						</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+<!-- FOOTER -->
+		<div class="main-footer">
+			<div class="wrapper wrapper--wide">
+				<div class="main-footer__left">
+					<nav class="main-footer__menu menu">
+						<a class="menu__item">
+							<span class="menu__item-text">Facilitators & Hosts</span>
+						</a>
+						<a class="menu__item">
+							<span class="menu__item-text">Retreat</span>
+						</a>
+						<a class="menu__item">
+							<span class="menu__item-text">Location</span>
+						</a>
+						<a class="menu__item">
+							<span class="menu__item-text">Inclusions</span>
+						</a>
+						<a class="menu__item">
+							<span class="menu__item-text">Q & A</span>
+						</a>
+						<a class="menu__item">
+							<span class="menu__item-text">Registration</span>
+						</a>
+					</nav>
+					<p class="main-footer__legal">Legal copy diam nonummy nibh euismod <br>© 2022 Dimensions. All rights reserved.</p>
+				</div>
+				<div class="main-footer__right">
+					<div class="main-footer__logo">
+						<img src="/Dimensions-Education-Logo--white.9218517e.svg" alt="">
+	
+					</div>
+					<div class="sub-social">
+						<div class="social-icons">
+								<a href="https://www.instagram.com/dimensionsretreats/"><img src="/instagram.b6dad8a8.svg" class="lazyloaded" data-ll-status="loaded"><noscript><img src="https://dimensionsretreats.com/wp-content/uploads/2021/12/inst.svg"></noscript></a>
+								<a href="https://www.facebook.com/dimensionshealth"><img src="/facebook.cbb8eeac.svg" class="lazyloaded" data-ll-status="loaded"><noscript><img src="https://dimensionsretreats.com/wp-content/uploads/2021/12/fb.svg"></noscript></a>
+								<a href="https://twitter.com/dimensionsheals"><img src="/twitter.053898bd.svg" class="lazyloaded" data-ll-status="loaded"><noscript><img src="https://dimensionsretreats.com/wp-content/uploads/2021/12/tw.svg"></noscript></a>
+								<a href="https://www.linkedin.com/company/dimensions-healing/"><img src="/linkedin.988f39de.svg" class="lazyloaded" data-ll-status="loaded"><noscript><img src="https://dimensionsretreats.com/wp-content/uploads/2021/12/linkedin.svg"></noscript></a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk-_EpGb9YIXP98DP-gtegW_9CSa0iITw" async=""></script>
+	<script src="/index.b8e4dfc2.js" defer=""></script>
+	<script src="/index.af1d64cf.js" defer=""></script>
+	<script src="/index.66c49646.js" defer=""></script>
+	<script src="/index.f9b3b06b.js" defer=""></script>
+	<script src="/index.739bf03c.js" defer=""></script>
+</body>
+
+</html>

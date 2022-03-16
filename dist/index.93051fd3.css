@@ -1,0 +1,239 @@
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  width: 31px;
+  height: 25px;
+  padding: 0;
+  /*
+   * Spin
+   */
+}
+.hamburger__box {
+  position: relative;
+}
+.hamburger__inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger__inner, .hamburger__inner::before, .hamburger__inner::after {
+  width: 31px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+}
+.hamburger__inner::before, .hamburger__inner::after {
+  content: "";
+  display: block;
+}
+.hamburger__inner::before {
+  top: -10px;
+}
+.hamburger__inner::after {
+  bottom: -10px;
+}
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+.hamburger--spin .hamburger__inner {
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--spin .hamburger__inner::before {
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+}
+.hamburger--spin .hamburger__inner::after {
+  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--spin.is-active .hamburger__inner {
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger--spin.is-active .hamburger__inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+}
+.hamburger--spin.is-active .hamburger__inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger--accent-color .hamburger__inner, .hamburger--accent-color .hamburger__inner::before, .hamburger--accent-color .hamburger__inner::after {
+  background-color: var(--accent-color);
+}
+.header__logo {
+  top: 24px;
+  z-index: 9;
+  width: 67px;
+  position: absolute;
+  left: calc(50vw - 33px);
+  display: block;
+}
+.top-nav {
+  padding: 24px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  transition: all 0.3s;
+}
+.top-nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-nav a, .top-nav button {
+  pointer-events: auto;
+}
+.top-nav__wordmark {
+  display: none;
+  content: "";
+  background-image: url("dimensions-education-wordmark.5055a56c.svg");
+  width: 145px;
+  height: 30px;
+  position: absolute;
+  left: calc(50vw - 72px);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.top-nav--is-hidden {
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+.top-nav.is-active .button {
+  box-shadow: inset 0px 0px 0 1px white;
+  color: white;
+}
+.top-nav.is-active .button span, .top-nav.is-active .button a {
+  color: white;
+}
+.top-nav.is-active .button .button__circle {
+  background: white;
+}
+.top-nav.is-active .button:hover a, .top-nav.is-active .button:hover span {
+  color: var(--accent-color);
+}
+.top-nav.is-active .hamburger__inner,
+.top-nav.is-active .hamburger__inner::before,
+.top-nav.is-active .hamburger__inner::after {
+  background-color: white;
+}
+.top-nav--scrolled {
+  background: var(--landing-bg);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.top-nav--scrolled .top-nav__logo {
+  display: none;
+}
+.top-nav--scrolled .top-nav__wordmark {
+  display: block;
+  background-image: url("dimensions-education-wordmark.5055a56c.svg");
+}
+.top-nav--scrolled.is-active {
+  background: none;
+  box-shadow: none;
+}
+.top-nav--scrolled.is-active .top-nav__wordmark {
+  display: block;
+  background-image: url("dimensions-education-wordmark--white.34aeb901.svg");
+}
+/* OPEN MENU  */
+.menu-wrap {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  opacity: 0;
+  background-color: #007755;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+.menu-wrap .wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu-wrap__image {
+  flex: 0 0 50%;
+}
+.menu-wrap__image img {
+  width: 100%;
+}
+.menu-wrap--open {
+  pointer-events: auto;
+  opacity: 1;
+}
+.overlay {
+  grid-area: 1/1/2/2;
+  position: fixed;
+  z-index: 3;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+#navigation .menu {
+  grid-area: 1/1/2/2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  height: 100%;
+}
+#navigation .menu__item {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1.5em;
+  font-weight: 500;
+  position: relative;
+  display: block;
+  will-change: opacity, transform;
+}
+#navigation .menu__item:hover .menu__item-text:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#navigation .menu__item-text {
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+#navigation .menu__item-text::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+/*# sourceMappingURL=index.93051fd3.css.map */
