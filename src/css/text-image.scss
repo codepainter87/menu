@@ -1,6 +1,8 @@
 .text-image {
     display: flex;
     justify-content: space-between;
+    max-width: 100vw;
+    overflow: hidden;
     &__text, &__image, &__logo {
         flex: 0 0 49%;
     }

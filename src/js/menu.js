@@ -202,10 +202,8 @@ hamburger.addEventListener('click', toggleMenu);
 const clickMenuLink = () => {
     event.preventDefault();
     const href = event.target.hash;
-    console.dir(event)
       let offsetTop = window.document.querySelector(href).offsetTop;
       offsetTop = offsetTop - 100;
-      console.log(offsetTop)
       scrollTo({
         top: offsetTop,
         left: 100,
