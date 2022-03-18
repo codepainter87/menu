@@ -23,16 +23,20 @@
         }
         &-label {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            align-items: baseline;
             padding: 20px;
             cursor: pointer;
-
             strong {
                 font-weight: bold;
                 text-transform: uppercase;
                 color: var(--accent-color);
                 margin-right: 20px;
+            }
+            span {
+                flex: 1;
+            }
+            .highlight {
+                flex: 0 0 40%;
             }
             /* Icon */
             &:hover {
@@ -52,10 +56,20 @@
         }
         &-content {
             max-height: 0;
-            padding: 1em;
+            padding: 0 1em;
             transition: all .35s;
-            p, ul {
+            p {
                 margin: 0;
+            }
+            ul {
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+            h4 {
+                margin: 25px 0;
+            }
+            h5 {
+                font-size: 1.6rem;
             }
         }
         &-close {
@@ -83,7 +97,8 @@
             }
         }
         ~ .tab-content {
-            max-height: 100vh;
+            max-height: 500vh;
+            padding: 1em;
         }
     }
 }
