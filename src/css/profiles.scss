@@ -16,17 +16,16 @@
             grid-template-columns: 1fr 1fr; 
             .grid__item {
                 width: 100%;
-                img {
-                    display: block;
-                    max-width: 100%;
-                    width: 100%;
-                    height: calc(((776px - 50px) / 2) * 0.9);
-                    object-fit: cover;
-                    border-top-left-radius: 50%;
-                    border-top-right-radius: 50%;
-                    transform-origin: left top;
-                    transition: all 0.3s;
-                }
+              
+                // img {
+                //     display: block;
+                //     max-width: 100%;
+                //     width: 100%;
+                //     height: calc(((776px - 50px) / 2) * 0.9);
+                //     object-fit: cover;
+                //     transform-origin: left top;
+                //     transition: all 0.3s;
+                // }
             }
         }
         &--3-col {
@@ -49,6 +48,17 @@
     }
     
 
+    .profile {
+        &__image {
+            border: 1px solid var(--accent-color);
+            width: 100%;
+            padding-top: 90%;
+            background-size: cover;
+            background-position: center;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+    }
 
     
     .grid__item--current {

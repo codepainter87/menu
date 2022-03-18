@@ -14,7 +14,7 @@
     padding: 40px;
     &__title {
         font-size: 2.8rem;
-        line-height: 1.25rem;
+        line-height: 1.25em;
         margin-bottom: 24px;
         font-weight: normal;
         color: var(--accent-color);
@@ -38,6 +38,7 @@
     &__currency {
         font-size: 2rem;
         line-height: 2.5rem;
+        display: block;
     }
 }
 

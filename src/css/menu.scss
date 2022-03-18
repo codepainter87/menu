@@ -214,6 +214,9 @@
 		img {
 			width: 100%;
 		}
+		@media only screen and (max-width: 640px) {
+			display: none;
+		}
 	}
 	&--open {
 		pointer-events: auto;
@@ -237,6 +240,9 @@
 	position: relative;
 	justify-content: center;
 	height: 100%;
+	@media only screen and (max-width: 640px) {
+		align-items: center;
+	}
 	&__item {
 		font-size: 3rem;
 		color: #fff;
@@ -246,6 +252,12 @@
 		position: relative;
 		display: block;
 		will-change: opacity, transform;
+		@media only screen and (max-width: 836px) {
+			font-size: 2.4rem;
+		}
+		@media only screen and (max-width: 640px) {
+			font-size: 3rem;
+		}
 		> * {
 			pointer-events: none;
 		}

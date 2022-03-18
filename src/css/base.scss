@@ -19,6 +19,8 @@ body {
 	margin: 0;
 	--accent-color: #007755; 
 	--landing-bg: #f7f4ed; 
+	max-width: 100vw;
+    overflow-x: hidden;
 	/* --color-text: #fff;
 	--color-text-alt: #fff;
 	--color-heading-main: #fff;
@@ -87,6 +89,9 @@ figcaption {
 		max-width: calc(916px + 60px);
 	}
 	&--extra-wide {
+		max-width: 100vw;
+	}
+	@media only screen and (max-width: 836px) {
 		max-width: 100vw;
 	}
 }
@@ -164,6 +169,10 @@ h3 {
 	font-family: Panama;
 	font-size: 8.5rem;
 	line-height: 9.5rem;
+	@media only screen and (max-width: 836px) {
+		font-size: 6rem;
+		line-height: 1.25em;
+	}
 	img {
 		margin-left: 12px;
 	}

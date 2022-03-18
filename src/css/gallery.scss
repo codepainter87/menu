@@ -1,96 +1,108 @@
-.full-width-image {
-    position: relative;
-    display: block;
-    height: 700px;
-    img {
-        width: 100%;
-        object-fit: cover;
-        object-position: bottom;
+.animated-gallery {
+
+    .text-area--title {
+        margin-bottom: 200px;
+
+    }
+    .text-area--sidebar {
+
+    }
+    .full-width-image {
+        position: relative;
         display: block;
-        height: 100%;
-    }
-
-    + .logo-image {
-        margin-top: -60px;
-    }
-
-    + .text-area {
-        position: relative;
-        z-index: -2;
-    }
-
-    + .text-area--display {
-        position: relative;
-        z-index: 0;
-        margin: 0;
-    }
-    &.is-style-animated {
-        transition: all 2s;
-        opacity: 0.1;
-        filter: grayscale(1);
-    }
-    &.animating {
-        filter: grayscale(0);
-        opacity: 1;
-    }
-    &.droplets {
-        color: white;
-        text-align: right;
-        opacity: 1;
-        filter: grayscale(0);
-        .wrapper {
-            display: flex;
-            height: 100%;
-            align-items: flex-end;
-        }
-        &:after {
-            content: "";
-            background: var(--accent-color);
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            mix-blend-mode: multiply;
-            z-index: -1;
-            height: 100%;
-        }
-    }
-    &--top-offset {
-        margin-top: -60px;
-        z-index: -1;
-        position: relative;
-    }
-}
-
-.half-image {
-    position: absolute;
-    top: 0;
-    width: 50vw;
-    height: 550px;
-    img {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-    }
-    &--top-offset {
-        z-index: 1;
-        top: -275px;
-    }
-    &--right {
-        right: 0; 
-        overflow: hidden;
+        height: 700px;
+        max-height: 80vh;
         img {
-            transform: translateX(100%);
-            transition: all 0.5s ease-in-out;
+            width: 100%;
+            object-fit: cover;
+            object-position: bottom;
+            display: block;
+            height: 100%;
+        }
+    
+        + .logo-image {
+            margin-top: -60px;
+        }
+    
+        + .text-area {
+            position: relative;
+            z-index: -2;
+        }
+    
+        + .text-area--display {
+            position: relative;
+            z-index: 0;
+            margin: 0;
+        }
+        &.is-style-animated {
+            transition: all 2s;
+            opacity: 0.1;
+            filter: grayscale(1);
         }
         &.animating {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+        &.droplets {
+            color: white;
+            text-align: right;
+            opacity: 1;
+            filter: grayscale(0);
+            .wrapper {
+                display: flex;
+                height: 100%;
+                align-items: flex-end;
+            }
+            &:after {
+                content: "";
+                background: var(--accent-color);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                mix-blend-mode: multiply;
+                z-index: -1;
+                height: 100%;
+            }
+        }
+        &--top-offset {
+            margin-top: -60px;
+            z-index: -1;
+            position: relative;
+        }
+    }
+    
+    .half-image {
+        position: absolute;
+        top: 0;
+        width: 50vw;
+        height: 550px;
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        &--top-offset {
+            z-index: 1;
+            top: -275px;
+        }
+        &--right {
+            right: 0; 
+            overflow: hidden;
             img {
-                transform: translateX(0%);
+                transform: translateX(100%);
+                transition: all 0.5s ease-in-out;
+            }
+            &.animating {
+                img {
+                    transform: translateX(0%);
+                }
             }
         }
     }
 }
+
 
 @keyframes rotation {
     from {
@@ -114,6 +126,3 @@
     }
 }
 
-.gallery-title {
-    margin-bottom: 200px;
-}
