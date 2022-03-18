@@ -1,1 +1,0 @@
-!function(){document.querySelectorAll(".grid__item");var e=document.querySelector(".modal");e.querySelector(".modal__closer")}();
