@@ -2,10 +2,56 @@
 
     .text-area--title {
         margin-bottom: 200px;
-
     }
-    .text-area--sidebar {
 
+    .text-area {
+        margin-top: 100px;
+    
+        + .text-area:not(.text-area--display):not(.text-area--color):not(.text-area--sidebar) {
+            margin-top: 100px;
+        }
+    
+        &--title {
+            margin-bottom: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            @media only screen and (max-width: 640px) {
+                margin-bottom: 25px;
+            }
+            + .text-area:not(.text-area--display):not(.text-area--color):not(.text-area--sidebar) {
+                margin-top: 0px;
+            }
+        }
+    
+        &--sidebar {
+            margin-top: 60px;
+            display: flex;
+            @media only screen and (max-width: 640px) {
+                margin-top: 5vw;
+            }
+            .text-area__main {
+                flex: 0 0 60%;
+                p:last-child:not(.display-style) {
+                    margin-bottom: 0;
+                }
+            }
+            .text-area__sidebar {
+                flex: 0 0 40%;
+            }
+            @media only screen and (max-width: 836px) {
+                flex-direction: row;
+                .text-area__main {
+                    flex: 0 0 60%;
+                    p:last-child:not(.display-style) {
+                        margin-bottom: 0;
+                    }
+                }
+                .text-area__sidebar {
+                    flex: 0 0 40%;
+                    border-bottom: 0;
+                }
+            }
+        }
     }
     .full-width-image {
         position: relative;
@@ -22,6 +68,9 @@
     
         + .logo-image {
             margin-top: -60px;
+            @media only screen and (max-width: 640px) {
+                margin-top: -5%;
+            }
         }
     
         + .text-area {
@@ -70,6 +119,9 @@
             margin-top: -60px;
             z-index: -1;
             position: relative;
+            @media only screen and (max-width: 640px) {
+                margin-top: -5%;
+            }
         }
     }
     

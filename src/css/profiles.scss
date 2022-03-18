@@ -14,9 +14,14 @@
         }
         &--2-col {
             grid-template-columns: 1fr 1fr; 
+            @media only screen and (max-width: 480px) {
+                grid-template-columns: 1fr; 
+            }
             .grid__item {
                 width: 100%;
-              
+                @media only screen and (max-width: 480px) {
+                    max-width: calc(100vw -  40px);
+                }
                 // img {
                 //     display: block;
                 //     max-width: 100%;

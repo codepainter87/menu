@@ -3,8 +3,17 @@
     justify-content: space-between;
     max-width: 100vw;
     overflow: hidden;
+    @media only screen and (max-width: 767px) {
+		flex-direction: column;
+	}
     &__text, &__image, &__logo {
         flex: 0 0 50%;
+        @media only screen and (max-width: 767px) {
+            flex: 0 0 100%;
+            &:before, &:after {
+                display: none;
+            }
+        }
     }
     &__logo-image {
         width: calc(836px / 2);
@@ -23,6 +32,7 @@
         opacity: 0;
         transition: all 1s ease-in-out;
         padding: 0 30px;
+
         p:first-of-type {
             margin-top: 0;
         }
@@ -40,10 +50,15 @@
         }
         p {
             max-width: calc(836px / 2);
+            @media only screen and (max-width: 767px) {
+                max-width: initial;
+            }
         }
     }
     &__image {
-
+        @media only screen and (max-width: 767px) {
+            margin-bottom: 25px;
+        }
         img {
             width: 100%;
             height: auto;
@@ -63,6 +78,9 @@
     }
     &--image-right {
         flex-direction: row-reverse;
+        @media only screen and (max-width: 767px) {
+           flex-direction: column;
+        }
         .text-image__text, .text-image__logo {
             flex-direction: row;
         }
@@ -92,6 +110,9 @@
     .rotating-logo {
         margin-top: 0;
         margin-bottom: 60px;
+        @media only screen and (max-width: 640px) {
+            margin-bottom: 5vw;
+        }
     }
     &__image, &__logo {
         flex: 0 0 50%;
@@ -101,13 +122,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
+        &.dimensions-education {
+            margin-top: 60px;
+            @media only screen and (max-width: 640px) {
+                margin-top: 5vw;
+            }
+        }
         img {
             height: auto;
             max-height: 185px;
-            @media only screen and (max-width: 836px) {
-                width: 75%;
-                margin-top: 60px;
+        }
+        @media only screen and (max-width: 836px) {
+            width: 60%;
+            img {
+                max-width: 100%;
             }
         }
     }

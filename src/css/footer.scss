@@ -1,25 +1,48 @@
 .main-footer {
     background: var(--accent-color);
     color: white;
-    padding: 120px 0;
-    &__left {
-
+    padding: 120px 0 50px;
+    position: relative;
+    @media only screen and (max-width: 640px) {
+        padding: 60px 0;
     }
-    &__right {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
+    // &__left {
+    //     @media only screen and (max-width: 640px) {
+    //         flex-direction: column;
+    //     }
+    // }
+    // &__right {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: space-between;
+    //     align-items: center;
+    // }
     .wrapper {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        @media only screen and (max-width: 640px) {
+            flex-direction: column;
+            align-items: center;
+        }
 
     }
     .sub-social {
         margin-top: 60px;
     }
+
+    &__logo {
+        @media only screen and (max-width: 640px) {
+            order: -1;
+            align-self: center;
+        }
+    }
     &__menu {
+        flex:  0 0 50%;
+        @media only screen and (max-width: 640px) {
+            text-align: center;
+            margin-top: 60px;
+        }
         .menu__item {
             display: block;
             text-transform: uppercase;
@@ -50,7 +73,16 @@
     }
     &__legal {
         font-size: 1.2rem;
+        line-height: 1.5em;
         margin-top: 60px;
+        align-self: flex-end;
+        @media only screen and (max-width: 640px) {
+            order: 1;
+            align-self: center;
+            margin-top: 12px;
+            margin-bottom: 0;
+            text-align: center;
+        }
     }
     .social-icons {
         a {
@@ -68,9 +100,25 @@
 
 .email-input {
     position: relative;
+    @media only screen and (max-width: 640px) {
+        position: static;
+    }
 }
 #footer-subscription {
     position: absolute;
     right: 0;
     top: calc(100% + 30px);
+    @media only screen and (max-width: 640px) {
+        top: calc(100% + 25px);
+        /* bottom: 0; */
+        margin-left: 0;
+        right: auto;
+        left: 0px;
+    }
+}
+
+.sub-email-content {
+    @media only screen and (max-width: 640px) {
+        position: relative;
+    }
 }

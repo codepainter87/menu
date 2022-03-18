@@ -43,6 +43,7 @@
         font-weight: 500;
         background: var(--landing-bg);
         padding: 12px 12px 6px;
+        width: 100%;
         ::-webkit-input-placeholder {
             font-size: 14px;
             line-height: 3;
@@ -148,6 +149,9 @@
     padding-right: 0px;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media only screen and (max-width: 640px) {
+        padding-bottom: calc(25px + 36px + 60px);
+    }
     ::placeholder {
         color: var(--accent-color);
         font-size: 2rem;
@@ -242,10 +246,8 @@
         }
         .newsletter-footer {
             margin: 5px 0px 5px 0px;
-            width: 440px;
-            // @include breakpoint-max("lg") {
-            //     width: 100%;
-            // }
+            max-width: 440px;
+        
             &.error {
                 border: 1px solid red;
             }

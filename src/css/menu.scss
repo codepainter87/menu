@@ -113,6 +113,9 @@
 		position: absolute;
 		left: calc(50vw - 33px);
 		display: block;
+		@media only screen and (max-width: 640px) {
+			display: none;
+		}
 	}
 }
 
@@ -123,7 +126,11 @@
 	right: 0;
 	top: 0;
 	z-index: 3;
-	transition: all 0.3s;
+	transition: all 0.3s;	
+	@media only screen and (max-width: 836px) {
+		padding: 12px 0;
+	}
+
 	.wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -143,6 +150,9 @@
 		left: calc(50vw - 72px);
 		background-size: contain;
 		background-repeat: no-repeat;
+		@media only screen and (max-width: 640px) {
+			display: none;
+		}
 	}
 
 	&--is-hidden {
@@ -178,6 +188,9 @@
 		.top-nav__wordmark {
 			display: block;
 			background-image: url(/src/img/dimensions-education-wordmark.svg);
+			@media only screen and (max-width: 640px) {
+				display: none;
+			}
 		}
 
 		&.is-active {
