@@ -52,7 +52,7 @@
         }
         &-content {
             max-height: 0;
-            padding: 0 1em;
+            padding: 1em;
             transition: all .35s;
             p, ul {
                 margin: 0;
@@ -84,7 +84,6 @@
         }
         ~ .tab-content {
             max-height: 100vh;
-            padding: 1em;
         }
     }
 }
