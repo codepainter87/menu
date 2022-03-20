@@ -3,6 +3,12 @@
 	background-size: cover;
 	background-position: center bottom;
     height: 100vh;
+	&__scrolldown {
+		position: absolute;
+		bottom: 25px;
+		left: calc(50vw - 25px);
+		width: 50px;
+	}
 }
 
 /* HERO OVERLAY  */
@@ -14,6 +20,7 @@
 	// max-height: 700px;
 	&__top, &__arch, &__left, &__right {
 		mix-blend-mode: multiply;
+		transform: translate3d(0,0,0); // hack for safari mixblendmode issue when the layers dont render together: https://greensock.com/forums/topic/21802-issues-with-safari-perspective-mix-blend-mode/
 	}
 	&__top {
 		content: '';
@@ -54,6 +61,7 @@
 		bottom: 0;
 		left: 0;
 		width: calc((100vw - 800px) / 2);
+		opacity: 1;
 		mix-blend-mode: multiply;
 		@media only screen and (max-width: 836px) {
 			width: 30px;

@@ -21,9 +21,7 @@
 	width: 31px;
     height: 25px;
     padding: 0;
-	&__box {
-		position: relative; 
-	}
+	position: relative; 
 	&__inner {
 		display: block;
 		top: 50%;
@@ -199,6 +197,9 @@
 			.top-nav__wordmark {
 				display: block;
 				background-image: url(/src/img/dimensions-education-wordmark--white.svg);
+				@media only screen and (max-width: 640px) {
+					display: none;
+				}
 			}
 		}
 	}
