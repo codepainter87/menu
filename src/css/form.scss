@@ -218,12 +218,14 @@
         }
         .privacy-policy-footer {
             margin: 18px 0px 5px 0px;
-            width: 390px;
             // @include breakpoint-max("md") {
             //     width: 100%;
             // }
             &.error {
                 border: 1px solid red;
+            }
+            .checkbox {
+              display: flex;
             }
             .check-label {
                 margin-bottom: 0;

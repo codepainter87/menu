@@ -139,4 +139,10 @@ import('jquery').then(async ($) => {
         textTransitionObserver.observe(text);
     });
 
+    const bios = window.document.querySelectorAll('.profile__bio');
+    bios.forEach(bio => {
+        bio.previousElementSibling.innerText = bio.innerText.split(" ").splice(0, 15).join(" ") + ' ...';
+    });
+
+
 });

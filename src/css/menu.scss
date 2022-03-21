@@ -335,3 +335,16 @@
 // 		font-size: 2rem;
 // 	}
 // }
+
+.modal-overlay {
+	top: 0;
+	left: 0;
+	grid-area: 1 / 1 / 2 / 2;
+	position: fixed;
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+	z-index: 999999;
+	&__path {
+	}
+}
