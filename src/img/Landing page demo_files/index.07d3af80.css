@@ -1,0 +1,180 @@
+.animated-gallery .text-area--title {
+  margin-bottom: 200px;
+}
+.animated-gallery .text-area {
+  margin-top: 100px;
+}
+.animated-gallery .text-area + .text-area:not(.text-area--display):not(.text-area--color):not(.text-area--sidebar) {
+  margin-top: 100px;
+}
+.animated-gallery .text-area--title {
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 640px) {
+  .animated-gallery .text-area--title {
+    margin-bottom: 25px;
+  }
+}
+.animated-gallery .text-area--title + .text-area:not(.text-area--display):not(.text-area--color):not(.text-area--sidebar) {
+  margin-top: 0px;
+}
+.animated-gallery .text-area--sidebar {
+  margin-top: 60px;
+  display: flex;
+}
+@media only screen and (max-width: 640px) {
+  .animated-gallery .text-area--sidebar {
+    margin-top: 5vw;
+  }
+}
+.animated-gallery .text-area--sidebar .text-area__main {
+  flex: 0 0 60%;
+}
+.animated-gallery .text-area--sidebar .text-area__main p:last-child:not(.display-style) {
+  margin-bottom: 0;
+}
+.animated-gallery .text-area--sidebar .text-area__sidebar {
+  flex: 0 0 40%;
+}
+@media only screen and (max-width: 836px) {
+  .animated-gallery .text-area--sidebar {
+    flex-direction: row;
+  }
+  .animated-gallery .text-area--sidebar .text-area__main {
+    flex: 0 0 60%;
+  }
+  .animated-gallery .text-area--sidebar .text-area__main p:last-child:not(.display-style) {
+    margin-bottom: 0;
+  }
+  .animated-gallery .text-area--sidebar .text-area__sidebar {
+    flex: 0 0 40%;
+    border-bottom: 0;
+  }
+}
+.animated-gallery .full-width-image {
+  position: relative;
+  display: block;
+  height: 700px;
+  max-height: 80vh;
+}
+@media only screen and (max-width: 640px) {
+  .animated-gallery .full-width-image {
+    max-height: 60vh;
+  }
+}
+.animated-gallery .full-width-image img {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  display: block;
+  height: 100%;
+}
+.animated-gallery .full-width-image + .logo-image {
+  margin-top: -60px;
+}
+@media only screen and (max-width: 640px) {
+  .animated-gallery .full-width-image + .logo-image {
+    margin-top: -5%;
+  }
+}
+.animated-gallery .full-width-image + .text-area {
+  position: relative;
+  z-index: -2;
+}
+.animated-gallery .full-width-image + .text-area--display {
+  position: relative;
+  z-index: 0;
+  margin: 0;
+}
+.animated-gallery .full-width-image.is-style-animated {
+  transition: all 2s;
+  opacity: 0.1;
+  filter: grayscale(1);
+}
+.animated-gallery .full-width-image.animating {
+  filter: grayscale(0);
+  opacity: 1;
+}
+.animated-gallery .full-width-image.droplets {
+  color: white;
+  text-align: right;
+  opacity: 1;
+  filter: grayscale(0);
+}
+.animated-gallery .full-width-image.droplets .wrapper {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+}
+.animated-gallery .full-width-image.droplets:after {
+  content: "";
+  background: var(--accent-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  mix-blend-mode: multiply;
+  opacity: 1;
+  z-index: -1;
+  height: 100%;
+}
+.animated-gallery .full-width-image--top-offset {
+  margin-top: -60px;
+  z-index: -1;
+  position: relative;
+}
+@media only screen and (max-width: 640px) {
+  .animated-gallery .full-width-image--top-offset {
+    margin-top: -5%;
+  }
+}
+.animated-gallery .half-image {
+  position: absolute;
+  top: 0;
+  width: 50vw;
+  height: 550px;
+}
+.animated-gallery .half-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.animated-gallery .half-image--top-offset {
+  z-index: 1;
+  top: -275px;
+}
+.animated-gallery .half-image--right {
+  right: 0;
+  overflow: hidden;
+}
+.animated-gallery .half-image--right img {
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+}
+.animated-gallery .half-image--right.animating img {
+  transform: translateX(0%);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animating .rotating-logo {
+  animation: rotation 14s linear infinite;
+}
+
+.rotating-logo {
+  mix-blend-mode: multiply;
+  opacity: 1;
+}
+.rotating-logo img {
+  margin: 0;
+}
+/*# sourceMappingURL=index.07d3af80.css.map */

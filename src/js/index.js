@@ -21,6 +21,65 @@ document.addEventListener('scroll', function(e) {
 
 import('jquery').then(async ($) => {
 
+    function validateEmail(email) {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+
+    const validateRsvpField = ( field ) => {
+        const inputValue = $(field).val();
+        let isError = false;
+        if (inputValue == null || inputValue.length <= 0) {
+            $(field).parent('.rsvp-form__label').removeClass('rsvp-form__label--active');
+            $(field).parent('.rsvp-form__label').addClass('rsvp-form__label--error');
+            isError = true;
+        } else {
+            if($(field).attr('type') === 'email' && !validateEmail(email)) {
+                $(field).parent('.rsvp-form__label').addClass('rsvp-form__label--invalid');
+            } else {
+                $(field).parent('.rsvp-form__label').removeClass('rsvp-form__label--invalid');
+                $(field).parent('.rsvp-form__label').removeClass('rsvp-form__label--error');
+            };
+        }
+        return isError;
+    };
+
+    // add active class to input on focus 
+    $("#rsvp input").focus(function(){
+        $(this).parent('.rsvp-form__label').addClass('rsvp-form__label--active');
+    });
+    
+    // remove active class from EMPTY inputs on focusout 
+    $("#rsvp input").focusout(function(){
+        validateRsvpField(this);
+    });
+
+
+    $('#submit-rsvp-form').click(function() {
+
+        let isError = false;
+        
+       /* Form field validation
+        - All fields:
+            - if no value add error class
+            - if has value remove error class UNLESS it is an email field
+        - Email field
+            - if email is invalid add invalid class
+            - if email is valid remove valid class
+    */
+        $('#rsvp input').each((index, elem) => {
+            isError = validateRsvpField(elem);
+        });
+        
+        if(!isError) {
+            $("#rsvp-form").removeClass('rsvp-form--error');
+            $("#rsvp-form").addClass('rsvp-form--success');
+            return true;
+        } else {
+            $("#rsvp-form").addClass('rsvp-form--error');
+            return false;
+        };
+    });
 
     let heroRipples;
     let dropletRipples;

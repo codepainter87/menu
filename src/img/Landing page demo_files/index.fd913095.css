@@ -1,0 +1,108 @@
+.accordion {
+  /* Accordion styles */
+  margin: 30px auto;
+}
+.accordion h1 {
+  margin: 0;
+  line-height: 2;
+  text-align: center;
+}
+.accordion h2 {
+  margin: 0 0 0.5em;
+  font-weight: normal;
+}
+.accordion .tabs {
+  border-radius: 8px;
+}
+.accordion .tab {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid;
+}
+.accordion .tab:last-child {
+  border-bottom: 1px solid;
+}
+.accordion .tab-label {
+  display: flex;
+  align-items: baseline;
+  padding: 20px 20px 20px 0;
+  cursor: pointer;
+  position: relative;
+  /* Icon */
+}
+@media only screen and (max-width: 640px) {
+  .accordion .tab-label {
+    flex-wrap: wrap;
+  }
+}
+.accordion .tab-label strong {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-right: 20px;
+}
+.accordion .tab-label span {
+  flex: 1;
+}
+.accordion .tab-label .highlight {
+  flex: 0 0 40%;
+}
+@media only screen and (max-width: 640px) {
+  .accordion .tab-label .highlight {
+    flex: 0 0 100%;
+  }
+}
+.accordion .tab-label::after {
+  content: "";
+  background-image: url("accordion-arrow-d.72b3423a.svg");
+  transform: rotate(180deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+  position: absolute;
+  right: 0;
+  top: 26px;
+}
+.accordion .tab-content {
+  max-height: 0;
+  height: 0;
+  padding: 0;
+  transition: all 0.35s;
+}
+.accordion .tab-content p {
+  margin: 0;
+}
+.accordion .tab-content ul {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.accordion .tab-content h4 {
+  margin: 25px 0;
+}
+.accordion .tab-content h5 {
+  font-size: 1.6rem;
+}
+.accordion .tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  cursor: pointer;
+}
+.accordion input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.accordion input:checked + .tab-label::after {
+  transform: rotate(0deg);
+}
+.accordion input:checked ~ .tab-content {
+  max-height: 500vh;
+  height: auto;
+  padding: 1em 0;
+}
+/*# sourceMappingURL=index.fd913095.css.map */

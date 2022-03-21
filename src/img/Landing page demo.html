@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:1234/ -->
+<html lang="en" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}.gm-style .gm-style-mtc ul,.gm-style .gm-style-mtc li{box-sizing:border-box}
+</style><style>.gm-control-active>img{box-sizing:content-box;display:none;left:50%;pointer-events:none;position:absolute;top:50%;transform:translate(-50%,-50%)}.gm-control-active>img:nth-child(1){display:block}.gm-control-active:hover>img:nth-child(1),.gm-control-active:active>img:nth-child(1),.gm-control-active:disabled>img:nth-child(1){display:none}.gm-control-active:hover>img:nth-child(2),.gm-control-active:active>img:nth-child(3),.gm-control-active:disabled>img:nth-child(4){display:block}
+</style><link type="text/css" rel="stylesheet" href="./Landing page demo_files/css"><link type="text/css" rel="stylesheet" href="./Landing page demo_files/css(1)"><style>.gm-ui-hover-effect{opacity:.6}.gm-ui-hover-effect:hover{opacity:1}
+</style><style>.gm-style .gm-style-cc a,.gm-style .gm-style-cc button,.gm-style .gm-style-cc span,.gm-style .gm-style-mtc div{font-size:10px;box-sizing:border-box}.gm-style .gm-style-cc a,.gm-style .gm-style-cc button,.gm-style .gm-style-cc span{outline-offset:3px}
+</style><style>@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style>.gm-style-moc{background-color:rgba(0,0,0,0.45);pointer-events:none;text-align:center;transition:opacity ease-in-out}.gm-style-mot{color:white;font-family:Roboto,Arial,sans-serif;font-size:22px;margin:0;position:relative;top:50%;transform:translateY(-50%);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%)}
+</style><style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style><style>.jquery-ripples { position: relative; z-index: 0; }</style>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Landing page demo</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="overlay, page transition, animation, svg">
+		<meta name="author" content="Lizzie Painter">
+		<link rel="shortcut icon" href="http://localhost:1234/favicon.824cf0c5.ico">
+		<link rel="stylesheet" href="./Landing page demo_files/iqd6ozy.css">
+		<link rel="stylesheet" type="text/css" href="./Landing page demo_files/index.b8ab1983.css">
+		<link rel="stylesheet" type="text/css" href="./Landing page demo_files/index.cfff48f7.css">
+		<link rel="stylesheet" type="text/css" href="./Landing page demo_files/index.3753ab62.css">
+		<link rel="stylesheet" type="text/css" href="./Landing page demo_files/index.a17b2bbc.css">
+		<link rel="stylesheet" type="text/css" href="./Landing page demo_files/index.3198ef4c.css">
+		<link rel="stylesheet" type="text/css" href="./Landing page demo_files/index.dd7d1775.css">
+		<link rel="stylesheet" type="text/css" href="./Landing page demo_files/index.59dcd763.css">
+		<link rel="stylesheet" type="text/css" href="./Landing page demo_files/index.f90dc71e.css">
+		<link rel="stylesheet" type="text/css" href="./Landing page demo_files/index.07d3af80.css">
+		<link rel="stylesheet" type="text/css" href="./Landing page demo_files/index.bc3205c9.css">
+		<link rel="stylesheet" type="text/css" href="./Landing page demo_files/index.93051fd3.css">
+		<link rel="stylesheet" type="text/css" href="./Landing page demo_files/index.ce7d2956.css">
+		<link rel="stylesheet" type="text/css" href="./Landing page demo_files/index.fd913095.css">
+		<link rel="stylesheet" type="text/css" href="./Landing page demo_files/index.8e151f13.css">
+
+		<link rel="stylesheet" type="text/css" href="./Landing page demo_files/index.a5efc37a.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+		<link href="./Landing page demo_files/css2" rel="stylesheet">
+		<script>document.documentElement.className = "js";
+var supportsCssVars = function() {
+    var e, t = document.createElement("style");
+    return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
+};
+supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+
+</script>
+	<script type="text/javascript" charset="UTF-8" src="./Landing page demo_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./Landing page demo_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./Landing page demo_files/map.js"></script><script type="text/javascript" charset="UTF-8" src="./Landing page demo_files/marker.js"></script><script type="text/javascript" charset="UTF-8" src="./Landing page demo_files/stats.js"></script><script type="text/javascript" charset="UTF-8" src="./Landing page demo_files/onion.js"></script><script type="text/javascript" charset="UTF-8" src="./Landing page demo_files/infowindow.js"></script><script type="text/javascript" charset="UTF-8" src="./Landing page demo_files/controls.js"></script></head>
+
+	<body class="">
+
+		<header>
+			<a href="https://dimensionsretreats.com/" class="header__logo" target="_blank">
+				<img src="./Landing page demo_files/Dimensions_Lockup.4f49e035.svg" alt="">
+			</a>
+			<div class="top-nav top-nav--scrolled">
+				<div class="wrapper wrapper--extra-wide">
+					<a href="http://localhost:1234/#rsvp" class="button button--bordered button--rounded">
+						<div class="button__circle"></div>
+						<span>RSVP</span>	
+					</a>
+					<a href="https://dimensionsretreats.com/" class="top-nav__wordmark" target="_blank"></a>
+					<button class="hamburger hamburger--spin hamburger--accent-color" type="button" aria-label="Menu" aria-controls="navigation">
+						<span class="hamburger__box">
+							<span class="hamburger__inner"></span>
+						</span>
+					</button>
+				</div>
+			</div>
+				<div class="menu-wrap menu-wrap--scrolled">
+					<div class="wrapper wrapper--wide">
+						<nav id="navigation" class="menu">
+							<a href="http://localhost:1234/#profiles" class="menu__item">
+								<span class="menu__item-text">Facilitators + Hosts</span>
+							</a>
+							<a href="http://localhost:1234/#retreat" class="menu__item">
+								<span class="menu__item-text">Retreat</span>
+							</a>
+							<a href="http://localhost:1234/#location" class="menu__item">
+								<span class="menu__item-text">Location</span>
+							</a>
+							<a href="http://localhost:1234/#inclusions" class="menu__item">
+								<span class="menu__item-text">Inclusions</span>
+							</a>
+							<a href="http://localhost:1234/#qa" class="menu__item">
+								<span class="menu__item-text">Q + A</span>
+							</a>
+							<a href="http://localhost:1234/#rsvp" class="menu__item">
+								<span class="menu__item-text">Registration</span>
+							</a>
+						</nav>
+						<div class="menu-wrap__image">
+							<img src="./Landing page demo_files/menu-image.2f06aebd.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<!-- Edit the paths here: https://yqnn.github.io/svg-path-editor/ -->
+				<svg class="overlay" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<path class="overlay__path" fill="#007755" vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z"></path>
+				</svg> 
+		</header>
+		<main>
+			<div class="hero ascend render jquery-ripples" style="background-image: none;">
+				<div class="hero__overlay hero-overlay">
+					<div class="hero-overlay__top"></div>
+					<div class="hero-overlay__left"></div>
+					<div class="hero-overlay__right"></div>
+					<div class="hero-overlay__arch"></div>
+				</div>
+				<div class="hero__title hero-title">
+					<span class="hero-title__main">Evolve</span>
+					<h1 class="hero-title__sub">Dimensions</h1>
+				</div>
+				<a href="http://localhost:1234/#program" class="hero__scrolldown">
+					<img src="./Landing page demo_files/scroll-down.b2f01df3.svg" alt="">
+				</a>
+			<canvas width="921" height="789" style="position: absolute; inset: 0px; z-index: -1;"></canvas></div> 
+			<div id="program" class="text-area text-area--title text-transition is-style-animated wrapper">
+				<h2 class="eyebrow">Evolve</h2>
+				<h2>Psychedelic Guide Training with Daniel McQueen + Center for Medicinal Mindfulness</h2>
+			</div>
+			<div class="text-area text-area--sidebar text-area--sidebar-right wrapper">
+				<div class="text-area__main">
+					<p>
+						Embark on your one-year psychedelic guide training program with Dimensions Algonquin Highlands’ Clinical Director Donald Currie, RP; Dawn Martin, PhD; and Daniel McQueen, MA, a globally recognized pioneer in the realm of psychedelic- assisted therapy. 
+					</p>
+					<p>
+						The <span class="highlight">EVOLVE</span> all-inclusive journey begins on May 23, 2022, with an intimate foundational five-day, four-night training intensive at Dimensions Retreats’ new Canadian lakeside destination. A certificate of completion from Dimensions Education and Center for Medicinal Mindfullness will be awarded to all Retreat participants. Post- Retreat, the learning transitions into an additional 30+ hours of curriculum delivered via online studies. The 12-month program culminates in professional psychedelic guide accreditation from Daniel McQueen’s Center for Medicinal Mindfulness. 
+					</p>
+					<p>
+						Be among the first in Canada to experience <span class="highlight">EVOLVE</span>, our psychedelic guide training program. Daniel McQueen, the international psychedelic educator and founding director of the Center for Medicinal Mindfulness, will lead Dimensions’ inaugural practitioner Retreat. <span class="highlight">EVOLVE</span> is tailored to wellness clinicians and registered therapists with a solid foundation of personal development work, self-understanding, conscious evolution and ceremonial experiences. This private Retreat is open only to a small group of invited practitioners, and offers you the opportunity to continue your transformational journey while surrounded by others who are equally dedicated to becoming a cannabis- assisted psychedelic guide.
+					</p>
+				</div>
+				<div class="text-area__sidebar">
+					<div class="text-area__sidebar-block">
+						<h4 class="eyebrow">Where</h4>
+						<p>Dimensions <br>Algonquin Highlands,<br>Ontario, Canada</p>
+					</div>
+					<div class="text-area__sidebar-block">
+						<h4 class="eyebrow">When</h4>
+						<p>Monday, May 23 through Friday, May 27, 2022</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-area text-area--title text-area--center text-area--left text-transition is-style-animated ">
+				<h2 class="eyebrow">Evolve</h2>
+				<h2>Faculty</h2>
+			</div>
+
+	<!-- PROFILES  -->
+			<div id="profiles" class="wrapper">
+	
+				<div class="profiles profiles--2-col">
+					<div class="profile" data-size="1280x857">
+							<div class="profile__image">
+								<img src="./Landing page demo_files/Daniel-McQueen.58c8aacd.jpg" alt="">
+							</div>
+							<div class="profile__description">
+								<h3 class="profile__name">Daniel McQueen, MA</h3>
+								<p class="profile__title"></p>
+								<p class="profile__bio-intro">Daniel McQueen is a psychedelic specialist, psychedelic therapy educator and activist, and the author of ...</p>
+								<p class="profile__bio">Daniel McQueen is a psychedelic specialist, psychedelic therapy educator and activist, and the author of the books Psychedelic Cannabis and Psychedelic Cannabis: Therapeutic Methods and Unique Blends to Treat Trauma and Transform Consciousness. In 2012, he co-founded the Center for Medicinal Mindfulness, which is the first legal plant-based psychedelic therapy centre in the United States. <a href="https://medicinalmindfulness.org/project/daniel-mcqueen/">Find out more</a>
+								</p>
+								<a href="./Landing page demo_files/index.html" class="profile__readmore">read more</a>
+							</div>
+					</div>
+				</div>
+
+				<div class="profiles profiles--2-col">
+					<div class="profile">
+							<div class="profile__image">
+								<img src="./Landing page demo_files/Donald-Currie.480587e5.jpg" alt="">
+							</div>
+							<div class="profile__description">
+								<h3 class="profile__name">Donald Currie, RP</h3>
+								<p class="profile__title">Clinical Director, Dimensions Algonquin Highlands</p>
+								<p class="profile__bio-intro">A registered psychotherapist with 19 years of experience, Donald leads Retreat programming at Dimensions Algonquin ...</p>
+								<p class="profile__bio">A registered psychotherapist with 19 years of experience, Donald leads Retreat programming at Dimensions Algonquin Highlands. He was a core team member of Helix Healthcare, a clinic specializing in addiction and mental health. His clinical work focuses on healing through somatic and trauma therapies that are evidence-based and supported by neuroscience research
+								</p>
+								<a href="./Landing page demo_files/index.html" class="profile__readmore">read more</a>
+							</div>
+					</div>
+					<div class="profile">
+							<div class="profile__image">
+								<img src="./Landing page demo_files/Dawn-Martin.7b1183e8.jpg" alt="">
+							</div>
+							<div class="profile__description">
+								<h3 class="profile__name">Dawn Martin </h3>
+								<p class="profile__title">PhD, MEd, MSW, RSW</p>
+								<p class="profile__bio-intro">For over 30 years, Dawn Martin has worked extensively with practising physicians, faculty, varying levels ...</p>
+								<p class="profile__bio">For over 30 years, Dawn Martin has worked extensively with practising physicians, faculty, varying levels of medical trainees and international medical graduates identified as needing additional assistance in the areas of communication, professionalism, collaboration and leadership in the workplace. Dawn’s background in clinical psychiatry, addictions and counselling has proven invaluable in assessing individuals’ needs and formulating appropriate learning plans. Her experience as a PhD educator with the Faculty of Medicine, University of Toronto and Royal College of Physicians and Surgeons of Canada allowed her to engage in research, develop curriculum for faculty and co-write the CanMEDs 2015 Communicator and Collaborator Roles. Dawn serves on the advisory board of Dimensions.
+								</p>
+								<a href="./Landing page demo_files/index.html" class="profile__readmore">read more</a>
+							</div>
+					</div>
+				</div>
+
+				<div class="modal-wrap">
+					<div class="wrapper wrapper--wide">
+						<div class="modal__closer"></div>
+						<div class="modal__content">
+							<!-- <div class="modal__thumbs">
+								<div class="modal__thumb">
+									<img src="./img/Daniel-McQueen.jpg" alt="">
+								</div>
+								<div class="modal__thumb">
+									<img src="./img/Donald-Currie.jpg" alt="">
+								</div>
+								<div class="modal__thumb">
+									<img src="./img/Dawn-Martin.jpg" alt="">
+								</div>
+							</div> -->
+							<div class="modal__image">
+								<img src="./Landing page demo_files/index.html" alt="">
+							</div>
+							<div class="modal__text">
+								<p class="modal__name"></p>
+								<p class="modal__title"></p>
+								<p class="modal__bio"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Edit the paths here: https://yqnn.github.io/svg-path-editor/ -->
+				<svg class="modal-overlay" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<path class="modal-overlay__path" fill="#007755" vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z"></path>
+				</svg> 
+
+			</div>
+
+			<div class="modal">
+				<div class="modal__closer"></div>
+				<div class="modal__content">
+					<div class="modal__image">
+					</div>
+					<div class="modal__text">
+						<p class="modal__name"></p>
+						<p class="modal__title"></p>
+						<p class="modal__bio"></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-area text-area--center text-area--color">
+				<div class="wrapper">
+					<div class="is-style-animated">
+						<img class="rotating-logo" src="./Landing page demo_files/slogan.41516a1d.svg" alt="">
+					</div>
+					<h2 class="eyebrow">About Dimensions</h2>
+					<p class="large">Combining neuroscientific research with Plant Ceremony and luxurious hospitality, Dimensions focuses on restorative well-being and transformational growth. Dimensions Retreats help improve and transform lives by drawing on the restorative power of nature, spa rituals, remarkable cuisine and psychedelic Plant Ceremony in a growing collection of safe, legal and luxurious accommodations in natural settings.</p>
+				</div>
+			</div>
+
+	<!-- ANIMATING SECTION  -->
+			<div class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated gallery-title">
+				<h2 class="eyebrow">Retreat</h2>
+				<h3>Dimensions <br>Algonquin Highlands</h3>
+			</div>
+
+			<div class="animated-gallery">
+				<div class="text-area text-area--sidebar wrapper wrapper--wide">
+					<div class="text-area__main">
+						<p class="display-style">
+							Join us and <span class="highlight">Evolve</span><img src="./Landing page demo_files/full-stop-d.616590b0.svg" alt="">
+						</p>
+					</div>
+					<div class="text-area__sidebar">
+						<div class="animating-logo is-style-animated">
+							<img class="first" src="./Landing page demo_files/hollow-d.ced66742.svg" alt="">
+							<img class="second" src="./Landing page demo_files/hollow-d.ced66742.svg" alt="">
+							<img class="third" src="./Landing page demo_files/hollow-d.ced66742.svg" alt="">
+							<img class="moving" src="./Landing page demo_files/hollow-d.ced66742.svg" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="animating-gallery">
+					<div class="full-width-image is-style-animated">
+						<img src="./Landing page demo_files/gallery-1.acf86e3a.jpg" alt="">
+					</div>
+					<div class="logo-image logo-image--image-right">
+						<div class="logo-image__image is-style-animated">
+							<img src="./Landing page demo_files/gallery-2.bdf79e3d.jpg" alt="">
+						</div>
+						<div class="logo-image__logo">
+							<div class="logo-image__logo-image dimensions-education">
+								<img src="./Landing page demo_files/Dimensions-Education-Logo.c5deb37d.svg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="logo-image">
+						<div class="logo-image__image is-style-animated">
+							<img src="./Landing page demo_files/gallery-3.b85a44d3.jpg" alt="">
+						</div>
+						<div class="logo-image__logo">
+						
+						</div>
+					</div>
+					<div class="logo-image logo-image--image-right">
+						<div class="logo-image__image is-style-animated">
+							<img src="./Landing page demo_files/gallery-5.dcd6e918.jpg" alt="">
+						</div>
+						<div class="logo-image__logo">
+							<div class="logo-image__logo-image rotating is-style-animated">
+								<img class="rotating-logo" src="./Landing page demo_files/slogan-green.5628dadf.svg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="full-width-image full-width-image--top-offset is-style-animated droplets" style="background-image: url(&quot;gallery-4.9ab275bb.jpg&quot;); background-size: cover;">
+						<!-- <img src="./img/gallery-4.jpg" alt=""> -->
+						<div class="wrapper">
+							<p class="display-style">Continue your transformational journey.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	<!-- RETREAT, RESET, TRANSFORM  -->
+			<div id="retreat" class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
+				<h2 class="eyebrow">Program</h2>
+				<h3>Retreat</h3>
+			</div>
+
+			<div class="text-image text-image--image-right">
+				<div class="text-image__image is-style-animated">
+					<img src="./Landing page demo_files/retreat.1507609f.jpg" alt="">
+				</div>
+				<div class="text-image__text is-style-animated">
+					<p>
+						<strong>Learning Retreat Objectives:</strong> To educate and graduate students through three progressive levels of a curriculum focused on the skills and protocols required to facilitate profound psychedelic experiences using the legal plant medicine cannabis sativa, and to prepare students for the transformational process of becoming psychedelic guides in a clinical setting. 
+					</p>
+				</div>
+			</div>
+
+			<div id="reset" class="text-area text-area--title text-area--center wrapper text-transition is-style-animated">
+				<h2 class="eyebrow">Program</h2>
+				<h3>Reset</h3>
+			</div>
+
+			<div class="text-image">
+				<div class="text-image__image is-style-animated">
+					<img src="./Landing page demo_files/reset.b0e82515.jpg" alt="">
+				</div>
+				<div class="text-image__text is-style-animated">
+					<p>
+						<span class="highlight">EVOLVE</span> is one of five well-being programs in Dimensions’ foundational repertoire. Your Retreat time with us will enrich your knowledge with relevant, in-depth training, provide better care for your clients and feel more confident in the work you do as a therapist and wellness practitioner. Our leaders in the fields of psychotherapy, wellness and psychedelics will instruct you in best practices to ensure the highest levels of integrity, ethics and safety. You will gain new skills and receive certification in evidence-based psychedelic therapies, techniques and methods. We focus on mindfulness techniques that psychedelic therapists and guides can use to deepen their own healing and transformation process while assisting and staying in full contact with their client for many hours. These internal skill sets are often unacknowledged in other programs, yet are essential in increasing personal and professional sustainability and resilience.
+					</p>
+				</div>
+			</div>
+
+			<div id="transform" class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
+				<h2 class="eyebrow">Program</h2>
+				<h3>Transform</h3>
+			</div>
+
+			<div class="text-image text-image--image-right">
+				<div class="text-image__image is-style-animated">
+					<img src="./Landing page demo_files/transform.f7164e09.jpg" alt="">
+				</div>
+				<div class="text-image__text is-style-animated">
+					<p>
+						<span class="highlight">EVOLVE</span> credentialed trainer intensive spans a 12-month period to achieve full accreditation. The Level One and Level Two experiential field portion begins at Dimensions Algonquin Highlands, and the off-site supporting course materials for Level Three include online modules, live supervision, recorded lectures, study groups, panel discussions, interviews and case studies. Graduation confirms that that all the skill sets and logistics training you’ll need to work skilfully and ethically as an accredited and credentialed cannabis-assisted psychedelic guide are achieved. All graduates will receive a professional psychedelic guide accreditation from Daniel McQueen’s Center for Medicinal Mindfulness.
+
+					</p>
+				</div>
+			</div>
+
+			<!-- TRANSFORM CURRICULULUM  -->
+			<div class="accordion row wrapper">
+				<div class="tabs">
+					<div class="tab">
+						<input type="checkbox" id="chck1">
+						<label class="tab-label" for="chck1"><span class="highlight">RETREAT CONTENT</span><span></span></label>
+						<div class="tab-content">
+							<ul>
+								<li>Code of ethics</li>
+								<li>Intention Setting</li>
+								<li>Integration Support</li>
+								<li>Creating Sacred Space</li>
+								<li>Incorporating Art Therapy</li>
+								<li>Cannabis Psychoeducation - Terpenes, Cannabinoids, THC, CBD, CBN, CBG</li>
+								<li>The Human Endocanniboid System</li>
+								<li>How to create a psychedelic cannabis alchemy blend</li>
+								<li>Psychedelic Preparation</li>
+								<li>Primary Attributes of Psychedelic Guides</li>
+								<li>Creating a Medicine Kit</li>
+								<li>Pre/Post Psychedelic Guide Self-Care</li>
+								<li>Individual and Small Group Facilitation (1.5 hour, 3 hour and 5 hour sessions)</li>
+								<li>Psychedelic Readiness Assessment</li>
+								<li>Safety Agreements</li>
+								<li>Mindful Journeywork Practices</li>
+								<li>The 5 Awareness Practice</li>
+								<li>Dealing with Difficult Experiences</li>
+								<li>The 7 Directions Prayer</li>
+								<li>Conscious Cannibis Circles</li>
+								<li>Music Facilitation</li>
+								<li>Four Types Interventions in Psychedelic Cannabis Experiences - Body, Psychology, Energy, Transpersonal</li>
+								<li>Psychedelic Harm Reduction Principles &amp; Managing Crisis Experiences </li>
+								<li>Therapeutic Interventions - Pre, During and Post Ceremony</li>
+								<li>Transpersonal Spaces</li>
+								<li>Intrapersonal View of the Self and Sub personalities</li>
+								<li>The 7 Stages of Alchemy</li>
+								<li>The CAPT Protocol (Cannabis Assisted Psychedelic Therapy)</li>
+								<li>Psychedelic Integration Practices</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab">
+						<input type="checkbox" id="chck2">
+						<label class="tab-label" for="chck2"><span class="highlight">ORIENTATION SESSIONS</span><span>Begins May 16, 2022</span></label>
+						<div class="tab-content">
+							<p>All participating practitioners will be contacted by our lead clinicians at least 7 days prior to arrival at Dimensions Algonquin Highlands. The orientation will cover basic logistics and serve as an opportunity to ask any preliminary questions you may have about the onboarding experience.</p>
+						</div>
+					</div>
+					<div class="tab">
+						<input type="checkbox" id="chck3">
+						<label class="tab-label" for="chck3"><span class="highlight">LEVEL ONE and LEVEL TWO</span> <span>MAY 23-MAY 27, 2022 <br>Introduction + Experiential Retreat</span></label>
+						<div class="tab-content">
+							<p>The first level of training features in-person experiential sessions: group and individual guiding sessions to introduce students to the power of psychedelic cannabis. During our six-day, five-night retreat, you’ll experience the transformational power of psychedelic cannabis first-hand in a series of journey experiences. We provide ongoing small group process for integration support and skill development, and a series of lectures on mindfulness practices, facilitator logistics and other skills required for ethical guiding.
+							</p>
+							<h4>AGENDA, Five Nights at Dimensions Algonquin Highlands</h4>
+							<h5>Day 1</h5>
+							<ul>
+								<li><strong>9:00am–10:30am</strong> Orientation and Introduction to the Training </li>
+								<li><strong>10:30am–12:00pm</strong> First Lecture: Overview of MBPT + CAPT Core Therapeutic Concepts </li>
+								<li><strong>12:00pm–1:00pm</strong> Lunch </li>
+								<li><strong>1:00pm–2:00pm</strong> Second Lecture: Understanding Our Relationship with Cannabis + Making the Alchemy Blend for Psychedelic Therapy </li>
+								<li><strong>2:30pm–6:30pm</strong> Group Cannabis Healing Mediation </li>
+							</ul>
+							<h5>Day 2</h5>
+							<ul>
+								<li><strong>9:00am–10:30am</strong> Small Group Integration + Check-In </li>
+								<li><strong>10:30am–12:00pm</strong> First Lecture: Preparing Clients for the Journey </li>
+								<li><strong>12:00pm–1:00pm</strong> Lunch <p></p>
+								</li><li><strong>1:00pm–2:00pm</strong> Second Lecture: Sitting Skill Sets + Mindfulness Practices for Personal Self-Care and Clinical Support </li>
+								<li><strong>2:30pm–6:30pm</strong> Group Cannabis-Assisted Breathwork Journey </li>
+							</ul>
+							<h5>Day 3</h5>
+							<ul>
+								<li><strong>9:00am–10:30am</strong> Small Group Integration + Check-In </li>
+								<li><strong>10:30am–12:00pm</strong> First Lecture: 5 Awareness Practice, Circuit Boarding, Guiding Skill Sets + Facilitating Guiding Interventions </li>
+								<li><strong>12:00pm–1:00pm</strong> Lunch </li>
+								<li><strong>1:00pm–2:30pm</strong> Second Lecture: Circuit Boarding, Clinical + Crisis Interventions, Contact Exercise </li>
+								<li><strong>3:00pm–5:30pm</strong> Practicum 1: Individual Practice Session </li>
+							</ul>
+							<h5>Day 4</h5> 
+							<ul>
+								<li><strong>9:00am–10:30am</strong> Small Group Integration + Check-In </li>
+								<li><strong>10:30am–12:00pm</strong> First Lecture: Facilitating Standard 2-day, 3-hour Journey Protocol with Preparation &amp; Integration Support </li>
+								<li><strong>12:00pm–1:00pm</strong> Lunch </li>
+								<li><strong>1:00pm–2:30pm</strong> Second Lecture: Helping Clients Integrate Experiences + Ongoing Support </li>
+								<li><strong>3:00pm–5:30pm</strong> Practicum 2: Individual Practice Session </li>
+							</ul>
+							<h5>Day 5</h5> 
+							<ul>
+								<li><strong>9:00am–10:30am</strong> Small Group Integration + Check-In</li>
+								<li><strong>10:30am–12:00pm</strong> Final Lecture: Next Steps and Developing a Psychedelic Practice</li>
+								<li><strong>12:00pm</strong> Closing Ceremony </li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="tab">
+						<input type="checkbox" id="chck4">
+						<label class="tab-label" for="chck4"><span class="highlight">LEVEL THREE</span><span> June 2022 through to June 2023 <br> Advanced Practices in Psychedelic Therapy</span></label>
+						<div class="tab-content">
+							<p>The Level Three advanced intensive is the culminating professional track for psychedelic guiding. The learning takes place online and includes lectures and psychedelic therapy experientials, group psychedelic breathwork experiences and individually guided psychedelic cannabis breathwork experiences. This final level is required to ethically practise professionally and use the trademarked language of the Centre for Medicinal Mindfulness: mindfulness-based psychedelic therapist (MBPT) and cannabis-assisted psychedelic therapist (CAPT).  
+							</p>
+							<ul>
+								<li>12 practice sessions with partners, with notes</li>
+								<li>8 Ninety-minute group supervision sessions</li>
+								<li>4 One-hour individual mentorship sessions</li>
+								<li>1 One-hour final individual supervision session with instructor</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab">
+						<input type="checkbox" id="chck5">
+						<label class="tab-label" for="chck5"><span class="highlight">GRADUATION</span><span>2023</span></label>
+						<div class="tab-content">
+							<p>The Level Three advanced intensive is the culminating professional track for psychedelic guiding. The learning takes place online and includes lectures and psychedelic therapy experientials, group psychedelic breathwork experiences and individually guided psychedelic cannabis breathwork experiences. This final level is required to ethically practise professionally and use the trademarked language of the Centre for Medicinal Mindfulness: mindfulness-based psychedelic therapist (MBPT) and cannabis-assisted psychedelic therapist (CAPT).  
+							</p>
+							<p>All graduates who complete the training will receive professional accreditation by Daniel McQueen’s Centre for Medicinal Mindfulness, for legally and safely providing cannabis-assisted psychedelic therapy in compliance with each practitioner’s professional licensing and other legal requirements.</p>
+							<p><strong>Graduate’s Credentials:</strong> Cannabis-Assisted Psychedelic Guide in Mindfulness-Based Psychedelic Therapy </p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+	<!-- LOCATION  -->
+			<div class="map-block">
+				<div class="acf-map" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div><button draggable="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts" type="button" style="background: none transparent; display: block; border: none; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; z-index: 1000002; outline-offset: 3px; right: 0px; bottom: 0px; transform: translateX(100%);"></button></div><div tabindex="0" aria-label="Map" aria-roledescription="map" role="group" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;"><div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 984; transform: matrix(1, 0, 0, 1, -182, -144);"><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div style="position: absolute; z-index: 984; transform: matrix(1, 0, 0, 1, -182, -144);"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 256px;"></div></div></div><div style="width: 35px; height: 48px; overflow: hidden; position: absolute; left: -18px; top: -48px; z-index: 0;"><img alt="" src="./Landing page demo_files/map-marker.7d3d2c16.svg" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 35px; height: 48px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 984; transform: matrix(1, 0, 0, 1, -182, -144);"><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./Landing page demo_files/vt" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./Landing page demo_files/vt(1)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./Landing page demo_files/vt(2)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./Landing page demo_files/vt(3)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./Landing page demo_files/vt(4)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./Landing page demo_files/vt(5)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./Landing page demo_files/vt(6)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./Landing page demo_files/vt(7)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./Landing page demo_files/vt(8)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./Landing page demo_files/vt(9)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./Landing page demo_files/vt(10)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./Landing page demo_files/vt(11)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./Landing page demo_files/vt(12)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./Landing page demo_files/vt(13)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="./Landing page demo_files/vt(14)" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;"><div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><span id="E2FA6F16-1F00-47E2-B12F-62F095A3C359" style="display: none;">To navigate, press the arrow keys.</span><div title="" role="button" tabindex="0" aria-describedby="E2FA6F16-1F00-47E2-B12F-62F095A3C359" style="width: 35px; height: 48px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: -18px; top: -48px; z-index: 0;"><img alt="" src="./Landing page demo_files/transparent.png" draggable="false" style="width: 35px; height: 48px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div class="gm-style-moc" style="z-index: 4; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;"><p class="gm-style-mot"></p></div></div><iframe aria-hidden="true" frameborder="0" tabindex="-1" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;" src="./Landing page demo_files/saved_resource.html"></iframe><div style="pointer-events: none; width: 100%; height: 100%; box-sizing: border-box; position: absolute; z-index: 1000002; opacity: 0; border: 2px solid rgb(26, 115, 232);"></div><div><div class="gmnoprint" role="menubar" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; left: 0px; top: 0px;"><div class="gm-style-mtc" style="float: left; position: relative;"><button draggable="false" aria-label="Show street map" title="Show street map" type="button" role="menuitemradio" aria-checked="true" style="background: none padding-box rgb(255, 255, 255); display: table-cell; border: 0px; margin: 0px; padding: 0px 17px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; direction: ltr; overflow: hidden; text-align: center; height: 40px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; font-size: 18px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; min-width: 36px; font-weight: 500;" id="7324CEF8-141F-4E39-A753-6BB725F381AF" aria-expanded="false">Map</button><ul role="menu" aria-labelledby="7324CEF8-141F-4E39-A753-6BB725F381AF" style="background-color: white; list-style: none; padding: 2px; margin: 0px; z-index: -1; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; position: absolute; left: 0px; top: 40px; text-align: left; display: none;"><li tabindex="-1" role="menuitemcheckbox" aria-label="Show street map with terrain" draggable="false" title="Show street map with terrain" aria-checked="false" style="color: black; font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 18px; background-color: rgb(255, 255, 255); padding: 5px 8px 5px 5px; direction: ltr; text-align: left; white-space: nowrap;"><span><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22/%3E%3Cpath%20d%3D%22M19%203H5c-1.11%200-2%20.9-2%202v14c0%201.1.89%202%202%202h14c1.11%200%202-.9%202-2V5c0-1.1-.89-2-2-2zm-9%2014l-5-5%201.41-1.41L10%2014.17l7.59-7.59L19%208l-9%209z%22/%3E%3C/svg%3E" alt="" style="height: 1em; width: 1em; transform: translateY(0.15em); display: none;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M19%205v14H5V5h14m0-2H5c-1.1%200-2%20.9-2%202v14c0%201.1.9%202%202%202h14c1.1%200%202-.9%202-2V5c0-1.1-.9-2-2-2z%22/%3E%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22/%3E%3C/svg%3E" alt="" style="height: 1em; width: 1em; transform: translateY(0.15em);"></span><label style="cursor: inherit;">Terrain</label></li></ul></div><div class="gm-style-mtc" style="float: left; position: relative;"><button draggable="false" aria-label="Show satellite imagery" title="Show satellite imagery" type="button" role="menuitemradio" aria-checked="false" style="background: none padding-box rgb(255, 255, 255); display: table-cell; border: 0px; margin: 0px; padding: 0px 17px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; direction: ltr; overflow: hidden; text-align: center; height: 40px; vertical-align: middle; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; font-size: 18px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; min-width: 66px;" id="0D836DBC-58D6-4D23-BC78-C6016C81B204" aria-expanded="false">Satellite</button><ul role="menu" aria-labelledby="0D836DBC-58D6-4D23-BC78-C6016C81B204" style="background-color: white; list-style: none; padding: 2px; margin: 0px; z-index: -1; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; position: absolute; right: 0px; top: 40px; text-align: left; display: none;"><li tabindex="-1" role="menuitemcheckbox" aria-label="Show imagery with street names" draggable="false" title="Show imagery with street names" aria-checked="true" style="color: black; font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 18px; background-color: rgb(255, 255, 255); padding: 5px 8px 5px 5px; direction: ltr; text-align: left; white-space: nowrap;"><span><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22/%3E%3Cpath%20d%3D%22M19%203H5c-1.11%200-2%20.9-2%202v14c0%201.1.89%202%202%202h14c1.11%200%202-.9%202-2V5c0-1.1-.89-2-2-2zm-9%2014l-5-5%201.41-1.41L10%2014.17l7.59-7.59L19%208l-9%209z%22/%3E%3C/svg%3E" alt="" style="height: 1em; width: 1em; transform: translateY(0.15em);"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M19%205v14H5V5h14m0-2H5c-1.1%200-2%20.9-2%202v14c0%201.1.9%202%202%202h14c1.1%200%202-.9%202-2V5c0-1.1-.9-2-2-2z%22/%3E%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22/%3E%3C/svg%3E" alt="" style="height: 1em; width: 1em; transform: translateY(0.15em); display: none;"></span><label style="cursor: inherit;">Labels</label></li></ul></div></div></div><div></div><div></div><div></div><div><button draggable="false" aria-label="Toggle fullscreen view" title="Toggle fullscreen view" type="button" class="gm-control-active gm-fullscreen-control" style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; top: 0px; right: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"></button></div><div></div><div></div><div></div><div></div><div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" data-control-width="40" data-control-height="153" style="margin: 10px; user-select: none; position: absolute; bottom: 167px; right: 40px;"><div class="gmnoprint" data-control-width="40" data-control-height="40" style="display: none; position: absolute;"><div style="background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; width: 40px; height: 40px;"><button draggable="false" aria-label="Rotate map clockwise" title="Rotate map clockwise" type="button" class="gm-control-active" style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"></button><div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;"></div><button draggable="false" aria-label="Rotate map counterclockwise" title="Rotate map counterclockwise" type="button" class="gm-control-active" style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px; transform: scaleX(-1);"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"></button><div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;"></div><button draggable="false" aria-label="Tilt map" title="Tilt map" type="button" class="gm-tilt gm-control-active" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; top: 0px; left: 0px; overflow: hidden; width: 40px; height: 40px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E" style="width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E" style="width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E" style="width: 18px;"></button></div></div><div class="gm-svpc" dir="ltr" title="Drag Pegman onto the map to open Street View" data-control-width="40" data-control-height="40" style="background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; width: 40px; height: 40px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: none; position: absolute; left: 0px; top: 0px;"><div style="position: absolute; left: 50%; top: 50%;"></div><div style="position: absolute; left: 50%; top: 50%;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2023%2038%22%3E%3Cpath%20d%3D%22M16.6%2038.1h-5.5l-.2-2.9-.2%202.9h-5.5L5%2025.3l-.8%202a1.53%201.53%200%2001-1.9.9l-1.2-.4a1.58%201.58%200%2001-1-1.9v-.1c.3-.9%203.1-11.2%203.1-11.2a2.66%202.66%200%20012.3-2l.6-.5a6.93%206.93%200%20014.7-12%206.8%206.8%200%20014.9%202%207%207%200%20012%204.9%206.65%206.65%200%2001-2.2%205l.7.5a2.78%202.78%200%20012.4%202s2.9%2011.2%202.9%2011.3a1.53%201.53%200%2001-.9%201.9l-1.3.4a1.63%201.63%200%2001-1.9-.9l-.7-1.8-.1%2012.7zm-3.6-2h1.7L14.9%2020.3l1.9-.3%202.4%206.3.3-.1c-.2-.8-.8-3.2-2.8-10.9a.63.63%200%2000-.6-.5h-.6l-1.1-.9h-1.9l-.3-2a4.83%204.83%200%20003.5-4.7A4.78%204.78%200%200011%202.3H10.8a4.9%204.9%200%2000-1.4%209.6l-.3%202h-1.9l-1%20.9h-.6a.74.74%200%2000-.6.5c-2%207.5-2.7%2010-3%2010.9l.3.1L4.8%2020l1.9.3.2%2015.8h1.6l.6-8.4a1.52%201.52%200%20011.5-1.4%201.5%201.5%200%20011.5%201.4l.9%208.4zm-10.9-9.6zm17.5-.1z%22%20style%3D%22isolation%3Aisolate%22%20fill%3D%22%23333%22%20opacity%3D%22.7%22/%3E%3Cpath%20d%3D%22M5.9%2013.6l1.1-.9h7.8l1.2.9%22%20fill%3D%22%23ce592c%22/%3E%3Cellipse%20cx%3D%2210.9%22%20cy%3D%2213.1%22%20rx%3D%222.7%22%20ry%3D%22.3%22%20style%3D%22isolation%3Aisolate%22%20fill%3D%22%23ce592c%22%20opacity%3D%22.5%22/%3E%3Cpath%20d%3D%22M20.6%2026.1l-2.9-11.3a1.71%201.71%200%2000-1.6-1.2H5.699999999999999a1.69%201.69%200%2000-1.5%201.3l-3.1%2011.3a.61.61%200%2000.3.7l1.1.4a.61.61%200%2000.7-.3l2.7-6.7.2%2016.8h3.6l.6-9.3a.47.47%200%2001.44-.5h.06c.4%200%20.4.2.5.5l.6%209.3h3.6L15.7%2020.3l2.5%206.6a.52.52%200%2000.66.31l1.2-.4a.57.57%200%2000.5-.7z%22%20fill%3D%22%23fdbf2d%22/%3E%3Cpath%20d%3D%22M7%2013.6l3.9%206.7%203.9-6.7%22%20style%3D%22isolation%3Aisolate%22%20fill%3D%22%23cf572e%22%20opacity%3D%22.6%22/%3E%3Ccircle%20cx%3D%2210.9%22%20cy%3D%227%22%20r%3D%225.9%22%20fill%3D%22%23fdbf2d%22/%3E%3C/svg%3E" aria-label="Street View Pegman Control" style="height: 30px; width: 30px; position: absolute; transform: translate(-50%, -50%); pointer-events: none;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2038%22%3E%3Cpath%20d%3D%22M22%2026.6l-2.9-11.3a2.78%202.78%200%2000-2.4-2l-.7-.5a6.82%206.82%200%20002.2-5%206.9%206.9%200%2000-13.8%200%207%207%200%20002.2%205.1l-.6.5a2.55%202.55%200%2000-2.3%202s-3%2011.1-3%2011.2v.1a1.58%201.58%200%20001%201.9l1.2.4a1.63%201.63%200%20001.9-.9l.8-2%20.2%2012.8h11.3l.2-12.6.7%201.8a1.54%201.54%200%20001.5%201%201.09%201.09%200%2000.5-.1l1.3-.4a1.85%201.85%200%2000.7-2zm-1.2.9l-1.2.4a.61.61%200%2001-.7-.3l-2.5-6.6-.2%2016.8h-9.4L6.6%2021l-2.7%206.7a.52.52%200%2001-.66.31l-1.1-.4a.52.52%200%2001-.31-.66l3.1-11.3a1.69%201.69%200%20011.5-1.3h.2l1-.9h2.3a5.9%205.9%200%20113.2%200h2.3l1.1.9h.2a1.71%201.71%200%20011.6%201.2l2.9%2011.3a.84.84%200%2001-.4.7z%22%20fill%3D%22%23333%22%20fill-opacity%3D%22.2%22/%3E%26quot%3B%3C/svg%3E" aria-label="Pegman is on top of the Map" style="display: none; height: 30px; width: 30px; position: absolute; transform: translate(-50%, -50%); pointer-events: none;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2040%2050%22%3E%3Cpath%20d%3D%22M34-30.4l-2.9-11.3a2.78%202.78%200%2000-2.4-2l-.7-.5a6.82%206.82%200%20002.2-5%206.9%206.9%200%2000-13.8%200%207%207%200%20002.2%205.1l-.6.5a2.55%202.55%200%2000-2.3%202s-3%2011.1-3%2011.2v.1a1.58%201.58%200%20001%201.9l1.2.4a1.63%201.63%200%20001.9-.9l.8-2%20.2%2012.8h11.3l.2-12.6.7%201.8a1.54%201.54%200%20001.5%201%201.09%201.09%200%2000.5-.1l1.3-.4a1.85%201.85%200%2000.7-2zm-1.2.9l-1.2.4a.61.61%200%2001-.7-.3L28.4-36l-.2%2016.8h-9.4L18.6-36l-2.7%206.7a.52.52%200%2001-.66.31l-1.1-.4a.52.52%200%2001-.31-.66l3.1-11.3a1.69%201.69%200%20011.5-1.3h.2l1-.9h2.3a5.9%205.9%200%20113.2%200h2.3l1.1.9h.2a1.71%201.71%200%20011.6%201.2l2.9%2011.3a.84.84%200%2001-.4.7zM34%2029.6l-2.9-11.3a2.78%202.78%200%2000-2.4-2l-.7-.5a6.82%206.82%200%20002.2-5%206.9%206.9%200%2000-13.8%200%207%207%200%20002.2%205.1l-.6.5a2.55%202.55%200%2000-2.3%202s-3%2011.1-3%2011.2v.1a1.58%201.58%200%20001%201.9l1.2.4a1.63%201.63%200%20001.9-.9l.8-2%20.2%2012.8h11.3l.2-12.6.7%201.8a1.54%201.54%200%20001.5%201%201.09%201.09%200%2000.5-.1l1.3-.4a1.85%201.85%200%2000.7-2zm-1.2.9l-1.2.4a.61.61%200%2001-.7-.3L28.4%2024l-.2%2016.8h-9.4L18.6%2024l-2.7%206.7a.52.52%200%2001-.66.31l-1.1-.4a.52.52%200%2001-.31-.66l3.1-11.3a1.69%201.69%200%20011.5-1.3h.2l1-.9h2.3a5.9%205.9%200%20113.2%200h2.3l1.1.9h.2a1.71%201.71%200%20011.6%201.2l2.9%2011.3a.84.84%200%2001-.4.7z%22%20fill%3D%22%23333%22%20fill-opacity%3D%22.2%22/%3E%3Cpath%20d%3D%22M15.4%2038.8h-4a1.64%201.64%200%2001-1.4-1.1l-3.1-8a.9.9%200%2001-.5.1l-1.4.1a1.62%201.62%200%2001-1.6-1.4L2.3%2015.4l1.6-1.3a6.87%206.87%200%2001-3-4.6A7.14%207.14%200%20012%204a7.6%207.6%200%20014.7-3.1A7.14%207.14%200%200112.2%202a7.28%207.28%200%20012.3%209.6l2.1-.1.1%201c0%20.2.1.5.1.8a2.41%202.41%200%20011%201s1.9%203.2%202.8%204.9c.7%201.2%202.1%204.2%202.8%205.9a2.1%202.1%200%2001-.8%202.6l-.6.4a1.63%201.63%200%2001-1.5.2l-.6-.3a8.93%208.93%200%2000.5%201.3%207.91%207.91%200%20001.8%202.6l.6.3v4.6l-4.5-.1a7.32%207.32%200%2001-2.5-1.5l-.4%203.6zm-10-19.2l3.5%209.8%202.9%207.5h1.6V35l-1.9-9.4%203.1%205.4a8.24%208.24%200%20003.8%203.8h2.1v-1.4a14%2014%200%2001-2.2-3.1%2044.55%2044.55%200%2001-2.2-8l-1.3-6.3%203.2%205.6c.6%201.1%202.1%203.6%202.8%204.9l.6-.4c-.8-1.6-2.1-4.6-2.8-5.8-.9-1.7-2.8-4.9-2.8-4.9a.54.54%200%2000-.4-.3l-.7-.1-.1-.7a4.33%204.33%200%2000-.1-.5l-5.3.3%202.2-1.9a4.3%204.3%200%2000.9-1%205.17%205.17%200%2000.8-4%205.67%205.67%200%2000-2.2-3.4%205.09%205.09%200%2000-4-.8%205.67%205.67%200%2000-3.4%202.2%205.17%205.17%200%2000-.8%204%205.67%205.67%200%20002.2%203.4%203.13%203.13%200%20001%20.5l1.6.6-3.2%202.6%201%2011.5h.4l-.3-8.2z%22%20fill%3D%22%23333%22/%3E%3Cpath%20d%3D%22M3.35%2015.9l1.1%2012.5a.39.39%200%2000.36.42h.14l1.4-.1a.66.66%200%2000.5-.4l-.2-3.8-3.3-8.6z%22%20fill%3D%22%23fdbf2d%22/%3E%3Cpath%20d%3D%22M5.2%2028.8l1.1-.1a.66.66%200%2000.5-.4l-.2-3.8-1.2-3.1z%22%20fill%3D%22%23ce592b%22%20fill-opacity%3D%22.25%22/%3E%3Cpath%20d%3D%22M21.4%2035.7l-3.8-1.2-2.7-7.8L12%2015.5l3.4-2.9c.2%202.4%202.2%2014.1%203.7%2017.1%200%200%201.3%202.6%202.3%203.1v2.9m-8.4-8.1l-2-.3%202.5%2010.1.9.4v-2.9%22%20fill%3D%22%23e5892b%22/%3E%3Cpath%20d%3D%22M17.8%2025.4c-.4-1.5-.7-3.1-1.1-4.8-.1-.4-.1-.7-.2-1.1l-1.1-2-1.7-1.6s.9%205%202.4%207.1a19.12%2019.12%200%20001.7%202.4z%22%20style%3D%22isolation%3Aisolate%22%20fill%3D%22%23cf572e%22%20opacity%3D%22.6%22/%3E%3Cpath%20d%3D%22M14.4%2037.8h-3a.43.43%200%2001-.4-.4l-3-7.8-1.7-4.8-3-9%208.9-.4s2.9%2011.3%204.3%2014.4c1.9%204.1%203.1%204.7%205%205.8h-3.2s-4.1-1.2-5.9-7.7a.59.59%200%2000-.6-.4.62.62%200%2000-.3.7s.5%202.4.9%203.6a34.87%2034.87%200%20002%206z%22%20fill%3D%22%23fdbf2d%22/%3E%3Cpath%20d%3D%22M15.4%2012.7l-3.3%202.9-8.9.4%203.3-2.7%22%20fill%3D%22%23ce592b%22/%3E%3Cpath%20d%3D%22M9.1%2021.1l1.4-6.2-5.9.5%22%20style%3D%22isolation%3Aisolate%22%20fill%3D%22%23cf572e%22%20opacity%3D%22.6%22/%3E%3Cpath%20d%3D%22M12%2013.5a4.75%204.75%200%2001-2.6%201.1c-1.5.3-2.9.2-2.9%200s1.1-.6%202.7-1%22%20fill%3D%22%23bb3d19%22/%3E%3Ccircle%20cx%3D%227.92%22%20cy%3D%228.19%22%20r%3D%226.3%22%20fill%3D%22%23fdbf2d%22/%3E%3Cpath%20d%3D%22M4.7%2013.6a6.21%206.21%200%20008.4-1.9v-.1a8.89%208.89%200%2001-8.4%202z%22%20fill%3D%22%23ce592b%22%20fill-opacity%3D%22.25%22/%3E%3Cpath%20d%3D%22M21.2%2027.2l.6-.4a1.09%201.09%200%2000.4-1.3c-.7-1.5-2.1-4.6-2.8-5.8-.9-1.7-2.8-4.9-2.8-4.9a1.6%201.6%200%2000-2.17-.65l-.23.15a1.68%201.68%200%2000-.4%202.1s2.3%203.9%203.1%205.3c.6%201%202.1%203.7%202.9%205.1a.94.94%200%20001.24.49l.16-.09z%22%20fill%3D%22%23fdbf2d%22/%3E%3Cpath%20d%3D%22M19.4%2019.8c-.9-1.7-2.8-4.9-2.8-4.9a1.6%201.6%200%2000-2.17-.65l-.23.15-.3.3c1.1%201.5%202.9%203.8%203.9%205.4%201.1%201.8%202.9%205%203.8%206.7l.1-.1a1.09%201.09%200%2000.4-1.3%2057.67%2057.67%200%2000-2.7-5.6z%22%20fill%3D%22%23ce592b%22%20fill-opacity%3D%22.25%22/%3E%3C/svg%3E" aria-label="Street View Pegman Control" style="display: none; height: 40px; width: 40px; position: absolute; transform: translate(-60%, -45%); pointer-events: none;"></div></div><div class="gmnoprint" data-control-width="40" data-control-height="81" style="position: absolute; left: 0px; top: 72px;"><div draggable="false" style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 40px; height: 81px;"><button draggable="false" aria-label="Zoom in" title="Zoom in" type="button" class="gm-control-active" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23d1d1d1%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"></button><div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); top: 0px;"></div><button draggable="false" aria-label="Zoom out" title="Zoom out" type="button" class="gm-control-active" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23d1d1d1%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"></button></div></div></div></div><div><div style="margin: 0px 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" rel="noopener" title="Open this area in Google Maps (opens a new window)" aria-label="Open this area in Google Maps (opens a new window)" href="https://maps.google.com/maps?ll=45.106244,-78.658208&amp;z=16&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" style="display: inline;"><div style="width: 66px; height: 26px;"><img alt="Google" src="./Landing page demo_files/google_white5.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div></div><div></div><div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 253px; bottom: 0px;"><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><button draggable="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts" type="button" style="background: none; display: inline-block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: inherit;">Keyboard shortcuts</button></div></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 166px; bottom: 0px; width: 87px;"><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><button draggable="false" aria-label="Map Data" title="Map Data" type="button" style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: inherit;">Map Data</button><span>Map data ©2022</span></div></div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 95px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" rel="noopener" style="text-decoration: none; cursor: pointer; color: rgb(0, 0, 0);">Terms of Use</a></div></div><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" rel="noopener" title="Report errors in the road map or imagery to Google" dir="ltr" href="https://www.google.com/maps/@45.106244,-78.658208,16z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); text-decoration: none; position: relative;">Report a map error</a></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(0, 0, 0); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2022</div></div></div></div></div></div>
+				<div class="hidden-marker"></div>
+			</div>
+
+			<div id="location" class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
+				<h2 class="eyebrow">Getting there</h2>
+				<h3>Map + Location</h3>
+			</div>
+
+			<div class="wrapper">
+				<p><strong>45° 06′ 22.48″ N, 78° 39′ 29.55″ W</strong></p>
+				<p>Dimensions Algonquin Highlands can be reached from Toronto by car, helicopter or private air. Driving from Toronto via Highway 400 North with a connection to Highway 118 West brings guests to our door in approximately three hours. From Billy Bishop Toronto City Airport or Toronto Pearson International Airport, flight time to the nearby Stanhope Municipal Airport (CND4) is one hour. The Retreat spans nearly 40 acres of woodlands, and is located in Stanhope Township along the shores of Maple Lake, at 1218 Canopy Lane. This forest access road leads south from the Township’s Airport Road, just 6 kilometres from the nearest community of Carnarvon and 20 kilometres from the larger town of Minden, Ontario. </p>
+			</div>
+
+	<!-- TESTIMONIAL  -->
+			<div class="text-area text-area--quote text-area--color">
+				<div class="wrapper">
+					<figure>
+						<blockquote>
+							<p>“Our lakeside Northern Ontario setting featuring rugged hills and an extensive network of forest trails is the optimal setting to observe the first signs of a Canadian spring. Time spent with us off the beaten path will serve as an exclusive prelude to Dimensions Education’s growing curriculum and the opening of a global collection of several permanent Retreat destinations for deep healing and well-being. You will learn why the combination of natural plant medicines and psychotherapeutic technique is a powerful strategy to address issues and reduce the impact of trauma – especially when healing is set in natural surroundings.“</p>
+						</blockquote>
+						<figcaption>—Donald Currie, RP, <br>Clinical Director Dimensions Algonquin Highlands</figcaption>
+					</figure>
+				</div>
+			</div>
+			
+	<!-- INCLUSIONS -->
+			<div id="inclusions" class="text-area  text-area--title text-area--center wrapper text-transition is-style-animated">
+				<h2 class="eyebrow">Program</h2>
+				<h3>Course Fees + Inclusions</h3>
+			</div>
+
+			<div class="text-image ">
+				<div class="text-image__image is-style-animated">
+					<img src="./Landing page demo_files/room.3f149059.jpg" alt="">
+				</div>
+				<div class="text-image__text is-style-animated">
+					<div class="text-image__text-content">
+						<p>
+							All course fees, accommodation and meals are included in our preferred practitioners’ rate of $11,000 + 13% HST (single occupancy). Accommodation in a private cabin includes all programmed activities and organic meals prepared daily to suit all dietary needs by Dimensions Algonquin Highlands Executive Chef Miriam Echeverria. These all-inclusive accommodations, amenities and activities are offered as a prelude to all three progressive levels of in-person training sessions and subsequent online modules conducted by Dimensions’ clinicians: Donald Currie, RP; Dawn Martin, PhD; and Daniel McQueen’s faculty at the Center for Medicinal Mindfulness. The rate does not include ground transportation or airfare.
+						</p>
+					</div>
+				</div>
+			</div>
+
+	<!-- ROOMS  -->
+			<div class="text-area text-area--title text-area--center wrapper text-transition is-style-animated">
+				<h2 class="eyebrow">Course Fees</h2>
+				<h3>Accommodation + Curriculum</h3>
+			</div>
+
+			<div class="wrapper">
+				<div class="room-grid text-transition">
+					<div class="room-grid__room room room--small">
+						<div class="room__icon">
+							<img src="./Landing page demo_files/cabin.4bd26699.svg" alt="">
+						</div>
+						<div class="room__text">
+							<div class="room__description">
+								<h4 class="room__title">Cabin</h4>
+								<p>1 Queen bed, single occupancy</p>
+							</div>
+							<p class="room__rate">
+								<span class="room__price">$11,000</span>
+								<span class="room__currency">CAD + HST Per Person</span>
+							</p>
+						</div>
+					</div>
+					<!-- <div class="room-grid__room room">
+						<h4 class="room__title">Forest View Cabin</h4>
+						<p class="room__description">
+							1 Room, 1 Queen Bed <br>Single occupancy
+						</p>
+						<div class="room__icon">
+							<img src="./img/hollow-d.svg" alt="">
+						</div>
+						<p class="room__rate">
+							<span class="room__price">$11,000</span>
+							<span class="room__currency">CAD + HST Per Person</span>
+						</p>
+					</div>
+					<div class="room-grid__room room">
+						<h4 class="room__title">Lake View</h4>
+						<p class="room__description">
+							1 Room, 1 Queen Bed <br>Double occupancy
+						</p>
+						<div class="room__icon">
+							<img src="./img/hollow-d.svg" alt="">
+						</div>
+						<p class="room__rate">
+							<span class="room__price">$10,000</span>
+							<span class="room__currency">CAD + HST Per Person</span>
+						</p>
+					</div>
+					<div class="room-grid__room room">
+						<h4 class="room__title">Forest View Cabin</h4>
+						<p class="room__description">
+							1 Room, 1 Queen Bed <br>Double occupancy
+						</p>
+						<div class="room__icon">
+							<img src="./img/hollow-d.svg" alt="">
+						</div>
+						<p class="room__rate">
+							<span class="room__price">$10,000</span>
+							<span class="room__currency">CAD + HST Per Person</span>
+						</p>
+					</div> -->
+				</div>
+			</div>
+
+	<!-- FINANCING  -->
+			<div class="text-area text-area--center text-area--title wrapper text-transition is-style-animated">
+				<h2 class="eyebrow">Terms and Conditions</h2>
+				<h3>Payment Guidelines:</h3>
+			</div>
+
+			<div class="text-area wrapper">
+				<p>Upon written acceptance of attendance at the Dimensions Education <span class="highlight">EVOLVE</span> practitioners’ retreat with Daniel McQueen, being held on May 23, 2022, all guests must confirm their registration with a 25% deposit toward the full enrollment fee of CAD$11,000 plus 13% HST. Full payment is due on May 15, 2022. 
+				</p>
+				<p><strong>Financing options:</strong> All practitioners enrolled in the <span class="highlight">EVOLVE</span> training intensive are also eligible for interest-free financing options. The payment plan allows for an initial 25% deposit and an allowance for a 50% advance payment toward the full enrollment fee of CAD $11,000 plus 13% HST by May 15, 2022, with the option to finalize payment of the outstanding balance in 10% installments. Full payment must be completed by December 31, 2022, regardless of attendance deferrals or course withdrawals.</p>
+
+				<p><strong>CANCELLATION TERMS:</strong>There is no cancellation penalty if Dimensions is notified 45 days prior to the Dimensions <span class="highlight">EVOLVE</span> Retreat being held on May 23, 2022. Cancellations made less than 45 days before the planned arrival date at a Dimensions Retreat will be subject to a charge of 100% of the cost of the Retreat reservation, or a credit for another Dimensions Retreat will be issued for redemption within 12 months of receipt. All charges and deposits for anyone who must cancel or postpone their stay for COVID-19 force majeure reasons within 14 days of arrival at the Retreat will be waived and refunded with proof of a PCR test. We understand a last-minute guest cancellation is impossible for Dimensions to replace, but you are too. We want you to be well.</p>
+				<p>Cancellations pertaining to the off-site portion of the course payments are non-refundable. There are no refunds once the course begins.</p>
+			</div>
+
+	<!-- Q + A  -->
+			<div id="qa" class="text-area text-area--center wrapper text-transition is-style-animated">
+				<h3>Q + A</h3>
+			</div>
+
+			<div class="accordion row wrapper">
+				<div class="tabs">
+					<div class="tab">
+						<input type="checkbox" id="qa-chck1">
+						<label class="tab-label" for="qa-chck1"><span> What are the graduation benchmarks, course attendance and diagnostic expectations?</span></label>
+						<div class="tab-content">
+							<p>Full attendance throughout the course is expected and mandatory. There will be no exceptions. Graduation is based on 100% attendance.</p>
+						</div>
+					</div>
+					<div class="tab">
+						<input type="checkbox" id="qa-chck2">
+						<label class="tab-label" for="qa-chck2"><span> Will we learn how to prepare cannabis blends?</span></label>
+						<div class="tab-content">
+							<p>Guidance will be provided on how to make your own psychedelic cannabis blends, set up your therapy space, and use music and prompts to safely hold space as a psychedelic facilitator. The skill sets taught are similar to facilitating Ketamine and N,N-DMT psychedelic experiences. 
+							</p>
+						</div>
+					</div>
+					<div class="tab">
+						<input type="checkbox" id="qa-chck4">
+						<label class="tab-label" for="qa-chck4"><span> Will we receive accreditation upon graduation?</span></label>
+						<div class="tab-content">
+							<p>All graduates completing the training will receive professional credentialing by Daniel McQueen’s Center for Medicinal Mindfulness for legally and safely providing cannabis-assisted psychedelic therapy in compliance with each practitioner’s professional licensing and other legal requirements. CMM already has graduates who are practising in Canada and have permission from their professional liability insurance to bring cannabis into their practice. <strong>Graduate’s Credentials:</strong> Cannabis-Assisted Psychedelic Guide in Mindfulness-Based Psychedelic Therapy </p>
+							<p><strong>Associated Benefits for Graduates:</strong></p>
+							<ul>
+								<li>Access Webinar Lecture Content and Community Forum of CMM/PSS </li>
+								<li>Invitation to Credentialing program for professional practice and membership in CMM </li>
+								<li>Invitation to CMM 10-Year Anniversary Community Gathering in Colorado</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab">
+						<input type="checkbox" id="qa-chck5">
+						<label class="tab-label" for="qa-chck5"><span> Will we receive Continuing Education Unit credits?</span></label>
+						<div class="tab-content">
+							<p>Because the training is cannabis-specific, and in the USA cannabis is still considered federally as a schedule 1 substance, there are some constraints and CMM has not offered these as CE credits yet in the USA. There may be greater opportunity for practitioners based in Canada. However, all CMM certificates of completion will denote the total hours of the training program and these have been successfully used as education and training hour requirements for professional licenses. </p>
+						</div>
+					</div>
+
+
+					<div class="tab">
+						<input type="checkbox" id="qa-chck6">
+						<label class="tab-label" for="qa-chck6"><span> What health and wellness concerns can be helped by psychedelic-assisted therapy at Dimensions?</span> </label>
+						<div class="tab-content">
+							<p>Published trials and recent research show that psychedelics are useful in treating depression, anxiety, stress, trauma, addictions, migraines, post-traumatic stress, obsessive–compulsive disorder, eating disorders and end-of-life distress, as well as in improving general well-being. Importantly, psychedelics also show promise in safely and efficiently treating many of these conditions where other approaches have failed.
+							</p>
+							<p>In conjunction with Queen’s University and Health Canada, Dimensions is developing a robust research agenda to continue exploring the benefits and limits of psychedelics. Read our blog for more information about current research trials and findings.</p>
+						</div>
+					</div>
+
+					<div class="tab">
+						<input type="checkbox" id="qa-chck7">
+						<label class="tab-label" for="qa-chck7"><span> Is a doctor referral required for participation?</span></label>
+						<div class="tab-content">
+							<p>Participation in our programs is not dependent on a physician’s referral, but all guests must participate in our intake and assessment process prior to Retreat, including a medical and psychological assessment to determine your physical and mental readiness for our programs. </p>
+						</div>
+					</div>
+
+					<div class="tab">
+						<input type="checkbox" id="qa-chck8">
+						<label class="tab-label" for="qa-chck8"><span> Will my insurance cover my Dimensions Retreat?</span> </label>
+						<div class="tab-content">
+							<p>The nature and level of coverage you are eligible to receive for services should be confirmed with your insurance company directly. Many of our services are provided by regulated and licensed experts, so you may be eligible for coverage for certain services.</p>
+						</div>
+					</div>
+
+					<div class="tab">
+						<input type="checkbox" id="qa-chck9">
+						<label class="tab-label" for="qa-chck9"><span> Which psychedelics do you offer?</span> </label>
+						<div class="tab-content">
+							<p>Dimensions believes in whole plant medicine. The type of plant-based psychedelics offered at our safe, legal and luxurious Retreats differs depending on local laws in the regions where our locations operate.</p>
+						</div>
+					</div>
+
+					<div class="tab">
+						<input type="checkbox" id="qa-chck10">
+						<label class="tab-label" for="qa-chck10"><span> Are psychedelics legal?</span> </label>
+						<div class="tab-content">
+							<p>Without exception, Dimensions complies with local laws and only provides plant-based medicines that are legal in a Retreat’s location.</p>
+						</div>
+					</div>
+
+					<div class="tab">
+						<input type="checkbox" id="qa-chck11">
+						<label class="tab-label" for="qa-chck11"><span> How do psychedelics work?</span></label>
+						<div class="tab-content">
+							<p>When used therapeutically in professionally supervised treatments, psychedelics can help you safely explore past experiences and memories that are normally difficult to tolerate or access. By quieting the part of the brain associated with ego, psychedelics disrupt patterns of negative thinking and allow for the creation of new perceptions. In these expanded states of consciousness, you’re better able to develop – and maintain – a deeper, more compassionate sense of yourself and your place in the world, leading to better mental health and improved well-being.</p>
+						</div>
+					</div>
+
+					<div class="tab">
+						<input type="checkbox" id="qa-chck12">
+						<label class="tab-label" for="qa-chck12"><span> How safe are psychedelics?</span></label>
+						<div class="tab-content">
+							<p>Used therapeutically, psychedelics are low-risk. At Dimensions, safety is our priority. We incorporate multiple measures to optimize your wellness journey and ensure your stay with us is safe and effective from beginning to end.</p>
+						</div>
+					</div>
+
+					<div class="tab">
+						<input type="checkbox" id="qa-chck13">
+						<label class="tab-label" for="qa-chck13"><span> What is psychedelic-assisted therapy?</span></label>
+						<div class="tab-content">
+							<p>Psychedelic-assisted therapy combines psychedelic experiences with complementary therapeutic processes to help you reflect, reset and reconnect. </p>
+							<p>The therapeutic effects of psychedelics are not due simply to their physiological effects. Rather, they are the result of interactions between these physiological effects, the therapeutic setting and your mindset. Dimensions wellness programs offer a diverse array of therapeutic somatic modalities such as massage, float tanks and acupuncture to help you reconnect to your body. Instruction in breathing, meditation, mindfulness and similar practices deepens your experience. Activities in nature, exceptional culinary selections and the serene design at our luxurious Retreats are essential supports on your journey to well-being. Through all of these elements, our expert team pays careful attention to your emotional, physical, mental and spiritual development.</p>
+						</div>
+					</div>
+
+					<div class="tab">
+						<input type="checkbox" id="qa-chck14">
+						<label class="tab-label" for="qa-chck14"><span> Does cannabis really have psychedelic properties?</span> </label>
+						<div class="tab-content">
+							<p>When specific strains of cannabis sativa are blended together in a particular way, their psychoactive components – notably, THC, CBD, CBN, CBG and CBC, as well as the terpene profile – can elicit deep psychedelic states similar to other classic psychedelics such as ayahuasca and psilocybin. When used in a therapeutic or ceremonial setting, cannabis addresses physical traumas in the fascia, tendons, muscles and bones – not just the trauma held in nervous system memories, emotions and personality structures.</p>
+							<p>However, cannabis differs from other psychedelics because you can retain your agency or sense of control. This often means you can navigate the experience more skilfully and with greater ease, and you can pause the experience. </p>
+						</div>
+					</div>
+
+					<div class="tab">
+						<input type="checkbox" id="qa-chck15">
+						<label class="tab-label" for="qa-chck15"><span> Is information shared at a Retreat confidential?</span></label>
+						<div class="tab-content">
+							<p>Our guests’ privacy is paramount. Any information shared during the Retreat is confidential. Dimensions’ therapeutic staff comprises professionals who hold designations from recognized licensing bodies, and all staff have received extensive training on privacy protocols. Our digital platforms and guest services systems comply fully with HIPAA and PHIPA privacy regulations. Your fellow guests must also agree to maintain the confidentiality of other participants’ experiences and identities.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+	<!-- RSVP  -->
+			<div id="rsvp" class="text-area text-area--center wrapper text-transition is-style-animated animating">
+				<h2 class="eyebrow">Planning your retreat</h2>
+				<h3>RSVP</h3>
+				<p>Thank you for expressing your interest in Evolve.</p>
+				<p>Our clinical team will confirm next steps with you.</p>
+				<!-- <form id="contact-us" class="rsvp-form" method="POST" action="/contact-us">
+					<div class="rsvp-form__input-fields-container">
+						<input type="text" placeholder="First Name*" name="first-name" id="first-name">
+						<input type="text" placeholder="Age" name="age" id="age">
+						<input type="text" placeholder="City / Town" name="city" id="city">
+						<input type="text" placeholder="Your Email*" name="email" id="email">
+					</div>
+					<button id="submitform" class="button button--rounded button--bordered"><div class="button__circle"></div> <span>Submit</span></button>
+				</form> -->
+
+				<form id="rsvp" class="rsvp-form" method="POST" action="http://localhost:1234/rsvp-algonquin-mcqueen">
+					<label for="first-name" class="rsvp-form__label">
+						<span class="rsvp-form__error-text"></span>
+						<span class="rsvp-form__label-text">First Name*</span>
+						<input type="text" class="rsvp-form__text-input" name="first-name" id="first-name">
+					</label>
+					<label for="age" class="rsvp-form__label">
+						<span class="rsvp-form__error-text"></span>
+						<span class="rsvp-form__label-text">Age*</span>
+						<input type="text" class="rsvp-form__text-input" placeholder="" name="age" id="age">
+					</label>
+					<label for="city" class="rsvp-form__label">
+						<span class="rsvp-form__error-text"></span>
+						<span class="rsvp-form__label-text">City / Town*</span>
+						<input type="text" class="rsvp-form__text-input" name="city" id="city">
+					</label>
+					<label for="email" class="rsvp-form__label">
+						<span class="rsvp-form__error-text"></span>
+						<span class="rsvp-form__label-text">Your Email*</span>
+						<input type="text" class="rsvp-form__text-input" name="email" id="email">
+					</label>
+					<button id="submit-rsvp-form" class="button button--rounded button--bordered"><div class="button__circle"></div> <span>Submit</span></button>
+				</form>
+			</div>
+
+
+			<!-- buttons test  -->
+			
+			<!-- From https://codepen.io/sebastien-gilbert/pen/VwLzvGV?editors=1010 -->
+
+		</main>
+		<footer>
+			<div class="subscriptions text-area">
+				<div class="wrapper sub-email">
+					<div class="sub-email-content">
+						<h2>Newsletter</h2>
+						<div class="email-input">
+							<input id="footer-email" type="text" placeholder="Just enter your email">
+
+							<button id="footer-subscription" class="button button--rounded button--bordered">
+								<div class="button__circle"></div> 
+								<span>Submit</span>
+							</button>
+						</div>
+						<div class="privacy-policy-footer">
+							<input type="hidden" id="footer-recipient" value="enquire@dimensionshealing.com">
+							<input type="hidden" id="footer-subject" value="Via Newsletter: Dimensions Site Visitor | Newsletter">
+							<span class="checkbox">
+								<label>
+									<input type="checkbox" class="condition-check" id="terms-condition-footer" name="terms-condition-footer">
+									<span class="check-label">I have read and understand the <a class="privacy-link" href="http://localhost:1234/privacy-policy">Privacy Policy.</a></span>
+								</label>
+							</span>
+						</div>
+						<div class="newsletter-footer">
+							<span class="checkbox">
+								<label>
+									<input type="checkbox" class="condition-check" id="news-letter-footer" name="news-letter-footer">
+									<span class="check-label">I would like to receive more information from Dimensions.</span>
+								</label>
+							</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+	<!-- FOOTER -->
+			<div class="main-footer">
+				<div class="wrapper wrapper--wide">
+					<nav class="main-footer__menu menu">
+						<a href="https://dimensionsretreats.com/about-us/" class="menu__item" target="_blank">
+							<span class="menu__item-text">About Us</span>
+						</a>
+						<a href="https://dimensionsretreats.com/contact-us/" class="menu__item" target="_blank">
+							<span class="menu__item-text">Contact Us</span>
+						</a>
+						<a href="https://dimensionsretreats.com/latest-news/" class="menu__item" target="_blank">
+							<span class="menu__item-text">News</span>
+						</a>
+						<a href="https://dimensionsretreats.com/faq/" class="menu__item" target="_blank">
+							<span class="menu__item-text">FAQ</span>
+						</a>
+						<a href="https://dimensionsretreats.com/dimensions-blogs/" class="menu__item" target="_blank">
+							<span class="menu__item-text">Blog</span>
+						</a>
+						<a href="https://dimensionsretreats.com/press-releases/" class="menu__item" target="_blank">
+							<span class="menu__item-text">Press releases</span>
+						</a>
+					</nav>
+					<div class="main-footer__logo">
+						<a href="https://dimensionsretreats.com/" target="_blank">
+							<img src="./Landing page demo_files/Dimensions-Education-Logo--white.9218517e.svg" alt="">
+						</a>
+					</div>
+					<p class="main-footer__legal">© 2022 Dimensions. All rights reserved.</p>
+					<div class="sub-social">
+						<div class="social-icons">
+								<a href="https://www.instagram.com/dimensionsretreats/" target="_blank"><img src="./Landing page demo_files/instagram.b6dad8a8.svg" class="lazyloaded" data-ll-status="loaded"><noscript><img src="https://dimensionsretreats.com/wp-content/uploads/2021/12/inst.svg"></noscript></a>
+								<a href="https://www.facebook.com/dimensionshealth" target="_blank"><img src="./Landing page demo_files/facebook.cbb8eeac.svg" class="lazyloaded" data-ll-status="loaded"><noscript><img src="https://dimensionsretreats.com/wp-content/uploads/2021/12/fb.svg"></noscript></a>
+								<a href="https://twitter.com/dimensionsheals" target="_blank"><img src="./Landing page demo_files/twitter.053898bd.svg" class="lazyloaded" data-ll-status="loaded"><noscript><img src="https://dimensionsretreats.com/wp-content/uploads/2021/12/tw.svg"></noscript></a>
+								<a href="https://www.linkedin.com/company/dimensions-healing/" target="_blank"><img src="./Landing page demo_files/linkedin.988f39de.svg" class="lazyloaded" data-ll-status="loaded"><noscript><img src="https://dimensionsretreats.com/wp-content/uploads/2021/12/linkedin.svg"></noscript></a>
+						</div>
+						
+					</div>
+					<!-- <div class="main-footer__left">
+					</div>
+					<div class="main-footer__right">
+					</div> -->
+				</div>
+			</div>
+		</footer>
+		<script src="./Landing page demo_files/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="./Landing page demo_files/js" async=""></script>
+		<script src="./Landing page demo_files/index.b8e4dfc2.js" defer=""></script>
+		<script src="./Landing page demo_files/index.af1d64cf.js" defer=""></script>
+		<script src="./Landing page demo_files/index.66c49646.js" defer=""></script>
+		<script src="./Landing page demo_files/index.f9b3b06b.js" defer=""></script>
+		<script src="./Landing page demo_files/index.739bf03c.js" defer=""></script>
+	
+
+</body></html>

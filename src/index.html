@@ -219,7 +219,7 @@
 			</div>
 
 			<div class="modal">
-				<div class="modal__closer">X</div>
+				<div class="modal__closer"></div>
 				<div class="modal__content">
 					<div class="modal__image">
 					</div>
@@ -745,9 +745,7 @@
 			<div id="rsvp" class="text-area text-area--center wrapper text-transition is-style-animated">
 				<h2 class="eyebrow">Planning your retreat</h2>
 				<h3>RSVP</h3>
-				<p>Thank you for expressing your interest in Evolve.</p>
-				<p>Our clinical team will confirm next steps with you.</p>
-				<form id="contact-us" class="rsvp-form" method="POST" action="/contact-us">
+				<!-- <form id="contact-us" class="rsvp-form" method="POST" action="/contact-us">
 					<div class="rsvp-form__input-fields-container">
 						<input type="text" placeholder="First Name*" name="first-name" id="first-name">
 						<input type="text" placeholder="Age" name="age" id="age">
@@ -755,6 +753,39 @@
 						<input type="text" placeholder="Your Email*" name="email" id="email">
 					</div>
 					<button id="submitform" class="button button--rounded button--bordered"><div class="button__circle"></div> <span>Submit</span></button>
+				</form> -->
+
+				<form id="rsvp-form" class="rsvp-form" method="POST" action="/rsvp-algonquin-mcqueen">
+					<div class="rsvp-form__fields">
+						<label for="first-name" class="rsvp-form__label">
+							<span class="rsvp-form__error-text"></span>
+							<span class="rsvp-form__label-text">First Name*</span>
+							<input type="text" class="rsvp-form__text-input" name="first-name" id="first-name" required>
+						</label>
+						<label for="age" class="rsvp-form__label">
+							<span class="rsvp-form__error-text"></span>
+							<span class="rsvp-form__label-text">Age*</span>
+							<input type="text" class="rsvp-form__text-input" name="age" id="age" required >
+						</label>
+						<label for="city" class="rsvp-form__label">
+							<span class="rsvp-form__error-text"></span>
+							<span class="rsvp-form__label-text">City / Town*</span>
+							<input type="text" class="rsvp-form__text-input" name="city" id="city" required>
+						</label>
+						<label for="email" class="rsvp-form__label">
+							<span class="rsvp-form__error-text"></span>
+							<span class="rsvp-form__label-text">Your Email*</span>
+							<input type="email" class="rsvp-form__text-input" name="email" id="email" required>
+						</label>
+					</div>
+					<button id="submit-rsvp-form" class="button button--rounded button--bordered"><div class="button__circle"></div> <span>Submit</span></button>
+					<div class="rsvp-form__error-message">
+						<p>* Missing / invalid required fields</p>
+					</div>
+					<div class="rsvp-form__success-message">
+						<p>Thank you for expressing your interest in Evolve.</p>
+						<p>Our clinical team will confirm next steps with you.</p>
+					</div>
 				</form>
 			</div>
 

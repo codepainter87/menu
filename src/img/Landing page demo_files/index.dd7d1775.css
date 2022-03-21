@@ -1,0 +1,121 @@
+.main-footer {
+  background: var(--accent-color);
+  color: white;
+  padding: 120px 0 50px;
+  position: relative;
+}
+@media only screen and (max-width: 640px) {
+  .main-footer {
+    padding: 60px 0;
+  }
+}
+.main-footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 640px) {
+  .main-footer .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main-footer .sub-social {
+  margin-top: 60px;
+}
+@media only screen and (max-width: 640px) {
+  .main-footer__logo {
+    order: -1;
+    align-self: center;
+  }
+}
+.main-footer__menu {
+  flex: 0 0 50%;
+}
+@media only screen and (max-width: 640px) {
+  .main-footer__menu {
+    text-align: center;
+    margin-top: 60px;
+  }
+}
+.main-footer__menu .menu__item {
+  display: block;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+.main-footer__menu .menu__item:hover .menu__item-text:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.main-footer__menu .menu__item-text {
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+.main-footer__menu .menu__item-text::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.main-footer__legal {
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  margin-top: 60px;
+  align-self: flex-end;
+}
+@media only screen and (max-width: 640px) {
+  .main-footer__legal {
+    order: 1;
+    align-self: center;
+    margin-top: 12px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+.main-footer .social-icons a:hover img {
+  transform: scale(1.1);
+}
+.main-footer .social-icons img {
+  transition: all 0.1s;
+  transform: scale(1);
+  margin: 0 4px;
+}
+
+.email-input {
+  position: relative;
+}
+@media only screen and (max-width: 640px) {
+  .email-input {
+    position: static;
+  }
+}
+
+#footer-subscription {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 30px);
+}
+@media only screen and (max-width: 640px) {
+  #footer-subscription {
+    top: calc(100% + 25px);
+    /* bottom: 0; */
+    margin-left: 0;
+    right: auto;
+    left: 0px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .sub-email-content {
+    position: relative;
+  }
+}
+/*# sourceMappingURL=index.dd7d1775.css.map */
